@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
 
-    <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
+    @include('shared.titlebar')
 
     <!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -84,11 +84,9 @@
             </div><!-- sign-wrapper -->
             <div class="media-body pd-y-30 pd-lg-x-50 pd-xl-x-60 align-items-center d-none d-lg-flex pos-relative">
                 <div class="mx-lg-wd-500 mx-xl-wd-550">
-                    <img src="https://via.placeholder.com/1280x1225" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/close-up-hand-repairman-professional-builder-working-indoors-repairing.png')}}" class="img-fluid" alt="">
                 </div>
-                <div class="pos-absolute b-0 r-0 tx-12">
-                    Social media marketing vector is created by <a href="https://www.freepik.com/pikisuperstar" target="_blank">pikisuperstar (freepik.com)</a>
-                </div>
+
             </div><!-- media-body -->
         </div><!-- media -->
     </div><!-- container -->

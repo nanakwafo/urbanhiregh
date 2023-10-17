@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
 
-    <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
+    @include('shared.titlebar')
 
     <!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -50,11 +50,9 @@
         <div class="media align-items-stretch justify-content-center ht-100p pos-relative">
             <div class="media-body align-items-center d-none d-lg-flex">
                 <div class="mx-wd-600">
-                    <img src="https://via.placeholder.com/1260x950" class="img-fluid" alt="">
+                    <img src="{{asset('assets/img/afro-american-builders-wearing-helmets-face-masks-while-measuring-wall.png')}}" class="img-fluid" alt="">
                 </div>
-                <div class="pos-absolute b-0 l-0 tx-12 tx-center">
-                    Workspace design vector is created by <a href="https://www.freepik.com/pikisuperstar" target="_blank">pikisuperstar (freepik.com)</a>
-                </div>
+
             </div><!-- media-body -->
             <div class="sign-wrapper mg-lg-l-50 mg-xl-l-60">
                 <div class="wd-100p">
