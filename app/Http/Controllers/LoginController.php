@@ -16,6 +16,13 @@ class LoginController extends Controller
 
     public function postlogin(Request $request)
     {
-
+//        return view('tradesman');
+        return view('requester');
     }
+
+    private function get_user_type($email)
+    {
+        return 'tradesman | requester';
+}
+
 }
