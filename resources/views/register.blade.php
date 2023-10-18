@@ -55,7 +55,7 @@
                     <h4 class="tx-color-01 mg-b-5">Create New Account</h4>
                     <p class="tx-color-03 tx-16 mg-b-40">It's free to signup and only takes a minute.</p>
 
-
+                    @include('shared.alert')
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
@@ -113,7 +113,7 @@
                             </form>
                         </div>
                         <div class="tab-pane fade" id="tradesman" role="tabpanel" aria-labelledby="tradesman-tab">
-                            <h6>Tradesman</h6>
+
                             <form action="/register" method="POST">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="user_type" value="tradesman">
