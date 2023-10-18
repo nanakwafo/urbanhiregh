@@ -159,6 +159,7 @@
                                 <div class="form-group tx-12">
                                     By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy statement.
                                 </div><!-- form-group -->
+
                                 <button type="submit" class="btn btn-brand-02 btn-block">Create Account</button>
                             </form>
                         </div>
