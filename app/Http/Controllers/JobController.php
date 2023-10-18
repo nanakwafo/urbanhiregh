@@ -22,7 +22,6 @@ class JobController extends Controller
         $jobpost->requesttype  = $request->requesttype;
         $jobpost->post_date  = $request->post_date;
         $jobpost->house_number  = $request->house_number;
-        $jobpost->house_number  = $request->house_number;
         $jobpost->location  = $request->location;
         $jobpost->job_title  = $request->job_title;
         $jobpost->job_description  = $request->job_description;

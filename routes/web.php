@@ -30,4 +30,7 @@ Route::get('/forgot-password', 'ForgotPasswordcontroller@index');
 //tradesman profile
 Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index');
 
+Route::get('/update-tradesmanprofile/{userId}', 'TradesmanprofileController@update_tradesman_profile');
+Route::post('/update-tradesmanprofile-picture', 'TradesmanprofileController@update_profile_picture');
+
 

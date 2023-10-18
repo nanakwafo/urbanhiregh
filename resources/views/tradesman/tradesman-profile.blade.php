@@ -55,7 +55,10 @@
                     </div><!-- col -->
                     <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
                         <h5 class="mg-b-2 tx-spacing--1">{{$tradesmanprofile->name}}</h5>
-
+                        <div class="d-flex mg-b-25">
+                            <button class="btn btn-xs btn-white flex-fill">Message</button>
+                            <button class="btn btn-xs btn-primary flex-fill mg-l-10">Follow</button>
+                        </div>
 
 
                         <p class="tx-13 tx-color-02 mg-b-25">Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive 20-something Yogurt Enthusiast... <a href="">Read more</a></p>
