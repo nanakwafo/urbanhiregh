@@ -158,16 +158,12 @@
 
                 reader.onload = function (e) {
                     $('#preview_image').attr('src', e.target.result);
-                    // $('#preview_image2').attr('src', e.target.result);
-                    // $('#preview_image3').attr('src', e.target.result);
+
                 };
                 reader.readAsDataURL(input.files[0]);
             }
         }
-        // $(document).on('change', 'input[type="file"]', function () {
-        //     readURL(this);
-        //
-        // });
+
         $("#imgInp").change(function(){
 
             readURL2(this);

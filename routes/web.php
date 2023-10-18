@@ -16,6 +16,17 @@ use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
+//About Us
+Route::get('/about-us', 'PageController@about');
+//Privacy policy
+Route::get('/privacy-policy', 'PageController@privacy_policy');
+//Terms
+Route::get('/terms', 'PageController@terms');
+//Contact Us
+Route::get('/contact-us', 'PageController@contact_us');
+//Faq
+Route::get('/faq', 'PageController@faq');
+
 
 Route::post('/logout','LoginController@logout');
 
