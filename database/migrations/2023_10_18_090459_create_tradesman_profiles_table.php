@@ -15,6 +15,15 @@ class CreateTradesmanProfilesTable extends Migration
     {
         Schema::create('tradesman_profiles', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->string('picture')->nullable();
+            $table->string('name')->nullable();
+            $table->string('about')->nullable();
+            $table->string('skills')->nullable();
+            $table->string('location')->nullable();
+            $table->string('home_address')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }

@@ -135,11 +135,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Firstname</label>
-                                    <input type="text" name="firstname" class="form-control" placeholder="Enter your firstname">
+                                    <input type="text" name="first_name" class="form-control" placeholder="Enter your firstname">
                                 </div>
                                 <div class="form-group">
                                     <label>Lastname</label>
-                                    <input type="text" name="lastname" class="form-control" placeholder="Enter your lastname">
+                                    <input type="text" name="last_name" class="form-control" placeholder="Enter your lastname">
                                 </div>
                                 <div class="form-group">
                                     <label>Phone Number</label>

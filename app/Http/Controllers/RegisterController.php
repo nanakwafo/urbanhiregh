@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\TradesmanProfile;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use Cartalyst\Sentinel\Native\Facades\Sentinel;
 use Illuminate\Http\Request;
@@ -20,8 +21,8 @@ class RegisterController extends Controller
 
             $this->validate($request,[
                 'user_type'=>'required',
-                'firstname'=>'required',
-                'lastname'=>'required',
+                'first_name'=>'required',
+                'last_name'=>'required',
                 'phone_number'=>'required',
                 'location'=>'required',
                 'email'=>'unique:users|required|email',
@@ -33,8 +34,8 @@ class RegisterController extends Controller
 
             $credentials = [
                 'user_type'    => $request->user_type,
-                'firstname' => $request->firstname,
-                'lastname'=> $request->lastname,
+                'first_name' => $request->first_name,
+                'last_name'=> $request->last_name,
                 'phone_number'=> $request->phone_number,
                 'location'=> $request->location,
                 'email'=> $request->email,
@@ -43,11 +44,22 @@ class RegisterController extends Controller
 
             $user = Sentinel::register($credentials);
 
+
+
             $activation = Activation::create($user);
             if($request->user_type === 'requester'){
                 $role = Sentinel::findRoleBySlug('requester');
             }
             if($request->user_type === 'tradesman'){
+
+                $trademanprofile = new TradesmanProfile();
+                $trademanprofile->user_id = $user->id;
+                $trademanprofile->name = $user->firstname . " " . $user->lastname;
+                $trademanprofile->phone = $user->phone_number;
+                $trademanprofile->location = $user->location;
+                $trademanprofile->email = $user->email;
+                $trademanprofile->save();
+
                 $role = Sentinel::findRoleBySlug('tradesman');
             }
 
@@ -62,4 +74,9 @@ class RegisterController extends Controller
 
 
     }
+
+
 }
+
+
+

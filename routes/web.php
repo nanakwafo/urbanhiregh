@@ -26,4 +26,4 @@ Route::post('register', 'RegisterController@postregister');
 
 
 //tradesman profile
-Route::get('/tradesmanprofile', 'TradesmanprofileController@index');
+Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index');

@@ -9,8 +9,14 @@ use Illuminate\Http\Request;
 class TradesmanprofileController extends Controller
 {
     //
-    public function index(){
-        return view('tradesman.tradesman-profile');
+    public function index($userId){
+
+        $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
+
+        return view('tradesman.tradesman-profile' ,[
+                               'tradesmanprofile' => $tradesmanprofile,
+
+        ]);
     }
 
     public function save_profile(Request $request){
@@ -23,6 +29,7 @@ class TradesmanprofileController extends Controller
         $tradesmanprofile->home_address = $request->home_address;
         $tradesmanprofile->phone = $request->phone;
         $tradesmanprofile->email = $request->email;
+        $tradesmanprofile->save();
 
     }
     public function save_education(Request $request){
