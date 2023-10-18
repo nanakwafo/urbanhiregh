@@ -24,6 +24,9 @@ Route::post('/login', 'LoginController@postlogin');
 Route::get('/register', 'RegisterController@register');
 Route::post('register', 'RegisterController@postregister');
 
+Route::get('/forgot-password', 'ForgotPasswordcontroller@index');
 
 //tradesman profile
 Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index');
+
+
