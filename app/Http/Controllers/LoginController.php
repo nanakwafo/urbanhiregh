@@ -8,7 +8,6 @@ class LoginController extends Controller
 {
     //
 
-
     public function login()
     {
         return view('login');
@@ -23,6 +22,5 @@ class LoginController extends Controller
     private function get_user_type($email)
     {
         return 'tradesman | requester';
-}
-
+    }
 }
