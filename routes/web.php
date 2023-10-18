@@ -12,6 +12,7 @@
 */
 
 
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
@@ -21,4 +22,4 @@ Route::get('/login', 'LoginController@login');
 Route::post('/login', 'LoginController@postlogin');
 
 Route::get('/register', 'RegisterController@register');
-Route::post('/register', 'RegisterController@register');
+Route::post('register', 'RegisterController@postregister');
