@@ -32,9 +32,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
 
-   @include('shared.titlebar')
+@include('shared.titlebar')
 
-    <!-- vendor css -->
+<!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
@@ -59,72 +59,101 @@
 
 <div class="content tx-13">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-      @include('shared.alert')
-           <ul class="nav nav-tabs" id="myTab" role="tablist">
-               <li class="nav-item">
-                   <a class="nav-link active" id="picture-tab" data-toggle="tab" href="#picture" role="tab" aria-controls="picture" aria-selected="true">Picture</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" id="detail-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="false">Personal Details</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
-               </li>
-           </ul>
-           <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
-               <div class="tab-pane fade show active" id="picture" role="tabpanel" aria-labelledby="picture-tab">
-                   <div id="avatar" style="display: flex;justify-content: center">
-                       @if(!empty($tradesmanprofile->picture))
-                           <div class="avatar avatar-lg mg-b-15"><img id="preview_image" src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle" alt=""></div>
+        @include('shared.alert')
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="picture-tab" data-toggle="tab" href="#picture" role="tab"
+                   aria-controls="picture" aria-selected="true">Picture</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="detail-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="detail"
+                   aria-selected="false">Personal Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab"
+                   aria-controls="education" aria-selected="false">Education</a>
+            </li>
+        </ul>
+        <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+            <div class="tab-pane fade show active" id="picture" role="tabpanel" aria-labelledby="picture-tab">
+                <div id="avatar" style="display: flex;justify-content: center">
+                    @if(!empty($tradesmanprofile->picture))
+                        <div class="avatar avatar-lg mg-b-15"><img id="preview_image"
+                                                                   src="/uploads/{{$tradesmanprofile->picture}}"
+                                                                   class="rounded-circle" alt=""></div>
 
-                       @else
-                           <div class="avatar avatar-lg mg-b-15"><img id="preview_image" src="/uploads/default.png" class="rounded-circle" alt=""></div>
+                    @else
+                        <div class="avatar avatar-lg mg-b-15"><img id="preview_image" src="/uploads/default.png"
+                                                                   class="rounded-circle" alt=""></div>
 
-                       @endif
-                   </div>
+                    @endif
+                </div>
 
 
-                   <form method="post" action="/update-tradesmanprofile-picture" enctype="multipart/form-data">
-                       <input type="hidden" name="user_id" value="{{$user_id}}" />
-                       <span style=" display: flex;justify-content: center;margin-bottom: 2%;">
-                           <input type="file" id="imgInp" name="picture" >
-                       </span>
+                <form method="post" action="/update-tradesmanprofile-picture" enctype="multipart/form-data">
+                    <input type="hidden" name="user_id" value="{{$user_id}}"/>
+                    <div class="custom-file" style=" display: flex;justify-content: center;margin-bottom: 2%;">
+                        <input type="file" class="custom-file-input" id="imgInp" name="picture">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
 
-                       <input type="hidden" name="_token" value="{{csrf_token()}}">
-                       <button type="submit" class="btn btn-brand-02 btn-block">Upload</button>
-                   </form>
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    <button type="submit" class="btn btn-brand-02 btn-block">Upload</button>
+                </form>
 
-               </div>
-               <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+            </div>
+            <div class="tab-pane fade" id="detail" role="tabpanel" aria-labelledby="detail-tab">
 
-                   <form id="form1" class="" novalidate>
-                       <div class="row row-sm mg-b-10">
-                           <div class="col-sm-6">
-                               <input type="text" class="form-control" placeholder="Valid state">
+                <form action="/update_profile_details" method="post">
 
-                           </div>
-                           <div class="col-sm-6 mg-t-10 mg-sm-t-0">
-                               <input type="text" class="form-control" placeholder="Invalid state" required>
+                    <div class="row row-sm mg-b-10 ">
+                        <div class="form-group col-md-12">
+                            <label for="formGroupExampleInput" class="d-block">About</label>
+                            <textarea class="form-control" name="about" rows="2"
+                                      placeholder="Tell Us About Yourself">{{$tradesmanprofile->about}}</textarea>
+                        </div>
+                    </div>
 
-                           </div>
-                           <div class="col-sm-6 mg-t-10">
-                               <textarea class="form-control" rows="2" placeholder="Valid state"></textarea>
+                    <div class="row row-sm mg-b-10">
+                        <div class="form-group col-md-12">
+                            <label for="formGroupExampleInput" class="d-block">Skills</label>
+                            <input type="text" name="skills" value="{{$tradesmanprofile->skills}}" class="form-control" placeholder="Select Skills">
+                        </div>
+                    </div>
+                    <div class="row row-sm mg-b-10">
+                        <div class="form-group col-md-12">
+                            <label for="formGroupExampleInput" class="d-block">Location</label>
+                            <input type="text" name="location" value="{{$tradesmanprofile->location}}" class="form-control" placeholder="Enter Location"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="row row-sm mg-b-10">
+                        <div class="form-group col-md-12">
+                            <label for="formGroupExampleInput" class="d-block">Home Address</label>
+                            <input type="text" name="home_address" value="{{$tradesmanprofile->home_address}}" class="form-control" placeholder="Enter Home Address"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="row row-sm mg-b-10">
+                        <div class="form-group col-md-12">
+                            <label for="formGroupExampleInput" class="d-block">Phone</label>
 
-                           </div>
-                           <div class="col-sm-6 mg-t-10">
-                               <textarea class="form-control" rows="2" placeholder="Invalid state" required></textarea>
+                            <input type="text" name="phone" value="{{$tradesmanprofile->phone}}" class="form-control" placeholder="Enter Phone" required>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    <input type="hidden" name="user_id" value="{{$tradesmanprofile->user_id}}">
 
-                           </div>
-                       </div>
-                   </form>
-               </div>
-               <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
-                   <h6>Contact</h6>
-                   <p>...</p>
-               </div>
-           </div>
+            <button type="submit" class="btn btn-brand-02 btn-block">Update Details</button>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+            <h6>Contact</h6>
+            <p>...</p>
+        </div>
+    </div>
 
-    </div><!-- container -->
+</div><!-- container -->
 </div><!-- content -->
 
 @include('shared.footer-1')
@@ -140,23 +169,24 @@
 <script src="../../lib/js-cookie/js.cookie.js"></script>
 <script src="../../assets/js/dashforge.settings.js"></script>
 <script>
-    $(function(){
+    $(function () {
         'use script'
 
-        window.darkMode = function(){
+        window.darkMode = function () {
             $('.btn-white').addClass('btn-dark').removeClass('btn-white');
         }
 
-        window.lightMode = function() {
+        window.lightMode = function () {
             $('.btn-dark').addClass('btn-white').removeClass('btn-dark');
         }
 
         var hasMode = Cookies.get('df-mode');
-        if(hasMode === 'dark') {
+        if (hasMode === 'dark') {
             darkMode();
         } else {
             lightMode();
         }
+
         function readURL2(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
@@ -169,7 +199,7 @@
             }
         }
 
-        $("#imgInp").change(function(){
+        $("#imgInp").change(function () {
 
             readURL2(this);
         });

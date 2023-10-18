@@ -43,5 +43,6 @@ Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index');
 
 Route::get('/update-tradesmanprofile/{userId}', 'TradesmanprofileController@update_tradesman_profile');
 Route::post('/update-tradesmanprofile-picture', 'TradesmanprofileController@update_profile_picture');
+Route::post('/update_profile_details', 'TradesmanprofileController@update_profile_details');
 
 

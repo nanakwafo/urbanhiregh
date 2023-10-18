@@ -75,7 +75,7 @@ class TradesmanprofileController extends Controller
         $tradesmanprofile->home_address = $request->home_address;
         $tradesmanprofile->phone = $request->phone;
         $tradesmanprofile->update();
-        return redirect()->back()->with(['success' => 'Your Details has been updated']);
+        return redirect()->back()->with(['success' => 'Your details has been updated']);
 
     }
 

@@ -61,7 +61,7 @@
                         </div>
 
 
-                        <p class="tx-13 tx-color-02 mg-b-25">Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive 20-something Yogurt Enthusiast... <a href="">Read more</a></p>
+                        <p class="tx-13 tx-color-02 mg-b-25">{{$tradesmanprofile->about}} </p>
 
                         <div class="d-flex">
                             <div class="profile-skillset flex-fill">
