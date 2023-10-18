@@ -56,8 +56,8 @@
         <h6 class="home-headline">We’ll introduce you to the millions of <span>homeowners</span> that are searching our website, or reading our printed directories every single month<span>looking for reputable tradespeople like you.</span></h6>
 
         <div class="d-flex wd-lg-350">
-            <a href="https://themeforest.net/item/dashforge-responsive-admin-dashboard-template/23725961" class="btn btn-brand-01 btn-uppercase flex-fill">Join today</a>
-            <a href="template/classic/dashboard-one.html" class="btn btn-white btn-uppercase flex-fill mg-l-10">Sign In</a>
+            <a href="register" class="btn btn-brand-01 btn-uppercase flex-fill">Join today</a>
+            <a href="login" class="btn btn-white btn-uppercase flex-fill mg-l-10">Sign In</a>
         </div>
 
         <div class="tx-12 mg-t-40">

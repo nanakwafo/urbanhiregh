@@ -23,3 +23,7 @@ Route::post('/login', 'LoginController@postlogin');
 
 Route::get('/register', 'RegisterController@register');
 Route::post('register', 'RegisterController@postregister');
+
+
+//tradesman profile
+Route::get('/tradesmanprofile', 'TradesmanprofileController@index');
