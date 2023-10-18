@@ -61,10 +61,10 @@
         </div>
 
         <div class="tx-12 mg-t-40">
-            <a href="docs.html" class="link-03">F<span class="d-none d-sm-inline">AQ's</span></a>
-            <a href="changelog.html" class="link-03 mg-l-10 mg-sm-l-20">Contact Us</a>
-            <a href="https://themeforest.net/licenses/standard" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Terms & Condition</a>
-            <a href="https://themeforest.net/page/customer_refund_policy" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Privacy Policy</a>
+            <a href="/faq" class="link-03">F<span class="d-none d-sm-inline">AQ's</span></a>
+            <a href="/contact-us" class="link-03 mg-l-10 mg-sm-l-20">Contact Us</a>
+            <a href="/terms" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Terms & Condition</a>
+            <a href="/privacy-policy" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Privacy Policy</a>
         </div>
     </div>
     <div class="home-slider-img">
