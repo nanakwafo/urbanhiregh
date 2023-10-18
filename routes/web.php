@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
+Route::post('/logout','LoginController@logout');
 
 Route::get('/login', 'LoginController@login');
 Route::post('/login', 'LoginController@postlogin');
