@@ -72,15 +72,15 @@
         </div><!-- dropdown -->
         <div class="dropdown dropdown-profile">
             <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
-                <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="avatar avatar-sm"><img src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle" alt=""></div>
             </a><!-- dropdown-link -->
             <div class="dropdown-menu dropdown-menu-right tx-13">
-                <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+                <div class="avatar avatar-lg mg-b-15"><img src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle" alt=""></div>
+                <h6 class="tx-semibold mg-b-5">{{$tradesmanprofile->name}}</h6>
                 <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
 
-                <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
-                <a href="tradesmanprofile/" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                <a href="/update-tradesmanprofile/{{$tradesmanprofile->user_id}}" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+                <a href="/tradesmanprofile/{{$tradesmanprofile->user_id}}" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
                 <div class="dropdown-divider"></div>
                 <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
 

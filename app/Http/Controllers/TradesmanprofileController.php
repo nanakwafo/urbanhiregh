@@ -25,27 +25,38 @@ class TradesmanprofileController extends Controller
 
         return view('tradesman.update-tradesman-profile' ,[
             'tradesmanprofile' => $tradesmanprofile,
+            'user_id' => $userId,
 
         ]);
     }
 
     public function update_profile_picture(Request $request)
     {
-dd($request->all());
+
         $profilepicture = TradesmanProfile::where('user_id', $request->user_id)->get()->first();
 
         if (!empty($profilepicture)) {
             if ($request->hasFile('picture')) {
-                dd("ok");
+
                 $picture = $request->file('picture');
                 $filename = time() . '.' . $picture->getClientOriginalExtension();
+
                 $profile = TradesmanProfile::findorfail($request->user_id);
+
                 $profile->picture = $filename;
                 $profile->update();
-                Image::make($picture)->resize(300, 300)->save(public_path('/uploads/' . $filename));
-                return redirect()->back()->with(['success' => 'Your Picture has been updated']);
+                try {
+
+                    Image::make($picture)->resize(300, 300)->save(public_path('/uploads/' . $filename));
+                    return redirect()->back()->with(['success' => 'Your Picture has been updated']);
+                }catch (\Exception $exception){
+                    dd($exception);
+                }
 
 
+
+            }else{
+                return redirect()->back()->with(['error' => 'File too large.Please select a smaller picture']);
             }
 
         }

@@ -59,7 +59,7 @@
 
 <div class="content tx-13">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
-
+      @include('shared.alert')
            <ul class="nav nav-tabs" id="myTab" role="tablist">
                <li class="nav-item">
                    <a class="nav-link active" id="picture-tab" data-toggle="tab" href="#picture" role="tab" aria-controls="picture" aria-selected="true">Picture</a>
@@ -73,12 +73,19 @@
            </ul>
            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
                <div class="tab-pane fade show active" id="picture" role="tabpanel" aria-labelledby="picture-tab">
+
+                   @if(!empty($tradesmanprofile->picture))
+                       <div class="avatar avatar-lg mg-b-15"><img id="preview_image" src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle" alt=""></div>
+
+                   @else
+                       <div class="avatar avatar-lg mg-b-15"><img id="preview_image" src="/uploads/default.png" class="rounded-circle" alt=""></div>
+
+                   @endif
+
                    <form method="post" action="/update-tradesmanprofile-picture" enctype="multipart/form-data">
-
-                       <input type="hidden" name="user_id" value="1" />
-                       <input type="file" name="picture" >
+                       <input type="hidden" name="user_id" value="{{$user_id}}" />
+                       <input type="file" id="imgInp" name="picture" >
                        <input type="hidden" name="_token" value="{{csrf_token()}}">
-
                        <button type="submit">Upload</button>
                    </form>
 
@@ -145,6 +152,26 @@
         } else {
             lightMode();
         }
+        function readURL2(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#preview_image').attr('src', e.target.result);
+                    // $('#preview_image2').attr('src', e.target.result);
+                    // $('#preview_image3').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        // $(document).on('change', 'input[type="file"]', function () {
+        //     readURL(this);
+        //
+        // });
+        $("#imgInp").change(function(){
+
+            readURL2(this);
+        });
     })
 </script>
 </body>

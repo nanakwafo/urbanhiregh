@@ -51,7 +51,7 @@
             <div class="profile-sidebar pd-lg-r-25">
                 <div class="row">
                     <div class="col-sm-3 col-md-2 col-lg">
-                        <div class="avatar avatar-xxl avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                        <div class="avatar avatar-xxl avatar-online"><img src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle" alt=""></div>
                     </div><!-- col -->
                     <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
                         <h5 class="mg-b-2 tx-spacing--1">{{$tradesmanprofile->name}}</h5>
