@@ -130,10 +130,10 @@
                 <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
 
                 <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
-                <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                <a href="tradesmanprofile/" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
                 <div class="dropdown-divider"></div>
                 <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
-                <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+
                 <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
                 <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
 
