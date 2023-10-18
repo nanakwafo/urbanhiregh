@@ -82,6 +82,13 @@
                                     </div>
                                     <input type="password" name="password" class="form-control" placeholder="Enter your password">
                                 </div>
+
+                                <div class="form-group">
+                                    <div class="d-flex justify-content-between mg-b-5">
+                                        <label class="mg-b-0-f">Password Confirmation</label>
+                                    </div>
+                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Enter your password Confirmation">
+                                </div>
                                 <div class="form-group">
                                     <label>Firstname</label>
                                     <input type="text" name="firstname" class="form-control" placeholder="Enter your firstname">
@@ -119,6 +126,12 @@
                                         <label class="mg-b-0-f">Password</label>
                                     </div>
                                     <input type="password" name="password" class="form-control" placeholder="Enter your password">
+                                </div>
+                                <div class="form-group">
+                                    <div class="d-flex justify-content-between mg-b-5">
+                                        <label class="mg-b-0-f">Password Confirmation</label>
+                                    </div>
+                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Enter your password Confirmation">
                                 </div>
                                 <div class="form-group">
                                     <label>Firstname</label>
