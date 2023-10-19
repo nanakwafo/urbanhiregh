@@ -148,8 +148,42 @@
             </form>
         </div>
         <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
-            <h6>Contact</h6>
-            <p>...</p>
+            <form action="/update_education_details" method="post">
+
+
+
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Title</label>
+                        <input type="text" name="title" value="{{$tradesmaneducation->title}}" class="form-control" placeholder="Select Skills">
+                    </div>
+                </div>
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Institution_name</label>
+                        <input type="text" name="institution_name" value="{{$tradesmaneducation->institution_name}}" class="form-control" placeholder="Enter Location"
+                               required>
+                    </div>
+                </div>
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Start Period</label>
+                        <input type="date" name="start_period" value="{{$tradesmaneducation->start_period}}" class="form-control" placeholder="Enter Home Address"
+                               required>
+                    </div>
+                </div>
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">End Period</label>
+
+                        <input type="date" name="end_period" value="{{$tradesmaneducation->end_period}}" class="form-control" placeholder="Enter Phone" required>
+                    </div>
+                </div>
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                <input type="hidden" name="user_id" value="{{$tradesmanprofile->user_id}}">
+
+                <button type="submit" class="btn btn-brand-02 btn-block">Update Details</button>
+            </form>
         </div>
     </div>
 

@@ -184,19 +184,19 @@
                                 <i data-feather="book-open" class="tx-white-7 wd-40 ht-40"></i>
                             </div>
                             <div class="media-body pd-l-25">
-                                <h5 class="mg-b-5">BS in Computer Science</h5>
-                                <p class="mg-b-3"><span class="tx-medium tx-color-02">Holy Name University</span>,  Tagbilaran City, Bohol</p>
-                                <span class="d-block tx-13 tx-color-03">2002-2006</span>
+                                <h5 class="mg-b-5">{{$tradesmaneducation->title}}</h5>
+                                <p class="mg-b-3"><span class="tx-medium tx-color-02">{{$tradesmaneducation->institution_name}}</span>,  Tagbilaran City, Bohol</p>
+                                <span class="d-block tx-13 tx-color-03">({{$tradesmaneducation->start_period}})-({{$tradesmaneducation->end_period}})</span>
                             </div>
                         </div><!-- media -->
                     </div>
                     <div class="card-footer bg-transparent pd-y-15 pd-x-20">
-                        <nav class="nav nav-with-icon tx-13">
-                            <a href="" class="nav-link">
-                                Show More Education (2)
-                                <i data-feather="chevron-down" class="mg-l-2 mg-r-0 mg-t-2"></i>
-                            </a>
-                        </nav>
+{{--                        <nav class="nav nav-with-icon tx-13">--}}
+{{--                            <a href="" class="nav-link">--}}
+{{--                                Show More Education (2)--}}
+{{--                                <i data-feather="chevron-down" class="mg-l-2 mg-r-0 mg-t-2"></i>--}}
+{{--                            </a>--}}
+{{--                        </nav>--}}
                     </div><!-- card-footer -->
                 </div><!-- card -->
 

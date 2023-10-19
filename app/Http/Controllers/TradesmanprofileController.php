@@ -14,18 +14,21 @@ class TradesmanprofileController extends Controller
     public function index($userId){
 
         $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
+        $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
 
         return view('tradesman.tradesman-profile' ,[
                                'tradesmanprofile' => $tradesmanprofile,
+                               'tradesmaneducation' => $tradesmaneducation,
 
         ]);
     }
     public function update_tradesman_profile($userId){
         $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
-
+        $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
         return view('tradesman.update-tradesman-profile' ,[
             'tradesmanprofile' => $tradesmanprofile,
             'user_id' => $userId,
+            'tradesmaneducation' => $tradesmaneducation
 
         ]);
     }
@@ -41,7 +44,7 @@ class TradesmanprofileController extends Controller
                 $picture = $request->file('picture');
                 $filename = time() . '.' . $picture->getClientOriginalExtension();
 
-                $profile = TradesmanProfile::findorfail($request->user_id);
+                $profile = TradesmanProfile::where('user_id',$request->user_id)->get()->first();;
 
                 $profile->picture = $filename;
                 $profile->update();
@@ -68,7 +71,7 @@ class TradesmanprofileController extends Controller
 
     public function update_profile_details(Request $request){
 
-        $tradesmanprofile = TradesmanProfile::findorfail($request->user_id);
+        $tradesmanprofile = TradesmanProfile::where('user_id',$request->user_id)->get()->first();
         $tradesmanprofile->about = $request->about;
         $tradesmanprofile->skills = $request->skills;
         $tradesmanprofile->location = $request->location;
@@ -80,21 +83,16 @@ class TradesmanprofileController extends Controller
     }
 
 
+    public function update_education_details(Request $request){
 
+        $tradesmaneduction = TradesmanEducation::where('user_id',$request->user_id)->get()->first();
+        $tradesmaneduction->title =$request->title;
+        $tradesmaneduction->institution_name = $request->institution_name;
+        $tradesmaneduction->start_period = $request->start_period;
+        $tradesmaneduction->end_period = $request->end_period;
+        $tradesmaneduction->update();
 
-
-
-
-
-
-
-    public function save_education(Request $request){
-        $tradesmanprofile = new TradesmanEducation();
-        $tradesmanprofile->title =$request->title;
-        $tradesmanprofile->institution = $request->institution;
-        $tradesmanprofile->period = $request->period;
-
-
+        return redirect()->back()->with(['success' => 'Your Educational details has been updated']);
     }
     public function update_profile(){
 

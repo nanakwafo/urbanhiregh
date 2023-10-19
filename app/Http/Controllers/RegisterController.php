@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\TradesmanEducation;
 use App\TradesmanProfile;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 
@@ -56,13 +57,8 @@ class RegisterController extends Controller
             }
             if($request->user_type === 'tradesman'){
 
-                $trademanprofile = new TradesmanProfile();
-                $trademanprofile->user_id = $user->id;
-                $trademanprofile->name = $user->firstname . " " . $user->lastname;
-                $trademanprofile->phone = $user->phone_number;
-                $trademanprofile->location = $user->location;
-                $trademanprofile->email = $user->email;
-                $trademanprofile->save();
+                $this->add_to_profile($user);
+                $this->add_to_education($user);
 
                 $role = Sentinel::findRoleBySlug('tradesman');
             }
@@ -75,6 +71,35 @@ class RegisterController extends Controller
 //        $this->sendActivationMail($request->email,$activation->code);
 //
             return redirect()->back()->with(['success'=>'An activation link was sent to your email Address']);
+
+
+    }
+
+    /**
+     * @param \Cartalyst\Sentinel\Users\UserInterface $user
+     */
+    private function add_to_profile(\Cartalyst\Sentinel\Users\UserInterface $user)
+    {
+        $trademanprofile = new TradesmanProfile();
+        $trademanprofile->user_id = $user->id;
+        $trademanprofile->name = $user->firstname . " " . $user->lastname;
+        $trademanprofile->phone = $user->phone_number;
+        $trademanprofile->location = $user->location;
+        $trademanprofile->email = $user->email;
+        $trademanprofile->save();
+    }
+
+    /**
+     * @param \Cartalyst\Sentinel\Users\UserInterface $user
+     */
+    private function add_to_education(\Cartalyst\Sentinel\Users\UserInterface $user){
+        $trademaneducation = new TradesmanEducation();
+        $trademaneducation->user_id = $user->id;
+        $trademaneducation->title = null;
+        $trademaneducation->institution_name = null;
+        $trademaneducation->start_period = null;
+        $trademaneducation->end_period = null;
+        $trademaneducation->save();
 
 
     }

@@ -52,6 +52,7 @@ use Illuminate\Support\Facades\Route;
     Route::get('/update-tradesmanprofile/{userId}', 'TradesmanprofileController@update_tradesman_profile')->middleware('tradesmen');
     Route::post('/update-tradesmanprofile-picture', 'TradesmanprofileController@update_profile_picture')->middleware('tradesmen');
     Route::post('/update_profile_details', 'TradesmanprofileController@update_profile_details')->middleware('tradesmen');
+    Route::post('/update_education_details', 'TradesmanprofileController@update_education_details')->middleware('tradesmen');
 //});
 
 

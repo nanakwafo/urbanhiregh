@@ -15,6 +15,11 @@ class CreateTradesmanEducationsTable extends Migration
     {
         Schema::create('tradesman_educations', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->string('title')->nullable();
+            $table->string('institution_name')->nullable();
+            $table->string('start_period')->nullable();
+            $table->string('end_period')->nullable();
             $table->timestamps();
         });
     }
