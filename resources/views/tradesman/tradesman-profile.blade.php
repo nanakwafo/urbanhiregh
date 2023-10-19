@@ -141,9 +141,7 @@
                 <div class="card mg-b-20 mg-lg-b-25">
                     <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                         <h6 class="tx-uppercase tx-semibold mg-b-0">Work Experience</h6>
-                        <nav class="nav nav-with-icon tx-13">
-                            <a href="" class="nav-link"><i data-feather="plus"></i> Add New</a>
-                        </nav>
+
                     </div><!-- card-header -->
                     <div class="card-body pd-25">
                         <div class="media d-block d-sm-flex">
@@ -178,9 +176,7 @@
                 <div class="card mg-b-20 mg-lg-b-25">
                     <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                         <h6 class="tx-uppercase tx-semibold mg-b-0">Education</h6>
-                        <nav class="nav nav-with-icon tx-13">
-                            <a href="" class="nav-link"><i data-feather="plus"></i> Add New</a>
-                        </nav>
+
                     </div><!-- card-header -->
                     <div class="card-body pd-25">
                         <div class="media">
