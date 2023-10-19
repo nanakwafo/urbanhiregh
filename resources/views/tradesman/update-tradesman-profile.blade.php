@@ -73,6 +73,10 @@
                 <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab"
                    aria-controls="education" aria-selected="false">Education</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab"
+                   aria-controls="experience" aria-selected="false">Experience</a>
+            </li>
         </ul>
         <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
             <div class="tab-pane fade show active" id="picture" role="tabpanel" aria-labelledby="picture-tab">
@@ -147,7 +151,7 @@
             <button type="submit" class="btn btn-brand-02 btn-block">Update Details</button>
             </form>
         </div>
-        <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
             <form action="/update_education_details" method="post">
 
 
@@ -177,6 +181,58 @@
                         <label for="formGroupExampleInput" class="d-block">End Period</label>
 
                         <input type="date" name="end_period" value="{{$tradesmaneducation->end_period}}" class="form-control" placeholder="Enter Phone" required>
+                    </div>
+                </div>
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                <input type="hidden" name="user_id" value="{{$tradesmanprofile->user_id}}">
+
+                <button type="submit" class="btn btn-brand-02 btn-block">Update Details</button>
+            </form>
+        </div>
+            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+              <form action="/update_experience" method="post">
+
+
+
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Position</label>
+                        <input type="text" name="position" value="{{$tradesmanexperience->position}}" class="form-control" placeholder="Select Skills">
+                    </div>
+                </div>
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">organisation_name</label>
+                        <input type="text" name="organisation_name" value="{{$tradesmanexperience->organisation_name}}" class="form-control" placeholder="Enter Location"
+                               required>
+                    </div>
+                </div>
+                  <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Location</label>
+                        <input type="text" name="organisation_location" value="{{$tradesmanexperience->organisation_location}}" class="form-control" placeholder="Enter Location"
+                               required>
+                    </div>
+                </div>
+                  <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Description</label>
+                        <input type="text" name="description" value="{{$tradesmanexperience->description}}" class="form-control" placeholder="Enter Location"
+                               required>
+                    </div>
+                </div>
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">Start Period</label>
+                        <input type="date" name="start_period" value="{{$tradesmanexperience->start_period}}" class="form-control" placeholder="Enter Home Address"
+                               required>
+                    </div>
+                </div>
+                <div class="row row-sm mg-b-10">
+                    <div class="form-group col-md-12">
+                        <label for="formGroupExampleInput" class="d-block">End Period</label>
+
+                        <input type="date" name="end_period" value="{{$tradesmanexperience->end_period}}" class="form-control" placeholder="Enter Phone" required>
                     </div>
                 </div>
                 <input type="hidden" name="_token" value="{{csrf_token()}}">

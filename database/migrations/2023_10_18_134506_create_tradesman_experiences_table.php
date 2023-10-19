@@ -15,6 +15,13 @@ class CreateTradesmanExperiencesTable extends Migration
     {
         Schema::create('tradesman_experiences', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->string('position')->nullable();
+            $table->string('organisation_name')->nullable();
+            $table->string('organisation_location')->nullable();
+            $table->string('description')->nullable();
+            $table->string('start_period')->nullable();
+            $table->string('end_period')->nullable();
             $table->timestamps();
         });
     }

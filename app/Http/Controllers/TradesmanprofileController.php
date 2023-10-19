@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\TradesmanEducation;
+use App\TradesmanExperience;
 use App\TradesmanProfile;
 use Illuminate\Http\Request;
 
@@ -15,10 +16,12 @@ class TradesmanprofileController extends Controller
 
         $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
         $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
+        $tradesmanexperience = TradesmanExperience::where('user_id',$userId)->get()->first();
 
         return view('tradesman.tradesman-profile' ,[
                                'tradesmanprofile' => $tradesmanprofile,
                                'tradesmaneducation' => $tradesmaneducation,
+                               'tradesmanexperience' => $tradesmanexperience,
 
         ]);
     }
@@ -94,7 +97,18 @@ class TradesmanprofileController extends Controller
 
         return redirect()->back()->with(['success' => 'Your Educational details has been updated']);
     }
-    public function update_profile(){
+    public function update_experience(Request $request){
+
+        $tradesmaneduction = TradesmanExperience::where('user_id',$request->user_id)->get()->first();
+        $tradesmaneduction->position =$request->position;
+        $tradesmaneduction->organisation_name = $request->organisation_name;
+        $tradesmaneduction->organisation_location = $request->organisation_location;
+        $tradesmaneduction->description = $request->description;
+        $tradesmaneduction->start_period = $request->start_period;
+        $tradesmaneduction->end_period = $request->end_period;
+        $tradesmaneduction->update();
+
+        return redirect()->back()->with(['success' => 'Your Experience details has been updated']);
 
     }
     public function update_education(){

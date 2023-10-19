@@ -149,27 +149,25 @@
                                 <i data-feather="briefcase" class="tx-white-7 wd-40 ht-40"></i>
                             </div>
                             <div class="media-body pd-t-25 pd-sm-t-0 pd-sm-l-25">
-                                <h5 class="mg-b-5">Area Sales Manager</h5>
-                                <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">ThemePixels, Inc.</span>, Bay Area, San Francisco, CA</p>
-                                <span class="d-block tx-13 tx-color-03">December 2016 - Present</span>
+                                <h5 class="mg-b-5">{{$tradesmanexperience->position}}</h5>
+                                <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">{{$tradesmanexperience->organisation_name}}</span>,
+                                    {{$tradesmanexperience->organisation_location}}</p>
+                                <span class="d-block tx-13 tx-color-03">{{$tradesmanexperience->start_period}}- {{$tradesmanexperience->end_period}}</span>
 
                                 <ul class="pd-l-10 mg-0 mg-t-20 tx-13">
-                                    <li>Reaching the targets and goals set for my area.</li>
-                                    <li>Servicing the needs of my existing customers.</li>
-                                    <li>Maintaining the relationships with existing customers for repeat business.</li>
-                                    <li>Reporting to top managers.</li>
-                                    <li>Keeping up to date with the products.</li>
+                                    <li>{{$tradesmanexperience->description}}</li>
+
                                 </ul>
                             </div>
                         </div><!-- media -->
                     </div>
                     <div class="card-footer bg-transparent pd-y-15 pd-x-20">
-                        <nav class="nav nav-with-icon tx-13">
-                            <a href="" class="nav-link">
-                                Show More Experiences (4)
-                                <i data-feather="chevron-down" class="mg-l-2 mg-r-0 mg-t-2"></i>
-                            </a>
-                        </nav>
+{{--                        <nav class="nav nav-with-icon tx-13">--}}
+{{--                            <a href="" class="nav-link">--}}
+{{--                                Show More Experiences (4)--}}
+{{--                                <i data-feather="chevron-down" class="mg-l-2 mg-r-0 mg-t-2"></i>--}}
+{{--                            </a>--}}
+{{--                        </nav>--}}
                     </div><!-- card-footer -->
                 </div><!-- card -->
 

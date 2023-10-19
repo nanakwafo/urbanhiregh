@@ -46,14 +46,15 @@ use Illuminate\Support\Facades\Route;
 
 //});
 
-//Route::middleware(['tradesmen'])->group(function () {
 
-    Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index')->middleware('tradesmen');
-    Route::get('/update-tradesmanprofile/{userId}', 'TradesmanprofileController@update_tradesman_profile')->middleware('tradesmen');
-    Route::post('/update-tradesmanprofile-picture', 'TradesmanprofileController@update_profile_picture')->middleware('tradesmen');
-    Route::post('/update_profile_details', 'TradesmanprofileController@update_profile_details')->middleware('tradesmen');
-    Route::post('/update_education_details', 'TradesmanprofileController@update_education_details')->middleware('tradesmen');
-//});
+
+Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index')->middleware('tradesmen');
+Route::get('/update-tradesmanprofile/{userId}', 'TradesmanprofileController@update_tradesman_profile')->middleware('tradesmen');
+Route::post('/update-tradesmanprofile-picture', 'TradesmanprofileController@update_profile_picture')->middleware('tradesmen');
+Route::post('/update_profile_details', 'TradesmanprofileController@update_profile_details')->middleware('tradesmen');
+Route::post('/update_education_details', 'TradesmanprofileController@update_education_details')->middleware('tradesmen');
+Route::post('/update_experience', 'TradesmanprofileController@update_experience')->middleware('tradesmen');
+
 
 
 

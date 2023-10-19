@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\TradesmanEducation;
+use App\TradesmanExperience;
 use App\TradesmanProfile;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 
@@ -59,6 +60,7 @@ class RegisterController extends Controller
 
                 $this->add_to_profile($user);
                 $this->add_to_education($user);
+                $this->add_to_experience($user);
 
                 $role = Sentinel::findRoleBySlug('tradesman');
             }
@@ -97,6 +99,26 @@ class RegisterController extends Controller
         $trademaneducation->user_id = $user->id;
         $trademaneducation->title = null;
         $trademaneducation->institution_name = null;
+        $trademaneducation->start_period = null;
+        $trademaneducation->end_period = null;
+        $trademaneducation->save();
+
+
+    }
+
+
+    /**
+     * @param \Cartalyst\Sentinel\Users\UserInterface $user
+     */
+    private function add_to_experience(\Cartalyst\Sentinel\Users\UserInterface $user){
+
+
+        $trademaneducation = new TradesmanExperience();
+        $trademaneducation->user_id = $user->id;
+        $trademaneducation->position = null;
+        $trademaneducation->organisation_name = null;
+        $trademaneducation->organisation_location = null;
+        $trademaneducation->description = null;
         $trademaneducation->start_period = null;
         $trademaneducation->end_period = null;
         $trademaneducation->save();
