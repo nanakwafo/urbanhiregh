@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\TradesmanEducation;
 use App\TradesmanExperience;
 use App\TradesmanProfile;
+use Cartalyst\Sentinel\Users\EloquentUser;
 use Illuminate\Http\Request;
 
 use Intervention\Image\Facades\Image;
@@ -13,7 +14,7 @@ class TradesmanprofileController extends Controller
 {
     //
     public function index($userId){
-
+               $user=             EloquentUser::find($userId);
         $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
         $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
         $tradesmanexperience = TradesmanExperience::where('user_id',$userId)->get()->first();
@@ -22,16 +23,19 @@ class TradesmanprofileController extends Controller
                                'tradesmanprofile' => $tradesmanprofile,
                                'tradesmaneducation' => $tradesmaneducation,
                                'tradesmanexperience' => $tradesmanexperience,
+            'user'=>$user
 
         ]);
     }
     public function update_tradesman_profile($userId){
         $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
         $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
+        $tradesmanexperience = TradesmanExperience::where('user_id',$userId)->get()->first();
         return view('tradesman.update-tradesman-profile' ,[
             'tradesmanprofile' => $tradesmanprofile,
             'user_id' => $userId,
-            'tradesmaneducation' => $tradesmaneducation
+            'tradesmaneducation' => $tradesmaneducation,
+            'tradesmanexperience' => $tradesmanexperience
 
         ]);
     }

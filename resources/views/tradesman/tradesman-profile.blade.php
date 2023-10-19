@@ -56,8 +56,8 @@
                     <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
                         <h5 class="mg-b-2 tx-spacing--1">{{$tradesmanprofile->name}}</h5>
                         <div class="d-flex mg-b-25">
-                            <button class="btn btn-xs btn-white flex-fill">Message</button>
-                            <button class="btn btn-xs btn-primary flex-fill mg-l-10">Follow</button>
+    {{--                            <button class="btn btn-xs btn-white flex-fill">Message</button>--}}
+                            <button class="btn btn-xs btn-primary flex-fill mg-l-10">Not verified</button>
                         </div>
 
 
@@ -79,12 +79,10 @@
                         </div>
                     </div><!-- col -->
                     <div class="col-sm-6 col-md-5 col-lg mg-t-40">
-                        <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Skills</label>
+                        <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Trade</label>
                         <ul class="list-inline list-inline-skills">
-                            <li class="list-inline-item"><a href="">HTML5</a></li>
-                            <li class="list-inline-item"><a href="">Sass</a></li>
-                            <li class="list-inline-item"><a href="">CSS</a></li>
-                            <li class="list-inline-item"><a href="">React</a></li>
+                            <li class="list-inline-item"><a href="">{{$user->trade}}</a></li>
+
 
                         </ul>
                     </div><!-- col -->
@@ -129,13 +127,13 @@
                             <span class="tx-13 tx-color-03">Bay Area, San Francisco, CA</span>
                         </div>
                     </div>
-                    <div class="card-footer bg-transparent pd-y-10 pd-sm-y-15 pd-x-10 pd-sm-x-20">
-                        <nav class="nav nav-with-icon tx-13">
-                            <a href="" class="nav-link"><i data-feather="thumbs-up"></i> Like</a>
-                            <a href="" class="nav-link"><i data-feather="message-square"></i> Comment</a>
-                            <a href="" class="nav-link"><i data-feather="share"></i> Share</a>
-                        </nav>
-                    </div><!-- card-footer -->
+{{--                    <div class="card-footer bg-transparent pd-y-10 pd-sm-y-15 pd-x-10 pd-sm-x-20">--}}
+{{--                        <nav class="nav nav-with-icon tx-13">--}}
+{{--                            <a href="" class="nav-link"><i data-feather="thumbs-up"></i> Like</a>--}}
+{{--                            <a href="" class="nav-link"><i data-feather="message-square"></i> Comment</a>--}}
+{{--                            <a href="" class="nav-link"><i data-feather="share"></i> Share</a>--}}
+{{--                        </nav>--}}
+{{--                    </div><!-- card-footer -->--}}
                 </div><!-- card -->
 
                 <div class="card mg-b-20 mg-lg-b-25">
@@ -152,7 +150,7 @@
                                 <h5 class="mg-b-5">{{$tradesmanexperience->position}}</h5>
                                 <p class="mg-b-3 tx-color-02"><span class="tx-medium tx-color-01">{{$tradesmanexperience->organisation_name}}</span>,
                                     {{$tradesmanexperience->organisation_location}}</p>
-                                <span class="d-block tx-13 tx-color-03">{{$tradesmanexperience->start_period}}- {{$tradesmanexperience->end_period}}</span>
+                                <span class="d-block tx-13 tx-color-03">{{$tradesmanexperience->start_period}} - {{$tradesmanexperience->end_period}}</span>
 
                                 <ul class="pd-l-10 mg-0 mg-t-20 tx-13">
                                     <li>{{$tradesmanexperience->description}}</li>
