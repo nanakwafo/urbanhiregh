@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\TradesmanProfile;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
-use Cartalyst\Sentinel\Native\Facades\Sentinel;
+
+use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
@@ -40,7 +41,10 @@ class RegisterController extends Controller
                 'location'=> $request->location,
                 'email'=> $request->email,
                 'password'=> $request->password,
+                'trade'=>$request->trade
             ];
+
+
 
             $user = Sentinel::register($credentials);
 

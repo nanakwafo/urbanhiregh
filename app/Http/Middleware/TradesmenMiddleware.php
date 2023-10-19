@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Closure;
 
@@ -16,7 +17,7 @@ class TradesmenMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Sentinel::check() && Sentinel::getUser()->roles()->first()->slug == 'requester') {
+        if (Sentinel::check() && Sentinel::getUser()->roles()->first()->slug === 'tradesman') {
             return $next($request);
         } else {
             return redirect('/');

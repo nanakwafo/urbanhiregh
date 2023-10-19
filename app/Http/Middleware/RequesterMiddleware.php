@@ -16,7 +16,7 @@ class RequesterMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Sentinel::check() && Sentinel::getUser()->roles()->first()->slug == 'tradesman') {
+        if (Sentinel::check() && Sentinel::getUser()->roles()->first()->slug == 'requester') {
             return $next($request);
         } else {
             return redirect('/');

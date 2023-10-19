@@ -106,6 +106,7 @@
                                     <label>Full Address</label>
                                     <input type="text" name="location" class="form-control" placeholder="Enter your Full Address">
                                 </div>
+                                <input type="hidden" value="" name="trade">
                                 <div class="form-group tx-12">
                                     By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy statement.
                                 </div><!-- form-group -->
@@ -152,8 +153,8 @@
                                 <div class="form-group">
                                     <label>Select Trade</label>
                                     <select class="form-control select2 " style="width: 100%" name="trade">
-                                        <option value="AL">Welder</option>
-                                        <option value="WY">Capenter</option>
+                                        <option value="Welder">Welder</option>
+                                        <option value="carpenter">Capenter</option>
                                     </select>
                                </div>
                                 <div class="form-group tx-12">
