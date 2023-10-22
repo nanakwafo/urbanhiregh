@@ -13,10 +13,9 @@
             <li class="nav-item with-sub">
                 <a href="#" class="nav-link"><i data-feather="pie-chart"></i> How it works</a>
                 <ul class="navbar-menu-sub">
-                    <li class="nav-sub-item"><a href="template/classic/dashboard-one.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Sales Monitoring</a></li>
-                    <li class="nav-sub-item"><a href="template/classic/dashboard-two.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Website Analytics</a></li>
-                    <li class="nav-sub-item"><a href="template/classic/dashboard-three.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Cryptocurrency</a></li>
-                    <li class="nav-sub-item"><a href="template/classic/dashboard-four.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Helpdesk Management</a></li>
+                    <li class="nav-sub-item"><a href="template/classic/dashboard-one.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>For Tradesmen</a></li>
+                    <li class="nav-sub-item"><a href="template/classic/dashboard-two.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>For Commercial/Home Owners</a></li>
+
                 </ul>
             </li>
             <li class="nav-item with-sub">

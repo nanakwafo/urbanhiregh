@@ -56,7 +56,6 @@
                     <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
                         <h5 class="mg-b-2 tx-spacing--1">{{$tradesmanprofile->name}}</h5>
                         <div class="d-flex mg-b-25">
-    {{--                            <button class="btn btn-xs btn-white flex-fill">Message</button>--}}
                             <button class="btn btn-xs btn-primary flex-fill mg-l-10">Not verified</button>
                         </div>
 
@@ -73,8 +72,8 @@
                                 <label>Money Earned</label>
                             </div>
                             <div class="profile-skillset flex-fill">
-                                <h6><a href="" class="link-01">GHC 437</a></h6>
-                                <label>Balance</label>
+                                <h6><a href="" class="link-01">2</a></h6>
+                                <label>Uncompleted Work</label>
                             </div>
                         </div>
                     </div><!-- col -->
@@ -105,35 +104,21 @@
 
                 <div class="card mg-b-20 mg-lg-b-25">
                     <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
-                        <h6 class="tx-uppercase tx-semibold mg-b-0">Latest Activity</h6>
-                        <nav class="nav nav-icon-only">
-                            <a href="" class="nav-link"><i data-feather="more-horizontal"></i></a>
-                        </nav>
+                        <h6 class="tx-uppercase tx-semibold mg-b-0">Latest Job</h6>
+
                     </div><!-- card-header -->
                     <div class="card-body pd-20 pd-lg-25">
                         <div class="media align-items-center mg-b-20">
                             <div class="avatar avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
                             <div class="media-body pd-l-15">
-                                <h6 class="mg-b-3">Dyanne Aceron</h6>
-                                <span class="d-block tx-13 tx-color-03">Cigarette Butt Collector</span>
+                                <h6 class="mg-b-3">Home owner name</h6>
+                                <span class="d-block tx-13 tx-color-03">Peduase Lodge</span>
                             </div>
-                            <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">5 hours ago</span>
-                        </div><!-- media -->
-                        <p class="mg-b-20">Our team is expanding again. We are looking for a Product Manager and Software Engineer to drive our new aspects of our capital projects. If you're interested, please drop a comment here or simply message me. <a href="">#softwareengineer</a> <a href="">#engineering</a></p>
 
-                        <div class="bd bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20">
-                            <h6 class="tx-15 mg-b-3">We're hiring of Product Manager</h6>
-                            <p class="mg-b-0 tx-14">Full-time, $60,000 - $80,000 annual</p>
-                            <span class="tx-13 tx-color-03">Bay Area, San Francisco, CA</span>
-                        </div>
+                        </div><!-- media -->
+                        <p class="mg-b-20"> My front door need fixing by replacing the door lock.</p>
                     </div>
-{{--                    <div class="card-footer bg-transparent pd-y-10 pd-sm-y-15 pd-x-10 pd-sm-x-20">--}}
-{{--                        <nav class="nav nav-with-icon tx-13">--}}
-{{--                            <a href="" class="nav-link"><i data-feather="thumbs-up"></i> Like</a>--}}
-{{--                            <a href="" class="nav-link"><i data-feather="message-square"></i> Comment</a>--}}
-{{--                            <a href="" class="nav-link"><i data-feather="share"></i> Share</a>--}}
-{{--                        </nav>--}}
-{{--                    </div><!-- card-footer -->--}}
+
                 </div><!-- card -->
 
                 <div class="card mg-b-20 mg-lg-b-25">

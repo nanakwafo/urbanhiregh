@@ -42,9 +42,7 @@ use Illuminate\Support\Facades\Route;
     //Logout
     Route::post('/logout', 'LoginController@logout');
 //});
-//Route::middleware(['requester'])->group(function () {
 
-//});
 
 
 
@@ -56,6 +54,12 @@ Route::post('/update_education_details', 'TradesmanprofileController@update_educ
 Route::post('/update_experience', 'TradesmanprofileController@update_experience')->middleware('tradesmen');
 
 
+
+
+
+
+Route::get('/available_jobs/{userId}', 'JobController@available_jobs')->middleware('tradesmen');
+Route::get('/completed_jobs/{userId}', 'JobController@completed_jobs')->middleware('tradesmen');
 
 
 

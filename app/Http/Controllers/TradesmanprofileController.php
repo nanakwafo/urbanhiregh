@@ -23,7 +23,7 @@ class TradesmanprofileController extends Controller
                                'tradesmanprofile' => $tradesmanprofile,
                                'tradesmaneducation' => $tradesmaneducation,
                                'tradesmanexperience' => $tradesmanexperience,
-            'user'=>$user
+                               'user'=>$user
 
         ]);
     }

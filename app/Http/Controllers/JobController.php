@@ -3,17 +3,47 @@
 namespace App\Http\Controllers;
 
 use App\Job;
+use App\TradesmanEducation;
+use App\TradesmanExperience;
+use App\TradesmanProfile;
+use Cartalyst\Sentinel\Users\EloquentUser;
 use Illuminate\Http\Request;
 
 class JobController extends Controller
 {
     //
-    public function available_jobs(){
-        return view('tradesman.available-jobs');
+    public function available_jobs($userId){
+
+        $user=  EloquentUser::find($userId);
+        $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
+        $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
+        $tradesmanexperience = TradesmanExperience::where('user_id',$userId)->get()->first();
+
+        return view('tradesman.available-jobs' ,[
+            'tradesmanprofile' => $tradesmanprofile,
+            'tradesmaneducation' => $tradesmaneducation,
+            'tradesmanexperience' => $tradesmanexperience,
+            'user'=>$user
+
+        ]);
+
 
     }
-    public function completed_jobs(){
-        return view('tradesman.completed-jobs');
+    public function completed_jobs($userId){
+
+        $user=  EloquentUser::find($userId);
+        $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
+        $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
+        $tradesmanexperience = TradesmanExperience::where('user_id',$userId)->get()->first();
+
+        return view('tradesman.completed-jobs' ,[
+            'tradesmanprofile' => $tradesmanprofile,
+            'tradesmaneducation' => $tradesmaneducation,
+            'tradesmanexperience' => $tradesmanexperience,
+            'user'=>$user
+
+        ]);
+
     }
 
     public function post_a_job(Request $request){

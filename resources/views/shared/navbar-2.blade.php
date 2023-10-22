@@ -13,13 +13,13 @@
             <li class="nav-item with-sub">
                 <a href="" class="nav-link"><i data-feather="package"></i> Jobs</a>
                 <ul class="navbar-menu-sub">
-                    <li class="nav-sub-item"><a href="completed-jobsl" class="nav-sub-link"><i data-feather="calendar"></i>Completed</a></li>
-                    <li class="nav-sub-item"><a href="available-jobs" class="nav-sub-link"><i data-feather="message-square"></i>Available</a></li>
+                    <li class="nav-sub-item"><a href="/completed_jobs/{{$tradesmanprofile->user_id}}" class="nav-sub-link"><i data-feather="calendar"></i>Completed</a></li>
+                    <li class="nav-sub-item"><a href="/available_jobs/{{$tradesmanprofile->user_id}}" class="nav-sub-link"><i data-feather="message-square"></i>Available</a></li>
 
                 </ul>
             </li>
 
-            <li class="nav-item"><a href="tradesman-payment" class="nav-link"><i data-feather="box"></i> Payments</a></li>
+{{--            <li class="nav-item"><a href="tradesman-payment" class="nav-link"><i data-feather="box"></i> Payments</a></li>--}}
         </ul>
     </div><!-- navbar-menu-wrapper -->
     <div class="navbar-right">
@@ -82,10 +82,10 @@
                 <a href="/update-tradesmanprofile/{{$tradesmanprofile->user_id}}" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
                 <a href="/tradesmanprofile/{{$tradesmanprofile->user_id}}" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
                 <div class="dropdown-divider"></div>
-                <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+{{--                <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>--}}
 
-                <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
-                <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+{{--                <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>--}}
+{{--                <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>--}}
 
                 <form action="/logout" method="post" id="logout-form1" style="margin-top: 10px">
                     {{csrf_field()}}
