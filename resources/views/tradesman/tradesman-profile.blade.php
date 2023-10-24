@@ -145,12 +145,7 @@
                         </div><!-- media -->
                     </div>
                     <div class="card-footer bg-transparent pd-y-15 pd-x-20">
-{{--                        <nav class="nav nav-with-icon tx-13">--}}
-{{--                            <a href="" class="nav-link">--}}
-{{--                                Show More Experiences (4)--}}
-{{--                                <i data-feather="chevron-down" class="mg-l-2 mg-r-0 mg-t-2"></i>--}}
-{{--                            </a>--}}
-{{--                        </nav>--}}
+
                     </div><!-- card-footer -->
                 </div><!-- card -->
 
@@ -172,12 +167,6 @@
                         </div><!-- media -->
                     </div>
                     <div class="card-footer bg-transparent pd-y-15 pd-x-20">
-{{--                        <nav class="nav nav-with-icon tx-13">--}}
-{{--                            <a href="" class="nav-link">--}}
-{{--                                Show More Education (2)--}}
-{{--                                <i data-feather="chevron-down" class="mg-l-2 mg-r-0 mg-t-2"></i>--}}
-{{--                            </a>--}}
-{{--                        </nav>--}}
                     </div><!-- card-footer -->
                 </div><!-- card -->
 

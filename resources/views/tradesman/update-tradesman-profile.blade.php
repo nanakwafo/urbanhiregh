@@ -118,12 +118,7 @@
                         </div>
                     </div>
 
-{{--                    <div class="row row-sm mg-b-10">--}}
-{{--                        <div class="form-group col-md-12">--}}
-{{--                            <label for="formGroupExampleInput" class="d-block">Skills</label>--}}
-{{--                            <input type="text" name="skills" value="{{$tradesmanprofile->skills}}" class="form-control" placeholder="Select Skills">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+
                     <div class="row row-sm mg-b-10">
                         <div class="form-group col-md-12">
                             <label for="formGroupExampleInput" class="d-block">Location</label>
