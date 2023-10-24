@@ -32,11 +32,14 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
 
-    @include('shared.titlebar')
+@include('shared.titlebar')
 
-    <!-- vendor css -->
+<!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
@@ -57,26 +60,36 @@
             <div class="sign-wrapper mg-lg-l-50 mg-xl-l-60">
                 @include('shared.alert')
                 <div class="wd-100p">
-                    <h3 class="tx-color-01 mg-b-5">Sign In</h3>
-                    <p class="tx-color-03 tx-16 mg-b-40">Welcome back! Please signin to continue.</p>
-                    <form action="/login" method="POST">
+                    <h3 class="tx-color-01 mg-b-5">{{$trade}}</h3>
+                    <p class="tx-color-03 tx-16 mg-b-40">Get responses from Urbanhire screened and reviewed tradespeople near you</p>
+                    <form action="/post_trade_job" method="post">
                         {{ csrf_field() }}
-                    <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" name="email" value="{{isset($email)? $email: ''}}" class="form-control" placeholder="yourname@yourmail.com">
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex justify-content-between mg-b-5">
-                            <label class="mg-b-0-f">Password</label>
-                            <a href="" class="tx-13">Forgot password?</a>
+                        <div class="form-group">
+                            <label>Email </label>
+                            <input type="text" name="email" class="form-control" placeholder="example-email@gmail.com">
                         </div>
-                        <input type="password" name="password" class="form-control" placeholder="Enter your password">
-                    </div>
-                    <button type="submit" class="btn btn-brand-02 btn-block">Sign In</button>
+                        <div class="form-group">
+                            <label>House no.* </label>
+                            <input type="text" name="house_no" class="form-control" placeholder="E12-D12S2">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Location </label>
+                            <input type="text" name="location" class="form-control" placeholder="Adenta housing down">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Describe what you need</label>
+                            <textarea class="form-control" rows="4" name="job_description" placeholder="I Want my door lock fixed"></textarea>
+                        </div>
+
+                        <button type="submit" id="trade" class="btn btn-brand-02 btn-block">Continue</button>
                     </form>
 
-                    <div class="tx-13 mg-t-20 tx-center">Don't have an account? <a href="register">Create an Account</a></div>
+
+
                 </div>
+
             </div><!-- sign-wrapper -->
         </div><!-- media -->
     </div><!-- container -->
@@ -88,6 +101,7 @@
 <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../../lib/feather-icons/feather.min.js"></script>
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="../../lib/select2/js/select2.min.js"></script>
 
 <script src="../../assets/js/dashforge.js"></script>
 
@@ -112,6 +126,14 @@
         } else {
             lightMode();
         }
+        $('.select2').select2({
+            placeholder: 'Choose one',
+            searchInputPlaceholder: 'Search options'
+        })
+
+
+
+
     })
 </script>
 </body>

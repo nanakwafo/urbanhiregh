@@ -46,6 +46,34 @@ class JobController extends Controller
 
     }
 
+    public function post_a_Job_trade(){
+         return view('requester.job_trade');
+    }
+    public function post_trade_job(Request $request){
+        if($request->email === null){
+            return view('requester.describe_job',[
+                'trade' => $request->trade,
+
+            ]);
+
+        }else{
+//            dd($request->all());
+            //check if email exist
+          if(  EloquentUser::where('email',$request->email)->get()->first() === null){//user does not exit
+             //store data in cookie and redirect to register page
+              return view('register',[
+                  'email' => $request->email,
+                  'location' => $request->location,
+              ]);
+          }else{
+              return view('login',[
+                  'email' => $request->email,
+              ]);
+          }
+        }
+
+
+    }
     public function post_a_job(Request $request){
         $jobpost = new Job();
         $jobpost->requestid  = $request->requestid;

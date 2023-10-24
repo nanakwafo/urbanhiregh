@@ -41293,4 +41293,9 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   width: 280px; }
 
 
+@media (min-width: 1200px){
+    .navbar-header .navbar-right {
+        width: unset;
+    }
+}
 

@@ -60,6 +60,8 @@ Route::post('/update_experience', 'TradesmanprofileController@update_experience'
 
 Route::get('/available_jobs/{userId}', 'JobController@available_jobs')->middleware('tradesmen');
 Route::get('/completed_jobs/{userId}', 'JobController@completed_jobs')->middleware('tradesmen');
+Route::get('/post_a_Job_trade', 'JobController@post_a_Job_trade');
+Route::post('/post_trade_job', 'JobController@post_trade_job');
 
 
 
