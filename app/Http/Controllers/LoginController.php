@@ -37,7 +37,7 @@ class LoginController extends Controller
                 }
                 if(Sentinel::getUser()->roles()->first()->slug =='requester') {
 
-                    return redirect('requesterdashboard/' . Sentinel::getUser()->id);
+                    return redirect('requesterprofile/' . Sentinel::getUser()->id);
                 }
             }else
             {

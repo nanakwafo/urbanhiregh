@@ -55,7 +55,7 @@ Route::post('/update_experience', 'TradesmanprofileController@update_experience'
 
 
 
-
+Route::get('/requesterprofile/{userId}', 'RequesterController@index');
 
 
 Route::get('/available_jobs/{userId}', 'JobController@available_jobs')->middleware('tradesmen');
