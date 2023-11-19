@@ -52,17 +52,96 @@
         <div class="media align-items-stretch justify-content-center ht-100p">
             <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
                 <div class="pd-t-20 wd-100p">
-                    <h4 class="tx-color-01 mg-b-5">Contact  Us </h4>
-                    <p class="tx-color-03 tx-16 mg-b-40">It's free to signup and only takes a minute.</p>
+                    <h4 class="tx-color-01 mg-b-5">Contact  Urbanhire</h4>
+                    <p class="tx-color-03 tx-16 mg-b-40">If you would like further information about any aspect of Urbanhire, don't forget to check the Help & Advice section, but also feel free to use the contact details below or complete the enquiry form.</p>
 
                 </div>
             </div><!-- sign-wrapper -->
             <div class="media-body pd-y-30 pd-lg-x-50 pd-xl-x-60 align-items-center d-none d-lg-flex pos-relative">
                 <div class="mx-lg-wd-500 mx-xl-wd-550">
-                    <img src="{{asset('assets/img/close-up-hand-repairman-professional-builder-working-indoors-repairing.png')}}" class="img-fluid" alt="">
+                    <img src="https://urbanhiregh.com/assets/img/home-2.png" class="img-fluid" alt="">
                 </div>
 
             </div><!-- media-body -->
+        </div><!-- media -->
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card card-help">
+                    <div class="card-body tx-13">
+                        <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-home"></i></div>
+                        <h5><a href="" class="link-01">UrbanHire Ltd.</a></h5>
+                        <p class="tx-color-03 mg-b-0">
+                           Aburi Kitase,Berekusu Road
+                        </p>
+                    </div><!-- card-body -->
+
+                </div><!-- card -->
+            </div><!-- col -->
+            <div class="col-sm-6 col-lg-4 mg-t-20 mg-sm-t-0">
+                <div class="card card-help">
+                    <div class="card-body tx-13">
+                        <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-call"></i></div>
+                        <h5><a href="" class="link-01">Call us</a></h5>
+                        <p class="tx-color-03 mg-b-0">059 829 6977</p>
+                    </div><!-- card-body -->
+
+                </div><!-- card -->
+            </div><!-- col -->
+            <div class="col-sm-6 col-lg-4 mg-t-20 mg-sm-t-30 mg-lg-t-0">
+                <div class="card card-help">
+                    <div class="card-body tx-13">
+                        <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-mail"></i></div>
+                        <h5><a href="" class="link-01">Email us</a></h5>
+                        <p class="tx-color-03 mg-b-0">support@urbanhiregh.com</p>
+                    </div><!-- card-body -->
+
+                </div><!-- card -->
+            </div><!-- col -->
+
+        </div><!-- row -->
+        <div class="media align-items-stretch justify-content-center ht-100p">
+            <div class="media-body pd-y-30 pd-lg-x-50 pd-xl-x-60 align-items-center d-none d-lg-flex pos-relative">
+                <div class="mx-lg-wd-500 mx-xl-wd-550">
+                    <div class="media align-items-stretch justify-content-center ht-100p">
+                        <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
+                            <div class="pd-t-20 wd-100p">
+
+                                <div class="form-group">
+                                    <label>Name:</label>
+                                    <input type="email" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <div class="d-flex justify-content-between mg-b-5">
+                                        <label class="mg-b-0-f">Email:</label>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Enter your  email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Telephone:</label>
+                                    <input type="text" class="form-control" placeholder="Enter your telephone number">
+                                </div>
+                                <div class="form-group">
+                                    <label>Message:</label>
+                                    <textarea class="form-control" cols="5"> </textarea>
+                                </div>
+
+
+
+                            </div>
+                        </div><!-- sign-wrapper -->
+
+                    </div><!-- media -->
+                    </div>
+
+            </div><!-- media-body -->
+            <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
+                <div class="pd-t-20 wd-100p">
+                    <h4 class="tx-color-01 mg-b-5">Urbanhire Equiry</h4>
+                    <p class="tx-color-03 tx-16 mg-b-40">If you are sending us an enquiry about a trader on the website, please first ensure that they are a member on the website before getting in touch.</p>
+
+                </div>
+            </div><!-- sign-wrapper -->
+
         </div><!-- media -->
     </div><!-- container -->
 </div><!-- content -->
