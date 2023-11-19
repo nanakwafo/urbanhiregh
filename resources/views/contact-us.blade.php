@@ -105,28 +105,29 @@
                     <div class="media align-items-stretch justify-content-center ht-100p">
                         <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
                             <div class="pd-t-20 wd-100p">
-
-                                <div class="form-group">
-                                    <label>Name:</label>
-                                    <input type="email" class="form-control" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <div class="d-flex justify-content-between mg-b-5">
-                                        <label class="mg-b-0-f">Email:</label>
+                                <form action="/post-contactus" method="POST">
+                                    {{ csrf_field() }}
+                                    <div class="form-group">
+                                        <label>Name:</label>
+                                        <input type="email" class="form-control" placeholder="Enter your name">
                                     </div>
-                                    <input type="password" class="form-control" placeholder="Enter your  email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Telephone:</label>
-                                    <input type="text" class="form-control" placeholder="Enter your telephone number">
-                                </div>
-                                <div class="form-group">
-                                    <label>Message:</label>
-                                    <textarea class="form-control" cols="5"> </textarea>
-                                </div>
+                                    <div class="form-group">
+                                        <div class="d-flex justify-content-between mg-b-5">
+                                            <label class="mg-b-0-f">Email:</label>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Enter your  email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Telephone:</label>
+                                        <input type="text" class="form-control" placeholder="Enter your telephone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Message:</label>
+                                        <textarea class="form-control" cols="5"> </textarea>
+                                    </div>
 
-
-
+                                    <button type="submit" class="btn btn-brand-02 btn-block">Send</button>
+                                </form>
                             </div>
                         </div><!-- sign-wrapper -->
 
