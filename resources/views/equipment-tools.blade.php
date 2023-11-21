@@ -47,74 +47,81 @@
 <body>
 
 @include('shared.navbar')
-<div class="content content-fixed content-auth">
-    <div class="container">
-        <div class="media align-items-stretch justify-content-center ht-100p">
-
-            <div class="pd-t-20 wd-100p accordion">
-
-                <p class="tx-color-03 tx-16 mg-b-40">
-                    New to Urbanhire? Read our Frequently Asked Questions, with lists tailored to both consumers and tradespeople.
-                </p>
-
-
-
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>Why do I need to be registered to leave a review?</h4>
-                    <p>We only allow registered consumers to leave reviews because we need the contact details of a consumer in the case of a bad review.
-
-                        To ensure reviews of our traders are accurate, we contact a consumer who leaves a less positive review in order to validate their story with the trader.
-                    </p>
+<div class="content content-fixed content-auth-alt">
+    <div class="container ht-100p tx-center">
+        <h3 class="mg-b-25">Rent An Equipment for Your Work</h3>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="bd pd-20">
+                    <label class="tx-sans tx-10 tx-medium tx-spacing-1 tx-uppercase tx-color-03 mg-b-10">Book an Equipment or tool</label>
+                    <p>Call 0598296977 </p>
                 </div>
-
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How do I know I can rely on this trader to do the job properly?</h4>
-                    <p> At urbanhiregh.com, we do all the hard work for you! We have hundreds of local tradesmen in your area who have been vetted by our team to check on all the questions you'd like to ask yourself.
-                        If the feedback isn't good enough when they request to join up to urbanhiregh.com, they won't be on our website. Simple!
-                    </p>
-                </div>
-
-
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>What do you do to make sure tradesmen are qualified to do work such as gas or electrics?</h4>
-                    <p> There are certain trades where experience isn't always enough! If you have gas or engineering works to be done, you need to know that whoever you hire is the best person for the job. We require copies of all current certificates when our members join, so we know they have the skills you need to do a professional job.
-                        For electricians, we require proof of registration with a governing body, and proof of Part P and 17th Addition Compliance; this ensures that our traders have their specialist training up to date, as bodies such as NICEIC have the sole purpose of protecting consumers from unsafe and unsound electrical work. The same goes for the Gas Safe Register; any trader coming into your home to carry out any gas works will have current Gas Safe Registration if you find them through Trustatrader.com.
-                        It's always a good idea to check with the trader when they come round, and ask to see their current membership cards for your total peace of mind.
-                    </p>
-                </div>
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How does urbanhiregh.com work?</h4>
-                    <p> Unlike some websites advertising reliable and trustworthy tradespeople, we are only here to make sure that you, the consumer, have the best choice of professionals to do the job. Our stringent vetting and constant monitoring of our traders provides you with the assurance that any trader you choose will be capable of completing your job to a high standard. You are, however, welcome to call as many of the companies as you like until you find the perfect one for your needs. </p>
-                </div>
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How do I choose the right trader for the job?</h4>
-                    <p>That really is up to you! We've done all the hard work by ensuring that all our traders are the best of the best, but you can make choices as a result of the following:
-
-                        The reviews which have been left on the website
-                        The trader's profile
-                        The trader's qualifications and memberships (these are listed with logos and in the qualifications box)
-                        Photographs of previous work</p>
-                </div>
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>Is there a charge to the consumer to use urbanhiregh.com?</h4>
-                    <p>urbanhire is a free online directory of tradespeople you can trust because their place on the website depends upon their quality of service. Consumers can leave feedback for our traders based on the work that has been done for them, which continues to improve the reliability of the service.</p>
-                </div>
-
-
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>I'm a consumer. How do I get the best out of urbanhiregh.com?</h4>
-                    <p>As a recommendations website, you can rest assured of the rigorous and stringent checks carried out on all tradespeople. We do recommend however that you contact at least two or three traders to get an idea of costs and how you get on with the tradesperson. There's no right or wrong, and we have no regulations on the fees our traders charge, so make sure you get enough details to ensure you use the company that's right for you.</p>
-                </div>
-
-
-
             </div>
 
 
-        </div><!-- media -->
+        </div><!-- row -->
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-bicycle"></i></div>
+                <h3 class="mg-b-25">Scaffold</h3>
+                <p class="tx-color-03 mg-b-25">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 20.00 /ROOM</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-sm-t-0 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-car"></i></div>
+                <h3 class="mg-b-25">Wheel Barrow</h3>
+                <p class="tx-color-03 mg-b-25">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 20 /EACH</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-boat"></i></div>
+                <h3 class="mg-b-25">Round Plastic Pillar Mould</h3>
+                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 150 /PILLAR</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-boat"></i></div>
+                <h3 class="mg-b-25">Jack Hammer</h3>
+                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 150 /EACH</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+        </div><!-- row -->
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-bicycle"></i></div>
+                <h3 class="mg-b-25">Square Plastic Pillar Mould</h3>
+                <p class="tx-color-03 mg-b-25">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 150 /PILLAR</h1>
+                <button class="btn btn-primary btn-block">Not Available</button>
+            </div><!-- col -->
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-sm-t-0 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-car"></i></div>
+                <h3 class="mg-b-25">Hammer Drill</h3>
+                <p class="tx-color-03 mg-b-25">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 40.00/EACH</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-boat"></i></div>
+                <h3 class="mg-b-25">Angle Grinder</h3>
+                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">$40.00/EACH</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
+                <div class="tx-100 lh-1"><i class="icon ion-ios-boat"></i></div>
+                <h3 class="mg-b-25">Welding Machine</h3>
+                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
+                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">$40.00/EACH</h1>
+                <button class="btn btn-primary btn-block">Available Now</button>
+            </div><!-- col -->
+        </div><!-- row -->
     </div><!-- container -->
 </div><!-- content -->
-
 @include('shared.footer-1')
 
 
