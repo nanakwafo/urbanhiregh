@@ -61,7 +61,8 @@
         </div>
 
         <div class="tx-12 mg-t-40">
-            <a href="/faq" class="link-03">F<span class="d-none d-sm-inline">AQ's</span></a>
+            <a href="/faq" class="link-03">FAQ's</a>
+            <a href="/about-us" class="link-03 mg-l-10 mg-sm-l-20">About Us</a>
             <a href="/contact-us" class="link-03 mg-l-10 mg-sm-l-20">Contact Us</a>
             <a href="/terms" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Terms & Condition</a>
             <a href="/privacy-policy" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Privacy Policy</a>
