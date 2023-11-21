@@ -28,6 +28,13 @@ use Illuminate\Support\Facades\Route;
     //Faq
     Route::get('/faq', 'PageController@faq');
 
+    //How it -works
+    Route::get('/how-it-works', 'How_it_works_Controller@index');
+    //How it -works
+    Route::get('/equipment-tools', 'EquipmentController@index');
+    //How it -works
+    Route::get('/review', 'ReviewController@index');
+
     //Register
     Route::get('/register', 'RegisterController@register');
     Route::post('register', 'RegisterController@postregister');
