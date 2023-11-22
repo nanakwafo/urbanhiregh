@@ -36,7 +36,7 @@ use Illuminate\Support\Facades\Route;
     Route::post('/review', 'ReviewController@index');
 
 
-    Route::get('/viewtradesmen', 'TradesmanController@index');
+    Route::any('/viewtradesmen', 'TradesmanController@index');
     //Register
     Route::get('/register', 'RegisterController@register');
     Route::post('register', 'RegisterController@postregister');

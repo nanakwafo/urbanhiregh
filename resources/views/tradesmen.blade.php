@@ -80,7 +80,7 @@
                                         <div class="avatar avatar-lg"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
                                     </a>
                                     <h5><a href="">Zhen Juan Chiu</a></h5>
-                                    <p>Software Engineer</p>
+                                    <p>Plumber</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@
                                         <div class="avatar avatar-lg"><img src="https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
                                     </a>
                                     <h5><a href="">Barbara Marion</a></h5>
-                                    <p>Tech Executive</p>
+                                    <p>Carpenter</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                                         <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-teal">c</span></div>
                                     </a>
                                     <h5><a href="">Christine Arnold</a></h5>
-                                    <p>Lead Creative Design</p>
+                                    <p>Electrician</p>
                                     <button class="btn btn-block btn-primary">Call</button>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                         <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-pink">n</span></div>
                                     </a>
                                     <h5><a href="">Natalie Corwin</a></h5>
-                                    <p>Product Designer</p>
+                                    <p>House painter</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@
                                         <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-gray-300">c</span></div>
                                     </a>
                                     <h5><a href="">Carolyn Park</a></h5>
-                                    <p>Lead Creative Design</p>
+                                    <p>Brick Layer</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@
                                         <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-gray-900">d</span></div>
                                     </a>
                                     <h5><a href="">Debbie Hite</a></h5>
-                                    <p>Lead Animator</p>
+                                    <p>Labourer</p>
                                     <button class="btn btn-block btn-primary">Call</button>
                                 </div>
                             </div><!-- card-body -->
@@ -170,7 +170,7 @@
                                         <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-success">s</span></div>
                                     </a>
                                     <h5><a href="">Sandra Valles</a></h5>
-                                    <p>Software Architect</p>
+                                    <p>Tiler</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div><!-- card-body -->
@@ -185,7 +185,7 @@
                                         <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-indigo">s</span></div>
                                     </a>
                                     <h5><a href="">Patrick Miramontes</a></h5>
-                                    <p>Software Engineer</p>
+                                    <p>Landscaper</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div><!-- card-body -->
@@ -200,7 +200,7 @@
                                         <div class="avatar avatar-lg"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
                                     </a>
                                     <h5><a href="">Amalia Redfern</a></h5>
-                                    <p>Front-end Engineer</p>
+                                    <p>Metal fabricator</p>
                                     <button class="btn btn-block btn-primary">Call</button>
                                 </div>
                             </div><!-- card-body -->
@@ -215,7 +215,7 @@
                                         <div class="avatar avatar-lg"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
                                     </a>
                                     <h5><a href="">Carole Rossignol</a></h5>
-                                    <p>Software Engineer</p>
+                                    <p>Steel Bending</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div><!-- card-body -->
