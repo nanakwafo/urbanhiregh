@@ -20,7 +20,7 @@
 }
 .home-search-trade{
     width: 533px;
-    border: 2px solid #1b2e4b;
+    border: 1px solid #1b2e4b;
     padding: 8px;
     font-size: 15px;
     transition: width 0.2s;
@@ -30,7 +30,7 @@
 }
 .home-search-location{
     width: 271px;
-    border: 2px solid #1b2e4b;
+    border: 1px solid #1b2e4b;
     padding: 8px;
     font-size: 15px;
     transition: width 0.2s;
