@@ -44,7 +44,24 @@
 
 @media (max-width: 375px) {
     .home-search {
-        top: 12%;
+        top: 12%!important;
+    }
+    .home-search-trade{
+        width: 280px!important;
+        height: 35px!important;
+    }
+    .home-search-location{
+        width: 280px !important;
+        height: 35px!important;
+    }
+    .home-search-button {
+
+        height: 35px!important;
+
+    }
+    .search-button-small{
+        display: flex;
+        justify-content: center;
     }
 }
 @media (max-width: 768px) {

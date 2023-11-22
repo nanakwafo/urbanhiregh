@@ -82,7 +82,7 @@
             <div class="home-search-divider">
                 <input class="home-search-location" placeholder="Location" />
             </div>
-            <div class="home-search-divider">
+            <div class="home-search-divider search-button-small">
                 <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
             </div>
         </form>
