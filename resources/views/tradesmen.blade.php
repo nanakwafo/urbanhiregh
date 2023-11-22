@@ -71,156 +71,24 @@
 
 
                 <div class="row row-xs mg-b-25">
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3">
+                 @foreach($tradesmenprofiles as $tradesmenprofile)
+                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 ">
                         <div class="card card-profile">
-                            <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
+                            <img src="assets/img/profile-image.png" class="card-img-top" alt="">
                             <div class="card-body tx-13">
                                 <div>
                                     <a href="">
-                                        <div class="avatar avatar-lg"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                                        <div class="avatar avatar-lg"><img src="/uploads/{{$tradesmenprofile->picture}}" class="rounded-circle" alt=""></div>
                                     </a>
-                                    <h5><a href="">Zhen Juan Chiu</a></h5>
-                                    <p>Plumber</p>
+                                    <h5><a href="">{{$tradesmenprofile->name}}</a></h5>
+                                    <p><h6>{{$tradesmenprofile->skills}}</h6></p>
+                                    <p>{{$tradesmenprofile->location}}</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
                             </div>
                         </div><!-- card -->
                     </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 mg-sm-t-0">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/500x281" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><img src="https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
-                                    </a>
-                                    <h5><a href="">Barbara Marion</a></h5>
-                                    <p>Carpenter</p>
-                                    <button class="btn btn-block btn-white">Call</button>
-                                </div>
-                            </div>
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 mg-sm-t-0">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-teal">c</span></div>
-                                    </a>
-                                    <h5><a href="">Christine Arnold</a></h5>
-                                    <p>Electrician</p>
-                                    <button class="btn btn-block btn-primary">Call</button>
-                                </div>
-                            </div>
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 mg-md-t-0 mg-lg-t-10 mg-xl-t-0">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/1000x666" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-pink">n</span></div>
-                                    </a>
-                                    <h5><a href="">Natalie Corwin</a></h5>
-                                    <p>House painter</p>
-                                    <button class="btn btn-block btn-white">Call</button>
-                                </div>
-                            </div>
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/1000x666" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-gray-300">c</span></div>
-                                    </a>
-                                    <h5><a href="">Carolyn Park</a></h5>
-                                    <p>Brick Layer</p>
-                                    <button class="btn btn-block btn-white">Call</button>
-                                </div>
-                            </div>
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/640x427" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-gray-900">d</span></div>
-                                    </a>
-                                    <h5><a href="">Debbie Hite</a></h5>
-                                    <p>Labourer</p>
-                                    <button class="btn btn-block btn-primary">Call</button>
-                                </div>
-                            </div><!-- card-body -->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/640x360" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-success">s</span></div>
-                                    </a>
-                                    <h5><a href="">Sandra Valles</a></h5>
-                                    <p>Tiler</p>
-                                    <button class="btn btn-block btn-white">Call</button>
-                                </div>
-                            </div><!-- card-body -->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/640x426" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-indigo">s</span></div>
-                                    </a>
-                                    <h5><a href="">Patrick Miramontes</a></h5>
-                                    <p>Landscaper</p>
-                                    <button class="btn btn-block btn-white">Call</button>
-                                </div>
-                            </div><!-- card-body -->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/640x360" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                                    </a>
-                                    <h5><a href="">Amalia Redfern</a></h5>
-                                    <p>Metal fabricator</p>
-                                    <button class="btn btn-block btn-primary">Call</button>
-                                </div>
-                            </div><!-- card-body -->
-                        </div><!-- card -->
-                    </div><!-- col -->
-                    <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
-                        <div class="card card-profile">
-                            <img src="https://via.placeholder.com/640x427" class="card-img-top" alt="">
-                            <div class="card-body tx-13">
-                                <div>
-                                    <a href="">
-                                        <div class="avatar avatar-lg"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                                    </a>
-                                    <h5><a href="">Carole Rossignol</a></h5>
-                                    <p>Steel Bending</p>
-                                    <button class="btn btn-block btn-white">Call</button>
-                                </div>
-                            </div><!-- card-body -->
-                        </div><!-- card -->
-                    </div><!-- col -->
+                    @endforeach
                 </div><!-- row -->
 
                 <button class="btn btn-block btn-sm btn-white">Load more</button>

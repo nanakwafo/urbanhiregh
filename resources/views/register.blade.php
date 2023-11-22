@@ -43,6 +43,7 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 

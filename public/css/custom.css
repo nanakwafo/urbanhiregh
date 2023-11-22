@@ -95,3 +95,13 @@
     height: 67px;
     border-radius: 30px;
 }
+/*-----------------*/
+@media (min-width: 1200px){
+    .sign-wrapper {
+        width: 390px;
+    }
+}
+.card-profile .card-img-top{
+    border: 1px solid #1b2e4b;
+}
+
