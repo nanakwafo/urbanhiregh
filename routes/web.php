@@ -30,11 +30,13 @@ use Illuminate\Support\Facades\Route;
 
     //How it -works
     Route::get('/how-it-works', 'How_it_works_Controller@index');
-    //How it -works
+    //Equipment tools
     Route::get('/equipment-tools', 'EquipmentController@index');
-    //How it -works
-    Route::get('/review', 'ReviewController@index');
+    //Reviews
+    Route::post('/review', 'ReviewController@index');
 
+
+    Route::get('/viewtradesmen', 'TradesmanController@index');
     //Register
     Route::get('/register', 'RegisterController@register');
     Route::post('register', 'RegisterController@postregister');
