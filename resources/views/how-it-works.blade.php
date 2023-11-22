@@ -49,64 +49,197 @@
 @include('shared.navbar')
 <div class="content content-fixed content-auth">
     <div class="container">
-        <div class="media align-items-stretch justify-content-center ht-100p">
+        <div class="align-items-stretch justify-content-center">
+            <div class="wd-100p">
+                <h2 class="tx-color-01 mg-b-5">How It Works!</h2>
 
-            <div class="pd-t-20 wd-100p accordion">
+                <p class="tx-color-03 tx-16 mg-b-40">If you're looking to get a job done properly, you want to find a trader you can trust to do a good job for a fair price. TrustATrader allows you to quickly find
+                    a tradesperson in your area who can be trusted to provide a high standard of work</p>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="home" aria-selected="true">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tradesmen" role="tab" aria-controls="profile" aria-selected="false">Tradesmen</a>
+                </li>
 
-                <p class="tx-color-03 tx-16 mg-b-40">
-                    New to Urbanhire? Read our Frequently Asked Questions, with lists tailored to both consumers and tradespeople.
-                </p>
+            </ul>
+            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+                <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="home-tab">
 
 
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
 
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>Why do I need to be registered to leave a review?</h4>
-                    <p>We only allow registered consumers to leave reviews because we need the contact details of a consumer in the case of a bad review.
+                                    <h5><a href="" class="link-01">Looking for a reliable Tradesperson?</a></h5>
+                                    <p class="tx-color-03 mg-b-0">No problem - just enter the trade you're looking for and your postcode or town/city into the boxes at the top of the page, then click 'Search'.</p>
+                                    <p class="tx-color-03 mg-b-0">Don't worry about having to enter exactly the right trade name - suggested options will be displayed as soon as you start typing.</p>
+                                </div><!-- card-body -->
 
-                        To ensure reviews of our traders are accurate, we contact a consumer who leaves a less positive review in order to validate their story with the trader.
-                    </p>
+                            </div><!-- card -->
+                        </div><!-- col -->
+
+
+                    </div><!-- row -->
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Choose your Trader</a></h5>
+                                    <p class="tx-color-03 mg-b-0">You can view the company profiles of all trusted traders in your area who suit your job.</p>
+                                    <p class="tx-color-03 mg-b-0">Reviews from previous customers are also available to help you to select the ideal tradesperson. Once you've chosen, you can immediately contact the trader by phone, text or email.</p>
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Discuss the job</a></h5>
+                                    <p class="tx-color-03 mg-b-0">The details of the job can then be discussed.
+
+                                    </p>
+                                    <p class="tx-color-03 mg-b-0">With costs agreed, and if both parties are happy, a date/timescale can be arranged for the work to be completed.
+
+                                    </p>
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Job Done</a></h5>
+                                    <p class="tx-color-03 mg-b-0">The job is completed as agreed.
+
+                                    </p>
+
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Leave a review</a></h5>
+                                    <p class="tx-color-03 mg-b-0">Once your job has been completed, leave a review on TrustATrader to let others know the quality of work done by the trader.
+
+                                    </p>
+                                    <p class="tx-color-03 mg-b-0">This encourages a continued high standard and helps others to find tradespeople they can trust.
+
+                                    </p>
+
+
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20" style="justify-content: center;">
+                        <div class="col-sm-6 col-lg-6 ">
+                            <button type="submit" class="btn btn-brand-02 btn-block">Find a Trader</button>
+                        </div><!-- col -->
+                    </div>
                 </div>
+                <div class="tab-pane fade" id="tradesmen" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
 
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How do I know I can rely on this trader to do the job properly?</h4>
-                    <p> At urbanhiregh.com, we do all the hard work for you! We have hundreds of local tradesmen in your area who have been vetted by our team to check on all the questions you'd like to ask yourself.
-                        If the feedback isn't good enough when they request to join up to urbanhiregh.com, they won't be on our website. Simple!
-                    </p>
+                                    <h5><a href="" class="link-01">Are you an experienced professional Tradesperson?</a></h5>
+                                    <p class="tx-color-03 mg-b-0"> If you're skilled in your trade, take pride in your work and have a selection of previously satisfied customers, you could join TrustATrader.</p>
+                                    <p class="tx-color-03 mg-b-0">As a member your company will be presented in the 710,170 searches made every month by visitors to the website. Go to the Join us page to start your TrustATrader membership application.</p>
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+
+
+                    </div><!-- row -->
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Making the selection</a></h5>
+                                    <p class="tx-color-03 mg-b-0">When a search has been made, the TrustATrader members who specialise in the relevant trade within the chosen region will be listed.</p>
+                                    <p class="tx-color-03 mg-b-0">We allow only a limited number of members to be listed for any one trade in each region, providing a better quality selection for the consumer and guaranteeing a fair share of enquiries for each trader.</p>
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Discuss the job</a></h5>
+                                    <p class="tx-color-03 mg-b-0">The details of the job can then be discussed.
+
+                                    </p>
+                                    <p class="tx-color-03 mg-b-0">With costs agreed, and if both parties are happy, a date/timescale can be arranged for the work to be completed.
+
+                                    </p>
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Job Done</a></h5>
+                                    <p class="tx-color-03 mg-b-0">The job is completed as agreed.
+
+                                    </p>
+
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20">
+                        <div class="col-sm-12 col-lg-12 ">
+                            <div class="card card-help">
+                                <div class="card-body tx-13">
+
+                                    <h5><a href="" class="link-01">Good results</a></h5>
+                                    <p class="tx-color-03 mg-b-0">Reviews left by your satisfied customers boost your rating on TrustATrader, encouraging others to enquire about your services.
+
+                                    </p>
+                                    <p class="tx-color-03 mg-b-0">As a trader, you can also sign in at any time to view a range of statistics showing how many have recently viewed your company profile, visited your website etc.
+
+                                    </p>
+
+
+                                </div><!-- card-body -->
+
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div>
+                    <div class="row mg-t-20" style="justify-content: center;">
+                        <div class="col-sm-6 col-lg-6 ">
+                            <button type="submit" class="btn btn-brand-02 btn-block">Join Urbanhire</button>
+                        </div><!-- col -->
+                    </div>
                 </div>
-
-
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>What do you do to make sure tradesmen are qualified to do work such as gas or electrics?</h4>
-                    <p> There are certain trades where experience isn't always enough! If you have gas or engineering works to be done, you need to know that whoever you hire is the best person for the job. We require copies of all current certificates when our members join, so we know they have the skills you need to do a professional job.
-                        For electricians, we require proof of registration with a governing body, and proof of Part P and 17th Addition Compliance; this ensures that our traders have their specialist training up to date, as bodies such as NICEIC have the sole purpose of protecting consumers from unsafe and unsound electrical work. The same goes for the Gas Safe Register; any trader coming into your home to carry out any gas works will have current Gas Safe Registration if you find them through Trustatrader.com.
-                        It's always a good idea to check with the trader when they come round, and ask to see their current membership cards for your total peace of mind.
-                    </p>
-                </div>
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How does urbanhiregh.com work?</h4>
-                    <p> Unlike some websites advertising reliable and trustworthy tradespeople, we are only here to make sure that you, the consumer, have the best choice of professionals to do the job. Our stringent vetting and constant monitoring of our traders provides you with the assurance that any trader you choose will be capable of completing your job to a high standard. You are, however, welcome to call as many of the companies as you like until you find the perfect one for your needs. </p>
-                </div>
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How do I choose the right trader for the job?</h4>
-                    <p>That really is up to you! We've done all the hard work by ensuring that all our traders are the best of the best, but you can make choices as a result of the following:
-
-                        The reviews which have been left on the website
-                        The trader's profile
-                        The trader's qualifications and memberships (these are listed with logos and in the qualifications box)
-                        Photographs of previous work</p>
-                </div>
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>Is there a charge to the consumer to use urbanhiregh.com?</h4>
-                    <p>urbanhire is a free online directory of tradespeople you can trust because their place on the website depends upon their quality of service. Consumers can leave feedback for our traders based on the work that has been done for them, which continues to improve the reliability of the service.</p>
-                </div>
-
-
-                <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>I'm a consumer. How do I get the best out of urbanhiregh.com?</h4>
-                    <p>As a recommendations website, you can rest assured of the rigorous and stringent checks carried out on all tradespeople. We do recommend however that you contact at least two or three traders to get an idea of costs and how you get on with the tradesperson. There's no right or wrong, and we have no regulations on the fees our traders charge, so make sure you get enough details to ensure you use the company that's right for you.</p>
-                </div>
-
-
 
             </div>
 
