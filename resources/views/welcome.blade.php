@@ -55,7 +55,9 @@
         <div class="df-logo-initial mg-b-15"><p>UH</p></div>
         <p class="home-text">Win local work and grow your business with Urbanhire</p>
 
-        <h6 class="home-headline">We’ll introduce you to the millions of <span>homeowners</span> that are searching our website, or reading our printed directories every single month<span>looking for reputable tradespeople like you.</span></h6>
+        <h6 class="home-headline">We’ll introduce you to the millions of <span>Homeowners</span>
+            that are searching our website, or reading our printed directories every single month
+            <span> looking for reputable tradespeople like you.</span></h6>
 
         <div class="d-flex wd-lg-350">
             <a href="register" class="btn btn-brand-01 btn-uppercase flex-fill">Join today</a>

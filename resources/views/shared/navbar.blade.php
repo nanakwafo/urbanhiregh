@@ -22,6 +22,10 @@
                 <a href="/equipment-tools" class="nav-link"><i data-feather="package"></i>Rent An Equipment For Work</a>
 
             </li>
+            <li class="nav-item ">
+                <a href="/viewtradesmen" class="nav-link"><i data-feather="package"></i>Find A Tradesman</a>
+
+            </li>
 {{--            <li class="nav-item ">--}}
 {{--                <a href="/review" class="nav-link"><i data-feather="package"></i>Leave a Review</a>--}}
 
