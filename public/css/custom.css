@@ -2,9 +2,21 @@
 .home-search {
     position: absolute;
     top: 35%;
-    right: 38%;
+    right: 30%;
     z-index: 1;
     display: flex;
+}
+.home-search-divider{
+    margin: 10px;
+}
+.home-search-button{
+
+    width: 100px;
+    height: 67px;
+    border-radius: 30px;
+    content: close-quote;
+    color: black;
+    font-size: 14px;
 }
 .home-search-trade{
     width: 533px;

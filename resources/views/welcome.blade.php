@@ -72,11 +72,14 @@
     </div>
 
     <div class="home-search">
-        <div>
+        <div class="home-search-divider">
             <input class="home-search-trade" placeholder="Enter a trade" />
         </div>
-        <div>
+        <div class="home-search-divider">
             <input class="home-search-location" placeholder="Location" />
+        </div>
+        <div class="home-search-divider">
+            <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
         </div>
 
     </div>
