@@ -50,6 +50,16 @@
 @media (max-width: 768px) {
     .home-search {
        top: 15%;
+        right: 10%
+    }
+    .home-search-trade{
+        width: 315px;
+    }
+    .home-search-location{
+        width: 200px;
+    }
+    .home-search-form{
+        display: unset;
     }
 
 }
@@ -95,6 +105,17 @@
     height: 67px;
     border-radius: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------*/
 @media (min-width: 1200px){
     .sign-wrapper {
