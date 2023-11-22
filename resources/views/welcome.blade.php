@@ -72,16 +72,18 @@
     </div>
 
     <div class="home-search">
-        <div class="home-search-divider">
-            <input class="home-search-trade" placeholder="Enter a trade" />
-        </div>
-        <div class="home-search-divider">
-            <input class="home-search-location" placeholder="Location" />
-        </div>
-        <div class="home-search-divider">
-            <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
-        </div>
-
+        <form method="post" action="/viewtradesmen">
+                {{ csrf_field() }}
+            <div class="home-search-divider">
+                <input class="home-search-trade" placeholder="Enter a trade" />
+            </div>
+            <div class="home-search-divider">
+                <input class="home-search-location" placeholder="Location" />
+            </div>
+            <div class="home-search-divider">
+                <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
+            </div>
+        </form>
     </div>
     <div class="home-slider-bg-one"></div>
 </div><!-- home-slider -->
