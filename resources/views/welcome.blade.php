@@ -41,6 +41,7 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.landing.css">
+    <link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body class="home-body">
@@ -49,6 +50,7 @@
 
 
 <div class="home-slider">
+
     <div class="home-lead">
         <div class="df-logo-initial mg-b-15"><p>UH</p></div>
         <p class="home-text">Win local work and grow your business with Urbanhire</p>
@@ -68,10 +70,15 @@
             <a href="/privacy-policy" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Privacy Policy</a>
         </div>
     </div>
-    <div class="home-slider-img">
-        <div><img src="assets/img/home-2.png" alt=""></div>
-        <div><img src="assets/img/home-1.png" alt=""></div>
-        <div><img src="assets/img/home-1.png" alt=""></div>
+
+    <div class="home-search">
+        <div>
+            <input class="home-search-trade" placeholder="Enter a trade" />
+        </div>
+        <div>
+            <input class="home-search-location" placeholder="Location" />
+        </div>
+
     </div>
     <div class="home-slider-bg-one"></div>
 </div><!-- home-slider -->
