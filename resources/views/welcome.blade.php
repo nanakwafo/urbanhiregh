@@ -72,7 +72,7 @@
     </div>
 
     <div class="home-search">
-        <form method="post" action="/viewtradesmen">
+        <form method="post" action="/viewtradesmen" class="home-search-form">
                 {{ csrf_field() }}
             <div class="home-search-divider">
                 <input class="home-search-trade" placeholder="Enter a trade" />

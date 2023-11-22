@@ -9,6 +9,9 @@
 .home-search-divider{
     margin: 10px;
 }
+.home-search-form{
+    display: flex;
+}
 .home-search-button{
 
     width: 100px;
