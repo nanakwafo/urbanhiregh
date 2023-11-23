@@ -49,7 +49,7 @@
 
 @include('shared.navbar')
 <div class="content content-fixed content-auth">
-    <div class="container">
+    <div class="container ">
         <div class="tradesmen-search">
             <form method="post" action="/viewtradesmen" class="tradesmen-search-form">
                 {{ csrf_field() }}
@@ -64,6 +64,7 @@
                 </div>
             </form>
         </div>
+
     </div><!-- container -->
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
         <div class="row">
