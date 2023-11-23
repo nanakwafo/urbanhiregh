@@ -26,6 +26,14 @@
                 <a href="/viewtradesmen" class="nav-link"><i data-feather="package"></i>Find A Tradesman</a>
 
             </li>
+            <li class="nav-item ">
+                <a href="/login" class="nav-link"><i data-feather="package"></i>Sign In</a>
+
+            </li>
+            <li class="nav-item ">
+                <a href="/register" class="nav-link"><i data-feather="package"></i>Sign Up</a>
+
+            </li>
 {{--            <li class="nav-item ">--}}
 {{--                <a href="/review" class="nav-link"><i data-feather="package"></i>Leave a Review</a>--}}
 
