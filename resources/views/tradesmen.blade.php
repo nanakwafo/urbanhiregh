@@ -80,8 +80,8 @@
                                     <a href="">
                                         <div class="avatar avatar-lg"><img src="/uploads/{{$tradesmenprofile->picture}}" class="rounded-circle" alt=""></div>
                                     </a>
-                                    <h5><a href="">{{$tradesmenprofile->name}}</a></h5>
-                                    <p><h6>{{$tradesmenprofile->skills}}</h6></p>
+                                    <h5><a href="">{{$tradesmenprofile->first_name .' '.$tradesmenprofile->last_name}}</a></h5>
+                                    <h6>{{$tradesmenprofile->trade}}</h6>
                                     <p>{{$tradesmenprofile->location}}</p>
                                     <button class="btn btn-block btn-white">Call</button>
                                 </div>
