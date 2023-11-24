@@ -66,18 +66,18 @@
 
         <div class="tx-12 mg-t-40">
             <a href="/faq" class="link-03">FAQ's</a>
-            <a href="/about-us" class="link-03 mg-l-10 mg-sm-l-20">About Us</a>
-            <a href="/contact-us" class="link-03 mg-l-10 mg-sm-l-20">Contact Us</a>
+            <a href="{{ url('about-us') }}" class="link-03 mg-l-10 mg-sm-l-20">About Us</a>
+            <a href="{{ url('contact-us') }}" class="link-03 mg-l-10 mg-sm-l-20">Contact Us</a>
             <a href="/terms" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Terms & Condition</a>
             <a href="/privacy-policy" target="_blank" class="link-03 mg-l-10 mg-sm-l-20">Privacy Policy</a>
         </div>
     </div>
 
     <div class="home-search">
-        <form method="post" action="/viewtradesmen" class="home-search-form">
+        <form method="post" action="{{ url('viewtradesmen') }}" class="home-search-form">
                 {{ csrf_field() }}
             <div class="home-search-divider">
-                <input class="home-search-trade" placeholder="Enter a trade" />
+                <input class="home-search-trade" name="tradeSearch" placeholder="Enter a trade" />
             </div>
             <div class="home-search-divider">
                 <input class="home-search-location" placeholder="Location" />

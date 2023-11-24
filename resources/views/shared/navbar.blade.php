@@ -14,21 +14,16 @@
                 <a href="/how-it-works" class="nav-link"><i data-feather="pie-chart"></i> How it Works</a>
 
             </li>
-
-            <li class="nav-item ">
-                <a href="/equipment-tools" class="nav-link"><i data-feather="package"></i>Rent An Equipment For Work</a>
-
-            </li>
-            <li class="nav-item ">
-                <a href="/viewtradesmen" class="nav-link"><i data-feather="package"></i>Find A Tradesman</a>
-
-            </li>
-            <li class="nav-item ">
-                <a href="/login" class="nav-link"><i data-feather="package"></i>Log In</a>
-
-            </li>
             <li class="nav-item ">
                 <a href="/register" class="nav-link"><i data-feather="package"></i>Join Us</a>
+
+            </li>
+            <li class="nav-item ">
+
+                <a href="/equipment-tools" class="nav-link"><i data-feather="package"></i>Rent An Equipment For Work</a>
+            </li>
+            <li class="nav-item ">
+                <a href="{{ url('viewtradesmen') }}" class="nav-link"><i data-feather="package"></i>Find A Tradesman</a>
 
             </li>
 {{--            <li class="nav-item ">--}}

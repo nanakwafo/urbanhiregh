@@ -30,19 +30,19 @@
     <meta name="author" content="ThemePixels">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
     @include('shared.titlebar')
 
     <!-- vendor css -->
-    <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
     <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../../assets/css/dashforge.css">
-    <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.auth.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
@@ -184,17 +184,17 @@
 @include('shared.footer-1')
 
 
-<script src="../../lib/jquery/jquery.min.js"></script>
-<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../lib/feather-icons/feather.min.js"></script>
-<script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<script src="../../lib/select2/js/select2.min.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/feather-icons/feather.min.js"></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="lib/select2/js/select2.min.js"></script>
 
-<script src="../../assets/js/dashforge.js"></script>
+<script src="assets/js/dashforge.js"></script>
 
 <!-- append theme customizer -->
-<script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/dashforge.settings.js"></script>
+<script src="lib/js-cookie/js.cookie.js"></script>
+<script src="assets/js/dashforge.settings.js"></script>
 <script>
     $(function(){
         'use script'
