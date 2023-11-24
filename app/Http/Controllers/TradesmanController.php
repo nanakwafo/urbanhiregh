@@ -5,21 +5,20 @@ namespace App\Http\Controllers;
 use App\TradesmanProfile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
-
 class TradesmanController extends Controller
 {
     //
-    public function index(Request $request){
+  public function index(Request $request)
+{
+    $searchText = $request->input('tradeSearch');
 
-        $tradesmenprofiles  = DB::table('users')
-                    ->join('tradesman_profiles', 'users.id', '=', 'tradesman_profiles.user_id')
-                    ->select('users.*', 'tradesman_profiles.*')
-                    ->get();
-//dd($tradesmenprofiles);
-        return view('tradesmen',[
-            'tradesmenprofiles' =>  $tradesmenprofiles,
+    $tradesmenprofiles = DB::table('tradesman_profiles')
+        ->where('skills', '=', $searchText)
+        ->get();
 
-        ]);
-    }
+    return view('tradesmen', [
+        'tradesmenprofiles' => $tradesmenprofiles,
+    ]);
+}
+
 }

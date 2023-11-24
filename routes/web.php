@@ -37,6 +37,7 @@ use Illuminate\Support\Facades\Route;
 
 
     Route::any('/viewtradesmen', 'TradesmanController@index');
+     // Route::any('/viewtradesmen/{searchText}', 'TradesmanController@index');
     //Register
     Route::get('/register', 'RegisterController@register');
     Route::post('register', 'RegisterController@postregister');
