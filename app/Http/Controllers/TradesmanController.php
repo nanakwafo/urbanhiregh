@@ -12,12 +12,16 @@ class TradesmanController extends Controller
     public function index(Request $request)
     {
         $searchText = $request->input('tradeSearch');
+
         if (!is_null($searchText)) {
             $tradesmenprofiles = DB::table('users')
                 ->join('tradesman_profiles', 'users.id', '=', 'tradesman_profiles.user_id')
                 ->select('users.*', 'tradesman_profiles.*')
                 ->where('users.trade', '=', $searchText)
                 ->get();
+            return view('tradesmen', [
+                'tradesmenprofiles' => $tradesmenprofiles,
+            ]);
         }
         $tradesmenprofiles = DB::table('users')
             ->join('tradesman_profiles', 'users.id', '=', 'tradesman_profiles.user_id')
