@@ -24,7 +24,7 @@
 
             </li>
             <li class="nav-item ">
-                <a href="/login" class="nav-link"><i data-feather="package"></i>Sign In</a>
+                <a href="/login" class="nav-link"><i data-feather="package"></i>Log In</a>
 
             </li>
             <li class="nav-item ">
