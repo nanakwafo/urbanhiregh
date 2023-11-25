@@ -92,7 +92,7 @@
                 {{ csrf_field() }}
             <div class="home-search-divider">
                 <!-- <input class="home-search-trade" name="tradeSearch" placeholder="Enter a trade" /> -->
-
+                <input type="hidden" value="1" name="pageNumber">
             
              <select  id="trade" class="form-control select2 home-search-trade" name="tradeSearch" >
                        <option value="" disabled selected>Select Trade</option>
