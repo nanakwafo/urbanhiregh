@@ -15,9 +15,6 @@ class TradesmanController extends Controller
         $location = $request->input('location');
         $pageNumber=$request->input('pageNumber');
 
-        // var_dump($searchText ."==" .$location); die;
-
-        // `users`.`location`
          $uniqueTrades = DB::table('users')->distinct()->pluck('trade');
         $uniqueLocations = DB::table('users')->distinct()->pluck('location');
 
@@ -56,15 +53,8 @@ class TradesmanController extends Controller
 
 
         }
-        
-
-       
 
 
- // var_dump($uniqueTrades ."==" .$uniqueLocations); die;
-
-
-       
 
     }
 
