@@ -37,13 +37,22 @@
 <!-- vendor css -->
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
-    <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-    <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <!-- <link href="../lib/select2/css/select2.min.css" rel="stylesheet"> -->
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.auth.css">
     <link rel="stylesheet" href="css/custom.css">
+
+
+     <!-- added files -->
+    <link href="lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+
+
 </head>
 <body>
 
@@ -54,13 +63,32 @@
             <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
                 {{ csrf_field() }}
                  <div class="home-search-divider">
-                <input class="home-search-trade" name="tradeSearch" placeholder="Enter a trade" />
-            </div>
-            <div class="home-search-divider">
-                <input class="home-search-location" placeholder="Location" />
-            </div>
+                    <select  id="trade" class="form-control select2 home-search-trade" name="tradeSearch" >
+                       <option value="" disabled selected>Select Trade</option>
+                        @foreach ($uniqueTrades as $trade)
+                            <option value="{{ $trade }}">{{ $trade }}</option>
+                        @endforeach
+                    </select></div>
+
+                  <div class="home-search-divider">
+
+                    <input type="hidden" value="1" name="pageNumber">
+                    <select id="location" class="select2 home-search-location"   name="location" >
+                     <option value="" disabled selected>Select Trade</option>
+                        @foreach ($uniqueLocations as $location)
+                            <option value="{{ $location }}">{{ $location }}</option>
+                        @endforeach
+                    </select>                
+                  </div>
+
+           
+
+
+           <!-- <div class="home-search-divider">
+                <input class="home-search-location" name="location" placeholder="Location" />
+            </div> -->
                 <div class="tradesmen-search-divider">
-                    <button class="btn btn-brand-02 btn-block tradesmen-search-button"  type="submit" >Search</button>
+                    <button class="btn btn-brand-02 btn-block "  type="submit" >Search</button>
                 </div>
             </form>
         </div>
@@ -89,9 +117,20 @@
                         </div>
                     </div>
                     @endforeach
+                   
                 </div><!-- row -->
+                 <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
+                {{ csrf_field() }}
+                    
 
-                <button class="btn btn-block btn-sm btn-white">Load more</button>
+           <input type="hidden" value="{{ $searchText }}" name="tradeSearch">
+            <input type="hidden" value="{{ $location }}" name="location">
+            <input type="hidden" value="{{ $pageNumber }}" name="pageNumber">
+
+
+            <button class="btn btn-block btn-sm btn-white" type="submit">Load more</button>
+                </form>
+                
             </div><!-- col -->
 
         </div><!-- row -->
@@ -131,11 +170,28 @@
             lightMode();
         }
 
-        $('.select2').select2({
-            placeholder: 'Choose one',
-            searchInputPlaceholder: 'Search options'
-        })
+
+// Basic with search
+        $('#trade').select2({
+          placeholder: 'Choose A Trade',
+          searchInputPlaceholder: 'Search options'
+        });
+
+        $('#location').select2({
+          placeholder: 'Choose A Location',
+          searchInputPlaceholder: 'Search options'
+        });
+
+
+       
     })
 </script>
+
+
+
+    
+
+
+
 </body>
 </html>

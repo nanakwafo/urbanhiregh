@@ -43,6 +43,20 @@
     <link rel="stylesheet" href="assets/css/dashforge.landing.css">
     <link rel="stylesheet" href="css/custom.css">
 
+
+
+
+
+    <!-- added files -->
+    <link href="lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+
+
+
+
+
 </head>
 <body class="home-body">
 
@@ -77,11 +91,32 @@
         <form method="post" action="{{ url('viewtradesmen') }}" class="home-search-form">
                 {{ csrf_field() }}
             <div class="home-search-divider">
-                <input class="home-search-trade" name="tradeSearch" placeholder="Enter a trade" />
+                <!-- <input class="home-search-trade" name="tradeSearch" placeholder="Enter a trade" /> -->
+
+            
+             <select  id="trade" class="form-control select2 home-search-trade" name="tradeSearch" >
+                       <option value="" disabled selected>Select Trade</option>
+                        @foreach ($uniqueTrades as $trade)
+                            <option value="{{ $trade }}">{{ $trade }}</option>
+                        @endforeach
+                    </select> 
+
+
             </div>
-            <div class="home-search-divider">
-                <input class="home-search-location" placeholder="Location" />
-            </div>
+
+             <div class="home-search-divider">
+                    <select id="location" class="select2 home-search-location"   name="location" >
+                     <option value="" disabled selected>Select Trade</option>
+                        @foreach ($uniqueLocations as $location)
+                            <option value="{{ $location }}">{{ $location }}</option>
+                        @endforeach
+                    </select>                
+                  </div>
+
+                  
+           <!--  <div class="home-search-divider">
+                <input class="home-search-location" name="location" placeholder="Location" />
+            </div> -->
             <div class="home-search-divider search-button-small">
                 <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
             </div>
@@ -90,7 +125,7 @@
     <div class="home-slider-bg-one"></div>
 </div><!-- home-slider -->
 
-<script src="lib/jquery/jquery.min.js"></script>
+<!-- <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="lib/feather-icons/feather.min.js"></script>
 <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
@@ -104,6 +139,78 @@
 
 
     });
-</script>
+
+
+</script> -->
+
+ <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+    <script>
+      // Adding placeholder for search input
+      (function($) {
+
+        'use strict'
+
+        var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+        $.extend(Defaults.defaults, {
+          searchInputPlaceholder: ''
+        });
+
+        var SearchDropdown = $.fn.select2.amd.require('select2/dropdown/search');
+
+        var _renderSearchDropdown = SearchDropdown.prototype.render;
+
+        SearchDropdown.prototype.render = function(decorated) {
+
+          // invoke parent method
+          var $rendered = _renderSearchDropdown.apply(this, Array.prototype.slice.apply(arguments));
+
+          this.$search.attr('placeholder', this.options.get('searchInputPlaceholder'));
+
+          return $rendered;
+        };
+
+      })(window.jQuery);
+
+
+      $(function(){
+        'use strict'
+
+        // Basic with search
+        $('.select2').select2({
+          placeholder: 'Choose one',
+          searchInputPlaceholder: 'Search options'
+        });
+
+        // Disable search
+        $('.select2-no-search').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Choose one'
+        });
+
+        // Clearable selection
+        $('.select2-clear').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Choose one',
+          allowClear: true
+        });
+
+        // Limit selection
+        $('.select2-limit').select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: 'Choose one',
+          maximumSelectionLength: 2
+        });
+
+      });
+    </script>
+
 </body>
 </html>
