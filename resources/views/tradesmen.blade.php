@@ -43,7 +43,7 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.auth.css">
-    <link rel="stylesheet" href="css/custom.css">
+
 
 
      <!-- added files -->
@@ -51,7 +51,7 @@
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
-
+    <link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body>
@@ -63,7 +63,7 @@
             <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
                 {{ csrf_field() }}
                  <div class="home-search-divider">
-                    <select  id="trade" class="form-control select2 home-search-trade" name="tradeSearch" >
+                    <select  id="trade" class="form-control select2 home-search-trade trade-dropdown" name="tradeSearch" >
                        <option value="" disabled selected>Select Trade</option>
                         @foreach ($uniqueTrades as $trade)
                             <option value="{{ $trade }}">{{ $trade }}</option>
@@ -73,15 +73,15 @@
                   <div class="home-search-divider">
 
                     <input type="hidden" value="1" name="pageNumber">
-                    <select id="location" class="select2 home-search-location"   name="location" >
+                    <select id="location" class="select2 home-search-location location-dropdown"   name="location" >
                      <option value="" disabled selected>Select Trade</option>
                         @foreach ($uniqueLocations as $location)
                             <option value="{{ $location }}">{{ $location }}</option>
                         @endforeach
-                    </select>                
+                    </select>
                   </div>
 
-           
+
 
 
            <!-- <div class="home-search-divider">
@@ -117,11 +117,11 @@
                         </div>
                     </div>
                     @endforeach
-                   
+
                 </div><!-- row -->
                  <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
                 {{ csrf_field() }}
-                    
+
 
            <input type="hidden" value="{{ $searchText }}" name="tradeSearch">
             <input type="hidden" value="{{ $location }}" name="location">
@@ -130,7 +130,7 @@
 
             <button class="btn btn-block btn-sm btn-white" type="submit">Load more</button>
                 </form>
-                
+
             </div><!-- col -->
 
         </div><!-- row -->
@@ -183,13 +183,13 @@
         });
 
 
-       
+
     })
 </script>
 
 
 
-    
+
 
 
 

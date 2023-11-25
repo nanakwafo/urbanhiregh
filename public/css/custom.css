@@ -15,8 +15,8 @@
 .home-search-button{
 
     width: 100px;
-    height: 67px;
-    border-radius: 30px;
+    height: 51px;
+    /*border-radius: 30px;*/
     content: close-quote;
     color: black;
     font-size: 14px;
@@ -143,3 +143,9 @@
     border: 1px solid #1b2e4b;
 }
 
+.select2-container--default .select2-selection--single {
+    border-radius: 0px !important;
+}
+.select2-container .select2-selection--single {
+    height: 51px !important;
+}
