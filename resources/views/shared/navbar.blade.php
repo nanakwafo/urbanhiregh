@@ -26,6 +26,10 @@
                 <a href="{{ url('viewtradesmen') }}" class="nav-link"><i data-feather="package"></i>Find A Tradesman</a>
 
             </li>
+            <li class="nav-item ">
+                <a href="{{ url('login') }}" class="nav-link"><i data-feather="package"></i>Log In </a>
+
+            </li>
 {{--            <li class="nav-item ">--}}
 {{--                <a href="/review" class="nav-link"><i data-feather="package"></i>Leave a Review</a>--}}
 

@@ -64,28 +64,24 @@
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/scaffold.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Scaffold</h3>
-                <p class="tx-color-03 mg-b-25">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 20.00 /ROOM</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-sm-t-0 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/wheel-barrow.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Wheel Barrow</h3>
-                <p class="tx-color-03 mg-b-25">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 20 /EACH</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/round-plastic.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Round Plastic Pillar Mould</h3>
-                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 150 /PILLAR</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/jack-hammer.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Jack Hammer</h3>
-                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 150 /EACH</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
@@ -94,28 +90,24 @@
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/square-mould.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Square Plastic Pillar Mould</h3>
-                <p class="tx-color-03 mg-b-25">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 150 /PILLAR</h1>
                 <button class="btn btn-primary btn-block">Not Available</button>
             </div><!-- col -->
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-sm-t-0 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/hammer-drill.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Hammer Drill</h3>
-                <p class="tx-color-03 mg-b-25">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-                <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 40.00/EACH</h1>
+               <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 40.00/EACH</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/angle-grinder.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Angle Grinder</h3>
-                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 40.00/EACH</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
             <div class="col-10 col-sm-6 col-md-4 col-lg-3 mg-t-40 mg-md-t-0 d-flex flex-column">
                 <div class="tx-100 lh-1"><img src="assets/img/welding-machine.png" style=" height: 2em;width: 2em;"/></div>
                 <h3 class="mg-b-25">Welding Machine</h3>
-                <p class="tx-color-03 mg-b-25">Nemo enim ipsam volu ptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia conse quuntur magni dolores eos qui ratione.</p>
                 <h1 class="tx-rubik tx-normal mg-b-30 mg-t-auto">GHC 40.00/EACH</h1>
                 <button class="btn btn-primary btn-block">Available Now</button>
             </div><!-- col -->
