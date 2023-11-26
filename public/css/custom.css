@@ -23,23 +23,23 @@
 }
 .home-search-trade{
     width: 533px;
-    border: 1px solid #1b2e4b;
-    padding: 8px;
-    font-size: 15px;
-    transition: width 0.2s;
-    -webkit-appearance: none;
-    height: 67px;
-    border-radius: 30px;
+    /*border: 1px solid #1b2e4b;*/
+    /*padding: 8px;*/
+    /*font-size: 15px;*/
+    /*transition: width 0.2s;*/
+    /*-webkit-appearance: none;*/
+    /*height: 67px;*/
+    /*border-radius: 30px;*/
 }
 .home-search-location{
     width: 271px;
-    border: 1px solid #1b2e4b;
-    padding: 8px;
-    font-size: 15px;
-    transition: width 0.2s;
-    -webkit-appearance: none;
-    height: 67px;
-    border-radius: 30px;
+    /*border: 1px solid #1b2e4b;*/
+    /*padding: 8px;*/
+    /*font-size: 15px;*/
+    /*transition: width 0.2s;*/
+    /*-webkit-appearance: none;*/
+    /*height: 67px;*/
+    /*border-radius: 30px;*/
 }
 
 @media (max-width: 375px) {
@@ -95,7 +95,7 @@
     display: flex;
 
 }
-@media (min-width: 768px){
+@media (max-width: 768px){
     .tradesmen-search-form {
         flex-wrap: wrap;
         justify-content: center;

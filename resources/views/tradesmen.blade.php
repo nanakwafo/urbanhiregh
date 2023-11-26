@@ -90,7 +90,7 @@
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
         <div class="row">
             <div class="col-lg-12">
-                <div class="row row-xs mg-b-25">
+                <div class="row row-xs mg-b-25" style="justify-content: center">
                     <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
                         {{ csrf_field() }}
                         <div class="home-search-divider">
