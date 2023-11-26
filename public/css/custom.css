@@ -94,6 +94,7 @@
 .tradesmen-search-form{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .tradesmen-search-button{
