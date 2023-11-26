@@ -150,3 +150,7 @@
 .select2-container .select2-selection--single {
     height: 51px !important;
 }
+.tradesmen-search-page{
+    display: flex;
+    justify-content: center;
+}

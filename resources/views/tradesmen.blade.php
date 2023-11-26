@@ -58,7 +58,7 @@
 
 @include('shared.navbar')
 <div class="content content-fixed content-auth">
-    <div class="container">
+    <div class="container tradesmen-search-page">
         <div class="tradesmen-search">
             <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
                 {{ csrf_field() }}
