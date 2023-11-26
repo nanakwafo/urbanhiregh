@@ -18,7 +18,7 @@
             </li>
             <li class="nav-item ">
 
-                <a href=" {{ url('equipment-tools') }}" class="nav-link"><i data-feather="tool"></i>Rent An Equipment For Work</a>
+                <a href=" {{ url('equipment-tools') }}" class="nav-link"><i data-feather="package"></i>Rent An Equipment For Work</a>
             </li>
             <li class="nav-item ">
                 <a href="{{ url('viewtradesmen') }}" class="nav-link"><i data-feather="search"></i>Find A Tradesman</a>
