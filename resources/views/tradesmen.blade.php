@@ -58,41 +58,65 @@
 
 @include('shared.navbar')
 <div class="content content-fixed content-auth">
-    <div class="container tradesmen-search-page">
-        <div class="tradesmen-search">
-            <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
-                {{ csrf_field() }}
-                 <div class="home-search-divider">
-                    <select  id="trade" class="form-control select2 home-search-trade trade-dropdown" name="tradeSearch" >
-                       <option value="" disabled selected>Select Trade</option>
-                        @foreach ($uniqueTrades as $trade)
-                            <option value="{{ $trade }}">{{ $trade }}</option>
-                        @endforeach
-                    </select></div>
+{{--    <div class="container tradesmen-search-page">--}}
+{{--        <div class="tradesmen-search">--}}
+{{--            <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">--}}
+{{--                {{ csrf_field() }}--}}
+{{--                 <div class="home-search-divider">--}}
+{{--                    <select  id="trade" class="form-control select2 home-search-trade trade-dropdown" name="tradeSearch" >--}}
+{{--                       <option value="" disabled selected>Select Trade</option>--}}
+{{--                        @foreach ($uniqueTrades as $trade)--}}
+{{--                            <option value="{{ $trade }}">{{ $trade }}</option>--}}
+{{--                        @endforeach--}}
+{{--                    </select></div>--}}
 
-                  <div class="home-search-divider">
+{{--                  <div class="home-search-divider">--}}
 
-                    <input type="hidden" value="1" name="pageNumber">
-                    <select id="location" class="select2 home-search-location location-dropdown"   name="location" >
-                     <option value="" disabled selected>Select Trade</option>
-                        @foreach ($uniqueLocations as $location)
-                            <option value="{{ $location }}">{{ $location }}</option>
-                        @endforeach
-                    </select>
-                  </div>
+{{--                    <input type="hidden" value="1" name="pageNumber">--}}
+{{--                    <select id="location" class="select2 home-search-location location-dropdown"   name="location" >--}}
+{{--                     <option value="" disabled selected>Select Trade</option>--}}
+{{--                        @foreach ($uniqueLocations as $location)--}}
+{{--                            <option value="{{ $location }}">{{ $location }}</option>--}}
+{{--                        @endforeach--}}
+{{--                    </select>--}}
+{{--                  </div>--}}
 
-
-
-                <div class="tradesmen-search-divider">
-                    <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
-                </div>
-            </form>
-        </div>
-    </div><!-- container -->
+{{--                <div class="tradesmen-search-divider">--}}
+{{--                    <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>--}}
+{{--                </div>--}}
+{{--            </form>--}}
+{{--        </div>--}}
+{{--    </div><!-- container -->--}}
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
         <div class="row">
             <div class="col-lg-12">
+                <div class="row row-xs mg-b-25">
+                    <form method="post" action="{{ url('viewtradesmen') }}" class="tradesmen-search-form">
+                        {{ csrf_field() }}
+                        <div class="home-search-divider">
+                            <select  id="trade" class="form-control select2 home-search-trade trade-dropdown" name="tradeSearch" >
+                                <option value="" disabled selected>Select Trade</option>
+                                @foreach ($uniqueTrades as $trade)
+                                    <option value="{{ $trade }}">{{ $trade }}</option>
+                                @endforeach
+                            </select></div>
 
+                        <div class="home-search-divider">
+
+                            <input type="hidden" value="1" name="pageNumber">
+                            <select id="location" class="select2 home-search-location location-dropdown"   name="location" >
+                                <option value="" disabled selected>Select Trade</option>
+                                @foreach ($uniqueLocations as $location)
+                                    <option value="{{ $location }}">{{ $location }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="tradesmen-search-divider">
+                            <button class="btn btn-brand-02 btn-block home-search-button"  type="submit" >Search</button>
+                        </div>
+                    </form>
+                </div>
 
                 <div class="row row-xs mg-b-25">
                  @foreach($tradesmenprofiles as $tradesmenprofile)
