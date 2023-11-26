@@ -11,23 +11,23 @@
         <ul class="nav navbar-menu">
             <li class="nav-label pd-l-15 pd-lg-l-25 d-lg-none">Main Navigation</li>
             <li class="nav-item">
-                <a href="/how-it-works" class="nav-link"><i data-feather="pie-chart"></i> How it Works</a>
+                <a href="/how-it-works" class="nav-link"><i data-feather="fast-forward"></i> How it Works</a>
 
             </li>
             <li class="nav-item ">
-                <a href="/register" class="nav-link"><i data-feather="package"></i>Join Us</a>
+                <a href="/register" class="nav-link"><i data-feather="arrow-right"></i>Join Us</a>
 
             </li>
             <li class="nav-item ">
 
-                <a href="/equipment-tools" class="nav-link"><i data-feather="package"></i>Rent An Equipment For Work</a>
+                <a href="/equipment-tools" class="nav-link"><i data-feather="tool"></i>Rent An Equipment For Work</a>
             </li>
             <li class="nav-item ">
-                <a href="{{ url('viewtradesmen') }}" class="nav-link"><i data-feather="package"></i>Find A Tradesman</a>
+                <a href="{{ url('viewtradesmen') }}" class="nav-link"><i data-feather="search"></i>Find A Tradesman</a>
 
             </li>
             <li class="nav-item ">
-                <a href="{{ url('login') }}" class="nav-link"><i data-feather="package"></i>Log In </a>
+                <a href="{{ url('login') }}" class="nav-link"><i data-feather="log-in"></i>Log In </a>
 
             </li>
 {{--            <li class="nav-item ">--}}
