@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Http\Controllers\Requester\RequesterController;
 
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -70,6 +70,35 @@ Route::post('/update_experience', 'TradesmanprofileController@update_experience'
 
 
 Route::get('/requesterprofile/{userId}', 'RequesterController@index');
+
+Route::get('/requester-profile', 'Requester\RequesterController@index');
+Route::get('/requester-security', 'Requester\RequesterController@Security');
+
+Route::get('/requester-properties', 'Requester\RequesterController@properties');
+Route::get('/requester-history', 'Requester\RequesterController@history');
+Route::get('/requester-payments', 'Requester\RequesterController@payments');
+
+Route::get('/requester-request', 'Requester\RequesterController@Request');
+
+Route::get('/requester-add-property', 'Requester\RequesterController@addproperty');
+
+Route::post('/requester-update-home-owner-profile', 'Requester\RequesterController@updateHomeOwnerProfile');
+Route::post('/requester-add-home-owner-property', 'Requester\RequesterController@newproperty');
+
+
+Route::get('/requester-edit-property/{propertyId}', 'Requester\RequesterController@Editproperty');
+
+Route::post('/requester-editing-property', 'Requester\RequesterController@editingproperty');
+
+
+Route::post('/requester-add-request', 'Requester\RequesterController@newRequest');
+
+Route::get('/requester-view-request/{id}', 'Requester\RequesterController@RequestView');
+
+Route::post('/requester-remove-property', 'Requester\RequesterController@deleteproperty');
+Route::post('/requester-remove-request', 'Requester\RequesterController@deleterequest');
+
+
 
 
 Route::get('/available_jobs/{userId}', 'JobController@available_jobs')->middleware('tradesmen');
