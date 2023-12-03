@@ -58,7 +58,7 @@
                     These Website Terms of Use were last updated on 28th June 2021</p>
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Who we are and how to contact us</h4>
-                    <p>Trustatrader and our Website is operated and managed by Trustatrader.com Ltd. We are a company incorporated in Ghana and Wales (company number 05489753). Our registered office address is at 5 Meadway Court, Rutherford Close, Stevenage, Hertfordshire, Ghana, SG1 2EF) (“Trustatrader”, “we”, “us”, “our”).
+                    <p>urbanhire and our Website is operated and managed by urbanhire.com Ltd. We are a company incorporated in Ghana and Wales (company number 05489753). Our registered office address is at 5 Meadway Court, Rutherford Close, Stevenage, Hertfordshire, Ghana, SG1 2EF) (“urbanhire”, “we”, “us”, “our”).
 
                         To contact us, please email admin@urbanhire.com or write to us at 5 Meadway Court, Rutherford Close, Stevenage SG1 2EF.</p>
                 </div>
@@ -213,9 +213,9 @@
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Disputes
                     </h4>
-                    <p>Our Website acts as a directory only for Visitors to view listings of, and obtain information about, services offered by Traders and to access their contact information. Trustatrader is not a party to any contract for goods and services agreed between a Visitor and Trader, nor does it offer such goods or services itself. Trustatrader does not mediate between Visitors and the Traders in the event of any dispute arising between them.
+                    <p>Our Website acts as a directory only for Visitors to view listings of, and obtain information about, services offered by Traders and to access their contact information. urbanhire is not a party to any contract for goods and services agreed between a Visitor and Trader, nor does it offer such goods or services itself. urbanhire does not mediate between Visitors and the Traders in the event of any dispute arising between them.
 
-                        Any issues or disputes that may arise between a Trader and Visitor must be brought directly against each other and not Trustatrader.
+                        Any issues or disputes that may arise between a Trader and Visitor must be brought directly against each other and not urbanhire.
 
                         Nothing in these Terms shall limit our right to take action against a Visitor or Trader for breach of these Terms or otherwise comply with legal or regulatory investigations and/or proceedings.
                     </p>

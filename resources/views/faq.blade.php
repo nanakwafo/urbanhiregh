@@ -78,7 +78,7 @@
                 <div class="tx-color-03 tx-16 mg-b-40">
                 <h4>What do you do to make sure tradesmen are qualified to do work such as gas or electrics?</h4>
                 <p> There are certain trades where experience isn't always enough! If you have gas or engineering works to be done, you need to know that whoever you hire is the best person for the job. We require copies of all current certificates when our members join, so we know they have the skills you need to do a professional job.
-                    For electricians, we require proof of registration with a governing body, and proof of Part P and 17th Addition Compliance; this ensures that our traders have their specialist training up to date, as bodies such as NICEIC have the sole purpose of protecting consumers from unsafe and unsound electrical work. The same goes for the Gas Safe Register; any trader coming into your home to carry out any gas works will have current Gas Safe Registration if you find them through Trustatrader.com.
+                    For electricians, we require proof of registration with a governing body, and proof of Part P and 17th Addition Compliance; this ensures that our traders have their specialist training up to date, as bodies such as NICEIC have the sole purpose of protecting consumers from unsafe and unsound electrical work. The same goes for the Gas Safe Register; any trader coming into your home to carry out any gas works will have current Gas Safe Registration if you find them through urbanhire.com.
                     It's always a good idea to check with the trader when they come round, and ask to see their current membership cards for your total peace of mind.
                 </p>
                 </div>

@@ -53,7 +53,7 @@
             <div class="wd-100p">
                 <h2 class="tx-color-01 mg-b-5">How It Works!</h2>
 
-                <p class="tx-color-03 tx-16 mg-b-40">If you're looking to get a job done properly, you want to find a trader you can trust to do a good job for a fair price. TrustATrader allows you to quickly find
+                <p class="tx-color-03 tx-16 mg-b-40">If you're looking to get a job done properly, you want to find a trader you can trust to do a good job for a fair price. urbanhire allows you to quickly find
                     a tradesperson in your area who can be trusted to provide a high standard of work</p>
             </div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -135,7 +135,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Leave a review</a></h5>
-                                    <p class="tx-color-03 mg-b-0">Once your job has been completed, leave a review on TrustATrader to let others know the quality of work done by the trader.
+                                    <p class="tx-color-03 mg-b-0">Once your job has been completed, leave a review on urbanhire to let others know the quality of work done by the trader.
 
                                     </p>
                                     <p class="tx-color-03 mg-b-0">This encourages a continued high standard and helps others to find tradespeople they can trust.
@@ -161,8 +161,8 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Are you an experienced professional Tradesperson?</a></h5>
-                                    <p class="tx-color-03 mg-b-0"> If you're skilled in your trade, take pride in your work and have a selection of previously satisfied customers, you could join TrustATrader.</p>
-                                    <p class="tx-color-03 mg-b-0">As a member your company will be presented in the 710,170 searches made every month by visitors to the website. Go to the Join us page to start your TrustATrader membership application.</p>
+                                    <p class="tx-color-03 mg-b-0"> If you're skilled in your trade, take pride in your work and have a selection of previously satisfied customers, you could join urbanhire.</p>
+                                    <p class="tx-color-03 mg-b-0">As a member your company will be presented in the 710,170 searches made every month by visitors to the website. Go to the Join us page to start your urbanhire membership application.</p>
                                 </div><!-- card-body -->
 
                             </div><!-- card -->
@@ -176,7 +176,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Making the selection</a></h5>
-                                    <p class="tx-color-03 mg-b-0">When a search has been made, the TrustATrader members who specialise in the relevant trade within the chosen region will be listed.</p>
+                                    <p class="tx-color-03 mg-b-0">When a search has been made, the urbanhire members who specialise in the relevant trade within the chosen region will be listed.</p>
                                     <p class="tx-color-03 mg-b-0">We allow only a limited number of members to be listed for any one trade in each region, providing a better quality selection for the consumer and guaranteeing a fair share of enquiries for each trader.</p>
                                 </div><!-- card-body -->
 
@@ -221,7 +221,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Good results</a></h5>
-                                    <p class="tx-color-03 mg-b-0">Reviews left by your satisfied customers boost your rating on TrustATrader, encouraging others to enquire about your services.
+                                    <p class="tx-color-03 mg-b-0">Reviews left by your satisfied customers boost your rating on urbanhire, encouraging others to enquire about your services.
 
                                     </p>
                                     <p class="tx-color-03 mg-b-0">As a trader, you can also sign in at any time to view a range of statistics showing how many have recently viewed your company profile, visited your website etc.
