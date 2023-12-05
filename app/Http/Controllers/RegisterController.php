@@ -9,6 +9,8 @@ use Cartalyst\Sentinel\Laravel\Facades\Activation;
 
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ActivationMail;
 use Illuminate\Validation\ValidationException;
 
 class RegisterController extends Controller
@@ -22,57 +24,54 @@ class RegisterController extends Controller
     public function postregister(Request $request)
     {
 
-            $this->validate($request,[
-                'user_type'=>'required',
-                'first_name'=>'required',
-                'last_name'=>'required',
-                'phone_number'=>'required',
-                'location'=>'required',
-                'email'=>'unique:users|required|email',
-                'password'=>'required|min:6|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/',
-                'password_confirmation'=>'required|min:6|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/',
-            ]);
+        $this->validate($request, [
+            'user_type' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'phone_number' => 'required',
+            'location' => 'required',
+            'email' => 'unique:users|required|email',
+            'password' => 'required|min:6|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/',
+            'password_confirmation' => 'required|min:6|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/',
+        ]);
 
 
-
-            $credentials = [
-                'user_type'    => $request->user_type,
-                'first_name' => $request->first_name,
-                'last_name'=> $request->last_name,
-                'phone_number'=> $request->phone_number,
-                'location'=> $request->location,
-                'email'=> $request->email,
-                'password'=> $request->password,
-                'trade'=>$request->trade
-            ];
-
+        $credentials = [
+            'user_type' => $request->user_type,
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'phone_number' => $request->phone_number,
+            'location' => $request->location,
+            'email' => $request->email,
+            'password' => $request->password,
+            'trade' => $request->trade
+        ];
 
 
-            $user = Sentinel::register($credentials);
+        $user = Sentinel::register($credentials);
 
 
+        $activation = Activation::create($user);
+        if ($request->user_type === 'requester') {
+            $role = Sentinel::findRoleBySlug('requester');
+        }
+        if ($request->user_type === 'tradesman') {
 
-            $activation = Activation::create($user);
-            if($request->user_type === 'requester'){
-                $role = Sentinel::findRoleBySlug('requester');
-            }
-            if($request->user_type === 'tradesman'){
+            $this->add_to_profile($user);
+            $this->add_to_education($user);
+            $this->add_to_experience($user);
 
-                $this->add_to_profile($user);
-                $this->add_to_education($user);
-                $this->add_to_experience($user);
+            $role = Sentinel::findRoleBySlug('tradesman');
+        }
 
-                $role = Sentinel::findRoleBySlug('tradesman');
-            }
-
-            $role->users()->attach($user);
+        $role->users()->attach($user);
 
 
 //
 //        /*************Send Acytivation MAil**********/
-//        $this->sendActivationMail($request->email,$activation->code);
+        $this->sendActivationMail($request->email, $activation->code);
 //
-            return redirect()->back()->with(['success'=>'An activation link was sent to your email Address']);
+        return redirect()->back()->with(['success' => 'An activation link was sent to your email Address']);
 
 
     }
@@ -94,7 +93,8 @@ class RegisterController extends Controller
     /**
      * @param \Cartalyst\Sentinel\Users\UserInterface $user
      */
-    private function add_to_education(\Cartalyst\Sentinel\Users\UserInterface $user){
+    private function add_to_education(\Cartalyst\Sentinel\Users\UserInterface $user)
+    {
         $trademaneducation = new TradesmanEducation();
         $trademaneducation->user_id = $user->id;
         $trademaneducation->title = null;
@@ -110,7 +110,8 @@ class RegisterController extends Controller
     /**
      * @param \Cartalyst\Sentinel\Users\UserInterface $user
      */
-    private function add_to_experience(\Cartalyst\Sentinel\Users\UserInterface $user){
+    private function add_to_experience(\Cartalyst\Sentinel\Users\UserInterface $user)
+    {
 
 
         $trademaneducation = new TradesmanExperience();
@@ -124,6 +125,13 @@ class RegisterController extends Controller
         $trademaneducation->save();
 
 
+    }
+    ///////////////////////////////////////////////////
+    ///// Send email activationmail////////////////////
+    ///////////////////////////////////////////////////
+    public function sendActivationMail($email, $code)
+    {
+        Mail::to($email)->send(new ActivationMail($code, $email));
     }
 
 
