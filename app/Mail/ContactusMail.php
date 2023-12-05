@@ -35,10 +35,17 @@ class ContactusMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mails.contact-message')
-            ->with('senderName',$this->senderName)
-            ->with('senderEmail',$this->senderEmail)
-            ->with('senderMessage',$this->contactmessage)
+
+
+
+
+        return $this->subject('Urbanhire Contact Us?')
+            ->from('support@ifmacinema.com', 'Contact Us ')
+            ->view('mails.contact-message')
+            ->with(['senderName' => $this->senderName,
+                'senderEmail' =>$this->senderEmail,
+                'senderMessage' =>$this->contactmessage,
+            ])
             ;
     }
 }

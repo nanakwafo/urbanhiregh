@@ -37,11 +37,7 @@ class ActivationMail extends Mailable
 
         $email = $this->email;
         $code = $this->code;
-//        Mail::send('mails.activation', ['email' => $email, 'code' => $code], function ($message) {
-//            $message->from('support@ifmacinema.com', 'urbanHire');
-//
-//            $message->to($this->email);
-//        });
+
 
 
         return $this->subject('Urbanhire User Activation?')

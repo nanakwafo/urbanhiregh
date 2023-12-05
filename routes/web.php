@@ -57,6 +57,7 @@ use Illuminate\Support\Facades\Route;
     Route::post('/logout', 'LoginController@logout');
 
    Route::get('/activate/{email}/{activationCode}','ActivationController@activate');
+    Route::post('/sendContact', 'ContactController@sendEmail')->name('sendContact');
 //});
 
 

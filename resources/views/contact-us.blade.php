@@ -104,8 +104,9 @@
                 <div class="mx-lg-wd-500 mx-xl-wd-550">
                     <div class="media align-items-stretch justify-content-center ht-100p">
                         <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
+                            @include('shared.alert')
                             <div class="pd-t-20 wd-100p">
-                                <form action="/post-contactus" method="POST">
+                                <form action="/sendContact" method="POST">
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <label>Name:</label>
