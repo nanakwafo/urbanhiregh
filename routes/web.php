@@ -47,7 +47,7 @@ use Illuminate\Support\Facades\Route;
     Route::post('register', 'RegisterController@postregister');
 
     //Login
-    Route::get('/login', 'LoginController@login');
+    Route::get('/login', 'LoginController@login')->name('login');
     Route::post('/login', 'LoginController@postlogin');
 
     //Forgot Password
@@ -55,6 +55,8 @@ use Illuminate\Support\Facades\Route;
 
     //Logout
     Route::post('/logout', 'LoginController@logout');
+
+   Route::get('/activate/{email}/{activationCode}','ActivationController@activate');
 //});
 
 

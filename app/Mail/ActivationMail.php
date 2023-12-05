@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Support\Facades\Mail;
 
 class ActivationMail extends Mailable
 {
@@ -18,11 +19,12 @@ class ActivationMail extends Mailable
      */
     private $code;
     private $email;
-    public function __construct($code,$email)
+
+    public function __construct($code, $email)
     {
         //
         $this->code = $code;
-        $this->email= $email;
+        $this->email = $email;
     }
 
     /**
@@ -33,10 +35,20 @@ class ActivationMail extends Mailable
     public function build()
     {
 
-        return $this->markdown('mails.activation')
-            ->with('code',$this->code)
-            ->with('email',$this->email)
-            ->subject('Activation Mail');
+        $email = $this->email;
+        $code = $this->code;
+//        Mail::send('mails.activation', ['email' => $email, 'code' => $code], function ($message) {
+//            $message->from('support@ifmacinema.com', 'urbanHire');
+//
+//            $message->to($this->email);
+//        });
+
+
+        return $this->subject('Urbanhire User Activation?')
+            ->from('support@ifmacinema.com', 'User Activation ')
+            ->view('mails.activation')
+            ->with(['email' => $email, 'code' => $code])
+            ;
 
     }
 }
