@@ -110,21 +110,18 @@
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <label>Name:</label>
-                                        <input type="email" class="form-control" placeholder="Enter your name">
+                                        <input type="text" name="contactname" class="form-control" placeholder="Enter your name">
                                     </div>
                                     <div class="form-group">
                                         <div class="d-flex justify-content-between mg-b-5">
                                             <label class="mg-b-0-f">Email:</label>
                                         </div>
-                                        <input type="password" class="form-control" placeholder="Enter your  email">
+                                        <input type="email" name="contactemail" class="form-control" placeholder="Enter your  email">
                                     </div>
-                                    <div class="form-group">
-                                        <label>Telephone:</label>
-                                        <input type="text" class="form-control" placeholder="Enter your telephone number">
-                                    </div>
+
                                     <div class="form-group">
                                         <label>Message:</label>
-                                        <textarea class="form-control" cols="5"> </textarea>
+                                        <textarea class="form-control" name="contactmessage" cols="5"> </textarea>
                                     </div>
 
                                     <button type="submit" class="btn btn-brand-02 btn-block">Send</button>
