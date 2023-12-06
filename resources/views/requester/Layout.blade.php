@@ -1,5 +1,5 @@
 @php
-    
+
 
 use Illuminate\Support\Facades\URL;
 
@@ -139,7 +139,7 @@ $currentURL = collect(explode('/', $currentURL))->last();
                 font-weight: bold;
                 letter-spacing: 2px;
             }
-           
+
         }
     </style>
 
@@ -249,9 +249,9 @@ ul.thumb-Images li {
           <div class="profile-sidebar pd-lg-r-25">
             <div class="row">
               <div class="col-sm-3 col-md-2 col-lg">
-               
+
                 <div class="avatar avatar-xxl avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-              
+
               </div><!-- col -->
               <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
                  @foreach ($self as $item)
@@ -262,7 +262,7 @@ ul.thumb-Images li {
                   <button class="btn btn-xs btn-white flex-fill">Message</button>
                   <button class="btn btn-xs btn-primary flex-fill mg-l-10">Follow</button>
                 </div>  -->
-              
+
 
                <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Contact Information</label>
                 <ul class="list-unstyled profile-info-list">
@@ -293,11 +293,11 @@ ul.thumb-Images li {
                 </div>
                  @endforeach
               </div><!-- col -->
-              
-        
-            
+
+
+
             </div><!-- row -->
-            
+
           </div><!-- profile-sidebar -->
           <div class="media-body mg-t-40 mg-lg-t-0 pd-lg-x-10">
 
@@ -340,49 +340,49 @@ ul.thumb-Images li {
             <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
     <li class="nav-item {{ request()->is('requester-profile') ? 'active' : '' }}">
-        <a href="{{ url('requester-profile') }}" class="nav-link">Home</a>
+        <a href="{{ url('requester-profile/' . $userId) }}" class="nav-link">Home</a>
     </li>
     <li class="nav-item {{ request()->is('requester-security') ? 'active' : '' }}">
-        <a href="{{ url('requester-security') }}" class="nav-link">Security</a>
+        <a href="{{ url('requester-security/' . $userId) }}" class="nav-link">Security</a>
     </li>
     <li class="nav-item {{ request()->is('requester-properties') ? 'active' : '' }}">
-        <a href="{{ url('requester-properties') }}" class="nav-link">Properties</a>
+        <a href="{{ url('requester-properties/' . $userId) }}" class="nav-link">Properties</a>
     </li>
     <li class="nav-item {{ request()->is('requester-history') ? 'active' : '' }}">
-        <a href="{{ url('requester-history') }}" class="nav-link">Request History</a>
+        <a href="{{ url('requester-history/' . $userId) }}" class="nav-link">Request History</a>
     </li>
     <li class="nav-item {{ request()->is('requester-payments') ? 'active' : '' }}">
-        <a href="{{ url('requester-payments') }}" class="nav-link">Payments</a>
+        <a href="{{ url('requester-payments/' . $userId) }}" class="nav-link">Payments</a>
     </li>
     <li class="nav-item">
-        <a href="{{ url('requester-request') }}" class="btn btn-xs btn-primary flex-fill mg-l-10" style="color:white;" >Request</a>
+        <a href="{{ url('requester-request/' . $userId) }}" class="btn btn-xs btn-primary flex-fill mg-l-10" style="color:white;" >Request</a>
     </li>
 </ul>
 
-              
+
             </div>
           </nav>
 <br>
 
-          
+
             <div class="card mg-b-20 mg-lg-b-25">
               <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
                 <h6 class="tx-uppercase tx-semibold mg-b-0 " >@yield('pagename')</h6>
-                
+
               </div><!-- card-header  Full Name-->
               <div class="card-body pd-20 pd-lg-25">
 
                  @yield('content')
 
-                
+
               </div>
-            
+
             </div><!-- card -->
 
-          
+
           </div><!-- media-body -->
          <!--  <div class="profile-sidebar mg-t-40 mg-lg-t-0 pd-lg-l-25">
-            
+
           </div> -->
           <!-- profile-sidebar -->
         </div><!-- media -->
@@ -391,10 +391,10 @@ ul.thumb-Images li {
 
    @include('shared.footer-1')
 
-    
 
 
-  
+
+
 
 
  @if ($currentURL === "requester-history" || $currentURL === "requester-payments" || $currentURL === "requester-properties" || $currentURL === "requester-request" || is_numeric($currentURL))
@@ -825,7 +825,7 @@ function FillAttachmentArray(e, readerEvt) {
 
 
 
- 
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
@@ -878,7 +878,7 @@ $('.deletePropery').on('submit', function (e) {
         contentType: false,
         success: function (data) {
             if (data.statusCode === 200) {
-                toastr.success(data.message, 'Success');  
+                toastr.success(data.message, 'Success');
                 setTimeout(function () {
                     window.location.href = '{{ url('requester-properties') }}';
                 }, 3000);
@@ -912,7 +912,7 @@ $('.deleteRequest').on('submit', function (e) {
         contentType: false,
         success: function (data) {
             if (data.statusCode === 200) {
-                toastr.success(data.message, 'Success');  
+                toastr.success(data.message, 'Success');
                 setTimeout(function () {
                     window.location.href = '{{ url('requester-history') }}';
                 }, 3000);
@@ -951,12 +951,12 @@ $('.selectServices').select2({
 
 function reloading(delay,path){
   setTimeout(function() {
-    window.location.href = path; 
-}, delay); 
+    window.location.href = path;
+}, delay);
 
 }
 $(document).ready(function () {
- 
+
 
 
       $('.addproperty').submit(function (e) {
@@ -977,7 +977,7 @@ $(document).ready(function () {
                     // Redirect to a new URL
 
                     reloading(500,'{{ url('requester-properties') }}')
-              
+
 
                 } else {
                     toastr.error(data.message, 'Error');
@@ -989,8 +989,8 @@ $(document).ready(function () {
         });
     });
 
- 
-  
+
+
 
 $('#editproperty').on('submit', function (e) {
     e.preventDefault();
@@ -1007,7 +1007,7 @@ $('#editproperty').on('submit', function (e) {
         success: function (data) {
             if (data.statusCode === 200) {
                 toastr.success(data.message, 'Success');
-                // Redirect to a new URL after a delay   
+                // Redirect to a new URL after a delay
                 setTimeout(function () {
                     window.location.href = '{{ url('requester-properties') }}';
                 }, 500);
@@ -1058,7 +1058,7 @@ $('#makeRequest').on('submit', function (e) {
 
             if (data.statusCode === 200) {
                 toastr.success(data.message, 'Success');
-                // Redirect to a new URL after a delay   
+                // Redirect to a new URL after a delay
                 setTimeout(function () {
                     window.location.href = '{{ url('requester-history') }}';
                 }, 500);

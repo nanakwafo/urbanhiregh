@@ -9,7 +9,7 @@ class HomeOwnersProperties extends Model
     //
 
     protected $table = 'properties';
-     protected $fillable = [
+    protected $fillable = [
         'property_number',
         'property_type',
         'property_location',

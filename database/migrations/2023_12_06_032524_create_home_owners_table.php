@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRequestProfilesTable extends Migration
+class CreateHomeOwnersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateRequestProfilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('request_profiles', function (Blueprint $table) {
+        Schema::create('home_owners', function (Blueprint $table) {
             $table->increments('id');
             $table->string('last_name')->nullable();
             $table->string('first_name')->nullable();
             $table->string('other_names')->nullable();
-            $table->string('email')->nullable();
             $table->string('phone_number1')->nullable();
             $table->string('phone_number2')->nullable();
             $table->string('address')->nullable();
@@ -34,6 +33,6 @@ class CreateRequestProfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('request_profiles');
+        Schema::dropIfExists('home_owners');
     }
 }

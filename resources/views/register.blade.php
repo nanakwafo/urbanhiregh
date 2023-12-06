@@ -75,7 +75,7 @@
                                 <input type="hidden" name="user_type" value="requester">
                                 <div class="form-group">
                                     <label>Email address</label>
-                                    <input type="email" value="{{isset($email)? $email: ''}}" name="email" class="form-control" placeholder="Enter your email address">
+                                    <input type="email"  name="email" class="form-control" placeholder="Enter your email address">
                                 </div>
                                 <div class="form-group">
                                     <div class="d-flex justify-content-between mg-b-5">
@@ -92,11 +92,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Firstname</label>
-                                    <input type="text" name="firstname" class="form-control" placeholder="Enter your firstname">
+                                    <input type="text" name="first_name" class="form-control" placeholder="Enter your firstname">
                                 </div>
                                 <div class="form-group">
                                     <label>Lastname</label>
-                                    <input type="text" name="lastname" class="form-control" placeholder="Enter your lastname">
+                                    <input type="text" name="last_name" class="form-control" placeholder="Enter your lastname">
                                 </div>
 
                                 <div class="form-group">
@@ -105,7 +105,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Full Address</label>
-                                    <input type="text" name="location" value="{{isset($location)? $location: ''}}" class="form-control" placeholder="Enter your Full Address">
+                                    <input type="text" name="location"  class="form-control" placeholder="Enter your Full Address">
                                 </div>
                                 <input type="hidden" value="" name="trade">
                                 <div class="form-group tx-12">

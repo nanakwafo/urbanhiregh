@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Home_owners extends Model
 {
     //
-
     protected $table = 'home_owners';
     protected $fillable = [
         'last_name',

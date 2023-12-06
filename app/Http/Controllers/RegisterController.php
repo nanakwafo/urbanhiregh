@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Home_owners;
 use App\TradesmanEducation;
 use App\TradesmanExperience;
 use App\TradesmanProfile;
@@ -53,6 +54,7 @@ class RegisterController extends Controller
 
         $activation = Activation::create($user);
         if ($request->user_type === 'requester') {
+            $this->add_to_requesterprofile($user);
             $role = Sentinel::findRoleBySlug('requester');
         }
         if ($request->user_type === 'tradesman') {
@@ -65,17 +67,22 @@ class RegisterController extends Controller
         }
 
         $role->users()->attach($user);
-
-
-//
-//        /*************Send Acytivation MAil**********/
         $this->sendActivationMail($request->email, $activation->code);
-//
         return redirect()->back()->with(['success' => 'An activation link was sent to your email Address']);
 
 
     }
+    private function add_to_requesterprofile(\Cartalyst\Sentinel\Users\UserInterface $user){
 
+        $requesterprofile = new Home_owners();
+        $requesterprofile->last_name = $user->last_name;
+        $requesterprofile->first_name = $user->first_name;
+        $requesterprofile->email = $user->email;
+        $requesterprofile->phone_number1 = $user->phone_number;
+        $requesterprofile->address = $user->location;
+//       dd($requesterprofile);
+        $requesterprofile->save();
+    }
     /**
      * @param \Cartalyst\Sentinel\Users\UserInterface $user
      */

@@ -10,57 +10,55 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 use App\Http\Controllers\Requester\RequesterController;
 
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 //Route::middleware(['visitor'])->group(function () {
-    Route::get('/', 'HomeController@index');
-    //About Us
-    Route::get('/about-us', 'PageController@about');
-    //Privacy policy
-    Route::get('/privacy-policy', 'PageController@privacy_policy');
-    //Terms
-    Route::get('/terms', 'PageController@terms');
-    //Contact Us
-    Route::get('/contact-us', 'PageController@contact_us');
-    //Faq
-    Route::get('/faq', 'PageController@faq');
+Route::get('/', 'HomeController@index');
+//About Us
+Route::get('/about-us', 'PageController@about');
+//Privacy policy
+Route::get('/privacy-policy', 'PageController@privacy_policy');
+//Terms
+Route::get('/terms', 'PageController@terms');
+//Contact Us
+Route::get('/contact-us', 'PageController@contact_us');
+//Faq
+Route::get('/faq', 'PageController@faq');
 
-    //How it -works
-    Route::get('/how-it-works', 'How_it_works_Controller@index');
-    //Equipment tools
-    Route::get('/equipment-tools', 'EquipmentController@index');
-    //Reviews
-    Route::post('/review', 'ReviewController@index');
-
-
-    Route::any('/viewtradesmen', 'TradesmanController@index');
-     Route::post('/viewtradesmenLoadMore', 'TradesmanController@loadMore');
+//How it -works
+Route::get('/how-it-works', 'How_it_works_Controller@index');
+//Equipment tools
+Route::get('/equipment-tools', 'EquipmentController@index');
+//Reviews
+Route::post('/review', 'ReviewController@index');
 
 
+Route::any('/viewtradesmen', 'TradesmanController@index');
+Route::post('/viewtradesmenLoadMore', 'TradesmanController@loadMore');
 
-     // Route::any('/viewtradesmen/{searchText}', 'TradesmanController@index');
-    //Register
-    Route::get('/register', 'RegisterController@register');
-    Route::post('register', 'RegisterController@postregister');
 
-    //Login
-    Route::get('/login', 'LoginController@login')->name('login');
-    Route::post('/login', 'LoginController@postlogin');
+// Route::any('/viewtradesmen/{searchText}', 'TradesmanController@index');
+//Register
+Route::get('/register', 'RegisterController@register');
+Route::post('register', 'RegisterController@postregister');
 
-    //Forgot Password
-    Route::get('/forgot-password', 'ForgotPasswordcontroller@index');
+//Login
+Route::get('/login', 'LoginController@login')->name('login');
+Route::post('/login', 'LoginController@postlogin');
 
-    //Logout
-    Route::post('/logout', 'LoginController@logout');
+//Forgot Password
+Route::get('/forgot-password', 'ForgotPasswordcontroller@index');
 
-   Route::get('/activate/{email}/{activationCode}','ActivationController@activate');
-    Route::post('/sendContact', 'ContactController@sendEmail')->name('sendContact');
+//Logout
+Route::post('/logout', 'LoginController@logout');
+
+Route::get('/activate/{email}/{activationCode}', 'ActivationController@activate');
+Route::post('/sendContact', 'ContactController@sendEmail')->name('sendContact');
 //});
-
-
 
 
 Route::get('/tradesmanprofile/{userId}', 'TradesmanprofileController@index')->middleware('tradesmen');
@@ -72,16 +70,14 @@ Route::post('/update_experience', 'TradesmanprofileController@update_experience'
 
 
 
-Route::get('/requesterprofile/{userId}', 'RequesterController@index');
+Route::get('/requester-profile/{userId}', 'Requester\RequesterController@index');
+Route::get('/requester-security/{userId}', 'Requester\RequesterController@Security');
 
-Route::get('/requester-profile', 'Requester\RequesterController@index');
-Route::get('/requester-security', 'Requester\RequesterController@Security');
+Route::get('/requester-properties/{userId}', 'Requester\RequesterController@properties');
+Route::get('/requester-history/{userId}', 'Requester\RequesterController@history');
+Route::get('/requester-payments/{userId}', 'Requester\RequesterController@payments');
 
-Route::get('/requester-properties', 'Requester\RequesterController@properties');
-Route::get('/requester-history', 'Requester\RequesterController@history');
-Route::get('/requester-payments', 'Requester\RequesterController@payments');
-
-Route::get('/requester-request', 'Requester\RequesterController@Request');
+Route::get('/requester-request/{userId}', 'Requester\RequesterController@Request');
 
 Route::get('/requester-add-property', 'Requester\RequesterController@addproperty');
 
@@ -100,8 +96,6 @@ Route::get('/requester-view-request/{id}', 'Requester\RequesterController@Reques
 
 Route::post('/requester-remove-property', 'Requester\RequesterController@deleteproperty');
 Route::post('/requester-remove-request', 'Requester\RequesterController@deleterequest');
-
-
 
 
 Route::get('/available_jobs/{userId}', 'JobController@available_jobs')->middleware('tradesmen');
