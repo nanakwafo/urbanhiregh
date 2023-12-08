@@ -44,7 +44,7 @@
 </head>
 <body class="page-profile">
 
-@include('shared.navbar-2')
+@include('shared.navbar-3')
 <div class="content content-fixed content-profile">
     <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
         <div class="media d-block d-lg-flex">

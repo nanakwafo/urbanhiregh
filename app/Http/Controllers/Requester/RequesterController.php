@@ -35,6 +35,7 @@ class RequesterController extends Controller
                 return "invalid request";///return 404;
             }
             $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+
             return view('Requester.Profile', ['self' => $self, 'userId' => $userId]);
         } catch (\Exception $exception) {
            //return user to login page

@@ -47,7 +47,7 @@
 </head>
 <body>
 
-@include('shared.navbar')
+@include('shared.navbar-3')
 <div class="content content-fixed content-auth">
     <div class="container">
         <div class="media align-items-stretch justify-content-center ht-100p pos-relative">
