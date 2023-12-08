@@ -43,7 +43,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
+    @include('shared.titlebar')
+
     <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
 
 
