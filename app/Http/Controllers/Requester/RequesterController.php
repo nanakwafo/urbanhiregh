@@ -17,6 +17,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\Types\Resource_;
 
 
 class RequesterController extends Controller
@@ -26,69 +27,79 @@ class RequesterController extends Controller
     public function index($userId)
     {
 
-   //getuserid from route and use the userid to query for the email
-        if($userId != Sentinel::getUser()->id){
-          return "invalid request" ;
+
+        try {
+            $userIdloginUser =Sentinel::getUser()->id;
+
+            if ($userId != $userIdloginUser) {
+                return "invalid request";///return 404;
+            }
+            $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+            return view('Requester.Profile', ['self' => $self, 'userId' => $userId]);
+        } catch (\Exception $exception) {
+           //return user to login page
+            return $exception;
         }
-        $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
-        return view('Requester.Profile', ['self' => $self,'userId' =>$userId]);
+
 
     }
 
     public function Security($userId)
     {
-        if($userId != Sentinel::getUser()->id){
-            return "invalid request" ;
+        if ($userId != Sentinel::getUser()->id) {
+            return "invalid request";///return 404;
         }
         $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
         return view('Requester.Security',
-            ['self' => $self,'userId' =>$userId]);
+            ['self' => $self, 'userId' => $userId]);
     }
 
 
     public function Properties($userId)
     {
-        if($userId != Sentinel::getUser()->id){
-            return "invalid request" ;
+        if ($userId != Sentinel::getUser()->id) {
+            return "invalid request";
         }
         $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
-        $specificData = HomeOwnersProperties::where('property_owner_id', 1)->get();
-        return view('Requester.Properties', ['specificData' => $specificData, 'self' => $self,'userId' =>$userId]);
+        $specificData = HomeOwnersProperties::where('property_owner_id', $userId)->get();
+
+        return view('Requester.Properties', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
     }
 
     public function History($userId)
     {
-        if($userId != Sentinel::getUser()->id){
-            return "invalid request" ;
+        if ($userId != Sentinel::getUser()->id) {
+            return "invalid request";
         }
         $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
         $specificData = DB::table('request')
             ->select('request.*', 'properties.property_number')
             ->join('properties', 'properties.id', '=', 'request.property_selection')
+            ->where('properties.property_owner_id','=','$userId')
             ->get();
 
-        return view('Requester.history', ['specificData' => $specificData, 'self' => $self,'userId' =>$userId]);
+        return view('Requester.history', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
 
     }
 
     public function Payments($userId)
     {
-        if($userId != Sentinel::getUser()->id){
-            return "invalid request" ;
+        if ($userId != Sentinel::getUser()->id) {
+            return "invalid request";
         }
         $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
         return view('Requester.payments',
-            ['self' => $self,'userId' =>$userId]);
+            ['self' => $self, 'userId' => $userId]);
     }
 
     public function Request($userId)
     {
-        if($userId != Sentinel::getUser()->id){
-            return "invalid request" ;
+        if ($userId != Sentinel::getUser()->id) {
+            return "invalid request";
         }
         $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
-        $specificData = HomeOwnersProperties::select('id', 'property_number')->where('property_owner_id', 1)->get();
-        return view('Requester.Request', ['specificData' => $specificData, 'self' => $self,'userId' =>$userId]);
+        $specificData = HomeOwnersProperties::select('id', 'property_number')->where('property_owner_id', $userId)->get();
+        return view('Requester.Request', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
 
     }
 

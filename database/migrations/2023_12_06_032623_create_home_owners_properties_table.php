@@ -13,7 +13,7 @@ class CreateHomeOwnersPropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('home_owners_properties', function (Blueprint $table) {
+        Schema::create('properties', function (Blueprint $table) {
             $table->increments('id');
             $table->string('property_number')->nullable();
             $table->string('property_type')->nullable();
@@ -22,7 +22,7 @@ class CreateHomeOwnersPropertiesTable extends Migration
             $table->string('district')->nullable();
             $table->string('region')->nullable();
             $table->string('nearest_landmark')->nullable();
-            $table->string('property_owner_id')->nullable();
+            $table->string('property_owner_id');
             $table->string('property_image')->nullable();
             $table->timestamps();
         });
