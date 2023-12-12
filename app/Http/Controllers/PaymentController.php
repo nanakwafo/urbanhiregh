@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Unicodeveloper\Paystack\Facades\Paystack;
 
 class PaymentController extends Controller
 {
@@ -16,6 +17,9 @@ class PaymentController extends Controller
 
     public function save()
     {
+
+    }
+    public function redirectToGateway(Request $request){
 
     }
 }

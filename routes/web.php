@@ -108,6 +108,9 @@ Route::post('/post_trade_job/{userId}', 'JobController@post_trade_job');
 //payment
 Route::get('/pay/{job_id}/{homeowner_id}/{tradesman_id}', 'PaymentController@index');
 Route::post('/pay', 'PaymentController@save');
+//Paypal
+Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
+Route::get('/payment/callback','PaymentController@handleGatewayCallback')->name('payment');
 
 
 
