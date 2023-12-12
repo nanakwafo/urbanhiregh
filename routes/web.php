@@ -101,9 +101,13 @@ Route::post('/requester-remove-request', 'Requester\RequesterController@deletere
 Route::get('/available_jobs/{userId}', 'JobController@available_jobs')->middleware('tradesmen');
 Route::get('/completed_jobs/{userId}', 'JobController@completed_jobs')->middleware('tradesmen');
 Route::get('/post_a_Job_trade', 'JobController@post_a_Job_trade');
-Route::post('/post_trade_job', 'JobController@post_trade_job');
+Route::post('/post_trade_job/{userId}', 'JobController@post_trade_job');
 
 
+
+//payment
+Route::get('/pay/{job_id}/{homeowner_id}/{tradesman_id}', 'PaymentController@index');
+Route::post('/pay', 'PaymentController@save');
 
 
 
