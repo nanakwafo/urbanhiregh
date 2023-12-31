@@ -77,10 +77,10 @@ class RegisterController extends Controller
         $requesterprofile = new Home_owners();
         $requesterprofile->last_name = $user->last_name;
         $requesterprofile->first_name = $user->first_name;
-        $requesterprofile->email = $user->email;
+//        $requesterprofile->email = $user->email;
         $requesterprofile->phone_number1 = $user->phone_number;
         $requesterprofile->address = $user->location;
-//       dd($requesterprofile);
+
         $requesterprofile->save();
     }
     /**
