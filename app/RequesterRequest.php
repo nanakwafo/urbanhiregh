@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class RequesterRequest extends Model
 {
       // Fillable fields for the 'first_table'
-   
+
     protected $fillableFirstTable = [
        'requester_id',
         'request_date',
@@ -39,7 +39,7 @@ class RequesterRequest extends Model
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
-        
+
         // Example: Set the table name to 'first_table' by default
         // $this->setTable('first_table');
     }
@@ -65,7 +65,7 @@ class RequesterRequest extends Model
         $this->setTable('request');
     }
 
-    
+
 
 
 }

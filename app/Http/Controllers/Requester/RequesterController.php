@@ -27,10 +27,7 @@ class RequesterController extends Controller
     public function index($userId)
     {
         try {
-            $userIdloginUser =Sentinel::getUser()->id;
-            if ($userId != $userIdloginUser) {
-                return "invalid request";///return 404;
-            }
+
             $self = Home_owners::where('user_id', $userId)->get();
             return view('Requester.Profile', ['self' => $self, 'userId' => $userId]);
         } catch (\Exception $exception) {
@@ -41,9 +38,7 @@ class RequesterController extends Controller
 
     public function Security($userId)
     {
-        if ($userId != Sentinel::getUser()->id) {
-            return "invalid request";///return 404;
-        }
+
         $self = Home_owners::where('user_id', $userId)->get();
         return view('Requester.Security',
             ['self' => $self, 'userId' => $userId]);
@@ -52,9 +47,7 @@ class RequesterController extends Controller
 
     public function Properties($userId)
     {
-        if ($userId != Sentinel::getUser()->id) {
-            return "invalid request";
-        }
+
         $self = Home_owners::where('user_id', $userId)->get();
         $specificData = HomeOwnersProperties::where('property_owner_id', $userId)->get();
 
@@ -63,15 +56,15 @@ class RequesterController extends Controller
 
     public function History($userId)
     {
-        if ($userId != Sentinel::getUser()->id) {
-            return "invalid request";
-        }
+
         $self = Home_owners::where('user_id', $userId)->get();
         $specificData = DB::table('request')
             ->select('request.*', 'properties.property_number')
             ->join('properties', 'properties.id', '=', 'request.property_selection')
-            ->where('properties.property_owner_id','=','$userId')
+            ->where('properties.property_owner_id','=',$userId)
             ->get();
+
+
 
         return view('Requester.history', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
 
@@ -79,9 +72,7 @@ class RequesterController extends Controller
 
     public function Payments($userId)
     {
-        if ($userId != Sentinel::getUser()->id) {
-            return "invalid request";
-        }
+
         $self = Home_owners::where('user_id', $userId)->get();
         return view('Requester.payments',
             ['self' => $self, 'userId' => $userId]);
@@ -89,9 +80,7 @@ class RequesterController extends Controller
 
     public function Request($userId)
     {
-        if ($userId != Sentinel::getUser()->id) {
-            return "invalid request";
-        }
+
         $self = Home_owners::where('user_id', $userId)->get();
         $specificData = HomeOwnersProperties::select('id', 'property_number')->where('property_owner_id', $userId)->get();
         return view('Requester.Request', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
@@ -112,7 +101,7 @@ class RequesterController extends Controller
 
         // var_dump($id); die;
 
-        $specificData = HomeOwnersProperties::select('id', 'property_number')->where('property_owner_id', 1)->get();
+        $specificData = HomeOwnersProperties::select('id', 'property_number')->where('property_owner_id', 2)->get();
 
         return view('Requester.RequestView', [
             'specificData' => $specificData,
@@ -184,7 +173,7 @@ class RequesterController extends Controller
 
 
             // If the property doesn't already exist, set the property_owner_id and create the record
-            $data['property_owner_id'] = '1';
+            $data['property_owner_id'] = '2';
             $data['property_image'] = $propertyimage;
             HomeOwnersProperties::create($data);
 
@@ -291,7 +280,7 @@ class RequesterController extends Controller
 
 
             // If the property doesn't already exist, set the property_owner_id and create the record
-            $data['property_owner_id'] = '1';
+            $data['property_owner_id'] = '2';
             $data['property_image'] = "89";
             $propertyId = $request->input('id');
             // HomeOwnersProperties::create($data);
@@ -355,7 +344,7 @@ class RequesterController extends Controller
 // Switch to the 'first_table' fields
         $requestModel->useFirstTable();
 // Set the attributes for the 'first_table'
-        $requestModel->requester_id = 1;  // Replace with the appropriate user identifier
+        $requestModel->requester_id = 2;  // Replace with the appropriate user identifier
         $requestModel->request_date = $request->input('expected_date'); // Use Laravel's Carbon for date
         $requestModel->status = 'Pending';  // Replace with the appropriate status
         $requestModel->property_selection = $request->input('property_selection');;  // Replace with the description
