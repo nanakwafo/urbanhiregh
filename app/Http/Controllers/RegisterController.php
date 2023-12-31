@@ -75,6 +75,7 @@ class RegisterController extends Controller
     private function add_to_requesterprofile(\Cartalyst\Sentinel\Users\UserInterface $user){
 
         $requesterprofile = new Home_owners();
+        $requesterprofile->user_id = $user->id;
         $requesterprofile->last_name = $user->last_name;
         $requesterprofile->first_name = $user->first_name;
         $requesterprofile->phone_number1 = $user->phone_number;

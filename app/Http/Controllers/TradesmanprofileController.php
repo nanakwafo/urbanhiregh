@@ -14,16 +14,16 @@ class TradesmanprofileController extends Controller
 {
     //
     public function index($userId){
-               $user=             EloquentUser::find($userId);
+        $user=             EloquentUser::find($userId);
         $tradesmanprofile = TradesmanProfile::where('user_id',$userId)->get()->first();
         $tradesmaneducation = TradesmanEducation::where('user_id',$userId)->get()->first();
         $tradesmanexperience = TradesmanExperience::where('user_id',$userId)->get()->first();
 
         return view('tradesman.tradesman-profile' ,[
-                               'tradesmanprofile' => $tradesmanprofile,
-                               'tradesmaneducation' => $tradesmaneducation,
-                               'tradesmanexperience' => $tradesmanexperience,
-                               'user'=>$user
+            'tradesmanprofile' => $tradesmanprofile,
+            'tradesmaneducation' => $tradesmaneducation,
+            'tradesmanexperience' => $tradesmanexperience,
+            'user'=>$user
 
         ]);
     }

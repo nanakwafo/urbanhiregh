@@ -819,7 +819,7 @@
             let formData = new FormData(this);
             formData.append('_token', '{{ csrf_token() }}');
             $.ajax({
-                url: 'requester-update-home-owner-profile',
+                url: '/requester-update-home-owner-profile',
                 type: 'POST',
                 data: formData,
                 processData: false,

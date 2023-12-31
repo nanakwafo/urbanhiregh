@@ -26,23 +26,17 @@ class RequesterController extends Controller
 
     public function index($userId)
     {
-
-
         try {
             $userIdloginUser =Sentinel::getUser()->id;
-
             if ($userId != $userIdloginUser) {
                 return "invalid request";///return 404;
             }
-            $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
-
+            $self = Home_owners::where('user_id', Sentinel::getUser()->id)->get();
             return view('Requester.Profile', ['self' => $self, 'userId' => $userId]);
         } catch (\Exception $exception) {
            //return user to login page
             return $exception;
         }
-
-
     }
 
     public function Security($userId)
@@ -144,7 +138,6 @@ class RequesterController extends Controller
             $userData->last_name = $request->input('last_name');
             $userData->first_name = $request->input('first_name');
             $userData->other_names = $request->input('other_names');
-            $userData->email = $request->input('email');
             $userData->phone_number1 = $request->input('phone_number1');
             $userData->phone_number2 = $request->input('phone_number2');
             $userData->address = $request->input('address');

@@ -3,7 +3,7 @@
 @section('pagename', 'Profile Page')
 @section('content')
     <form id="updateHomeOwnerProfileForm">
-         @csrf
+
          @foreach ($self as $item)
   <div class="form-row">
 
@@ -17,9 +17,9 @@
     <div class="form-group col-md-4">
       <label for="inputEmail4">Other Name(s)</label>
       <input type="text" class="form-control" value="{{ $item->other_names }}" id="inputEmail4" name="other_names" placeholder="other_names"> </div>
-    <div class="form-group col-md-12">
-      <label for="inputEmail4">Email address</label>
-      <input type="email" class="form-control" value="{{ $item->email }}" id="inputEmail4" name="email" placeholder="Email"> </div>
+{{--    <div class="form-group col-md-12">--}}
+{{--      <label for="inputEmail4">Email address</label>--}}
+{{--      <input type="email" class="form-control" value="{{ $item->email }}" id="inputEmail4" name="email" placeholder="Email"> </div>--}}
     <div class="form-group col-md-6">
       <label for="inputPassword4">Phone Number 1</label>
       <input type="text" class="form-control" value="{{ $item->phone_number1 }}" id="inputPassword4" name="phone_number1" placeholder="Phone Number"> </div>

@@ -15,6 +15,7 @@ class CreateHomeOwnersTable extends Migration
     {
         Schema::create('home_owners', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('last_name')->nullable();
             $table->string('first_name')->nullable();
             $table->string('other_names')->nullable();
