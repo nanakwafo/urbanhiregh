@@ -5,8 +5,8 @@
 @section('content')
       <div data-label="Example" class="df-example demo-table">
 <!-- <button type="submit" class="btn btn-primary">Add New</button> -->
-        
-        <a href="requester-add-property" class="btn btn-xs btn-primary ">Add Property</a><br><br>
+
+        <a href="/requester-add-property/{{$userId}}" class="btn btn-xs btn-primary ">Add Property</a><br><br>
           <table id="example2" class="table">
 
             <thead >
@@ -35,7 +35,7 @@
                 <td>{{ $item->nearest_landmark }}</td>
                <td><div class="dropdown">
                    <a href="" class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="more-horizontal"></i></a>
-  
+
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
    <a class="dropdown-item" href="requester-edit-property/{{ $item->id }}">Edit</a>
      <!-- <a href="#modal6Property{{ $item->id }}" class="dropdown-item" data-toggle="modal" data-animation="effect-sign">Delete</a> -->
@@ -76,8 +76,8 @@
 
     </div>
                @endforeach
-             
-             
+
+
             </tbody>
           </table>
 

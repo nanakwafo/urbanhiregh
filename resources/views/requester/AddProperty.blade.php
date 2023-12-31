@@ -9,6 +9,8 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <div class="form-row">
+
+                    <input type="hidden" id="property_owner_id" name="property_owner_id" value="{{$userId}}">
                     <div class="form-group col-md-12">
                         <label for="property_number">Property / House Number</label>
                         <input type="text" class="form-control" id="property_number" name="property_number" placeholder="Property Name">
@@ -69,7 +71,7 @@
 
                   </style>
                     <div class="form-group col-md-12">
-                       
+
                         <div class="col-ting">
                             <div class="control-group file-upload" id="file-upload1">
                                 <div class="image-box text-center">

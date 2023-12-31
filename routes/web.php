@@ -79,7 +79,7 @@ Route::get('/requester-payments/{userId}', 'Requester\RequesterController@paymen
 
 Route::get('/requester-request/{userId}', 'Requester\RequesterController@Request');
 
-Route::get('/requester-add-property', 'Requester\RequesterController@addproperty');
+Route::get('/requester-add-property/{userId}', 'Requester\RequesterController@addproperty');
 
 Route::post('/requester-update-home-owner-profile', 'Requester\RequesterController@updateHomeOwnerProfile')->name('requester-update-home-owner-profile');
 Route::post('/requester-add-home-owner-property', 'Requester\RequesterController@newproperty');

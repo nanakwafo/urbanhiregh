@@ -932,13 +932,13 @@
 
 
         $('.addproperty').submit(function (e) {
-            alert("jk")
+
             e.preventDefault();
             let formData = new FormData(this);
+            console.log();
             formData.append('_token', '{{ csrf_token() }}');
             $.ajax({
                 url: '{{ url('requester-add-home-owner-property') }}',
-                // url: 'requester-add-home-owner-property',
                 type: 'POST',
                 data: formData,
                 processData: false,
@@ -948,7 +948,7 @@
                         toastr.success(data.message, 'Success');
                         // Redirect to a new URL
 
-                        reloading(500, '{{ url('requester-properties') }}')
+                        reloading(500, '/requester-properties/'+ formData.get('property_owner_id'))
 
 
                     } else {

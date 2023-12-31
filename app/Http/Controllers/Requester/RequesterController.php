@@ -31,7 +31,7 @@ class RequesterController extends Controller
             if ($userId != $userIdloginUser) {
                 return "invalid request";///return 404;
             }
-            $self = Home_owners::where('user_id', Sentinel::getUser()->id)->get();
+            $self = Home_owners::where('user_id', $userId)->get();
             return view('Requester.Profile', ['self' => $self, 'userId' => $userId]);
         } catch (\Exception $exception) {
            //return user to login page
@@ -44,7 +44,7 @@ class RequesterController extends Controller
         if ($userId != Sentinel::getUser()->id) {
             return "invalid request";///return 404;
         }
-        $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+        $self = Home_owners::where('user_id', $userId)->get();
         return view('Requester.Security',
             ['self' => $self, 'userId' => $userId]);
     }
@@ -55,7 +55,7 @@ class RequesterController extends Controller
         if ($userId != Sentinel::getUser()->id) {
             return "invalid request";
         }
-        $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+        $self = Home_owners::where('user_id', $userId)->get();
         $specificData = HomeOwnersProperties::where('property_owner_id', $userId)->get();
 
         return view('Requester.Properties', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
@@ -66,7 +66,7 @@ class RequesterController extends Controller
         if ($userId != Sentinel::getUser()->id) {
             return "invalid request";
         }
-        $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+        $self = Home_owners::where('user_id', $userId)->get();
         $specificData = DB::table('request')
             ->select('request.*', 'properties.property_number')
             ->join('properties', 'properties.id', '=', 'request.property_selection')
@@ -82,7 +82,7 @@ class RequesterController extends Controller
         if ($userId != Sentinel::getUser()->id) {
             return "invalid request";
         }
-        $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+        $self = Home_owners::where('user_id', $userId)->get();
         return view('Requester.payments',
             ['self' => $self, 'userId' => $userId]);
     }
@@ -92,7 +92,7 @@ class RequesterController extends Controller
         if ($userId != Sentinel::getUser()->id) {
             return "invalid request";
         }
-        $self = Home_owners::where('email', Sentinel::getUser()->email)->get();
+        $self = Home_owners::where('user_id', $userId)->get();
         $specificData = HomeOwnersProperties::select('id', 'property_number')->where('property_owner_id', $userId)->get();
         return view('Requester.Request', ['specificData' => $specificData, 'self' => $self, 'userId' => $userId]);
 
@@ -122,9 +122,10 @@ class RequesterController extends Controller
     }
 
 
-    public function addproperty()
+    public function addproperty($userId)
     {
-        return view('Requester.AddProperty');
+        $self = Home_owners::where('user_id', $userId)->get();
+        return view('Requester.AddProperty',[ 'self' => $self,'userId' => $userId]);
     }
 
     public function updateHomeOwnerProfile(Request $request)
