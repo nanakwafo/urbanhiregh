@@ -13868,7 +13868,11 @@ textarea.parsley-success:focus {
   color: #637388;
   border-top: 1px solid rgba(72, 94, 144, 0.16);
   text-transform: uppercase;
-  display: none; }
+  display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
   @media (min-width: 992px) {
     .footer {
       display: flex;

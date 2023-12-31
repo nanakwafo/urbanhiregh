@@ -232,6 +232,8 @@ return [
         'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Paystack' => Unicodeveloper\Paystack\Facades\Paystack::class,
+
+
     ],
 
 ];

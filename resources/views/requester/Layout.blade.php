@@ -1,5 +1,6 @@
 @php
     use Illuminate\Support\Facades\URL;
+use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
     // Get the full URL
     $currentURL = URL::full();
@@ -234,12 +235,7 @@
         <div class="media d-block d-lg-flex">
             <div class="profile-sidebar pd-lg-r-25">
                 <div class="row">
-                    <div class="col-sm-3 col-md-2 col-lg">
 
-                        <div class="avatar avatar-xxl avatar-online"><img src="https://via.placeholder.com/500"
-                                                                          class="rounded-circle" alt=""></div>
-
-                    </div><!-- col -->
                     <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
                         @foreach ($self as $item)
                             <h5 class="mg-b-2 tx-spacing--1">{{ $item->last_name }} {{$item->first_name}} {{$item->other_names}}</h5>
@@ -259,7 +255,7 @@
                                 </li>
                                 <li><i data-feather="smartphone"></i> <a href="">{{ $item->phone_number1 }}</a></li>
                                 <li><i data-feather="phone"></i> <a href="">{{ $item->phone_number2 }}</a></li>
-                                <li><i data-feather="mail"></i> <a href="">{{ $item->email }}</a></li>
+                                <li><i data-feather="mail"></i> <a href="">{{ Sentinel::getUser()->email}}</a></li>
                             </ul>
 
 
@@ -275,10 +271,10 @@
                                     <h4><a href="" class="link-01">2.8k</a></h4>
                                     <label>Done</label>
                                 </div>
-                                <div class="profile-skillset flex-fill">
-                                    <h4><a href="" class="link-01">437</a></h4>
-                                    <label>Reviews</label>
-                                </div>
+{{--                                <div class="profile-skillset flex-fill">--}}
+{{--                                    <h4><a href="" class="link-01">437</a></h4>--}}
+{{--                                    <label>Reviews</label>--}}
+{{--                                </div>--}}
                             </div>
                         @endforeach
                     </div><!-- col -->
