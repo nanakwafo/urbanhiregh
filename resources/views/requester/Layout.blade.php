@@ -115,6 +115,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
         .error {
             color: red;
         }
+
         /* Default styling for all screen sizes */
         .navbar-brand {
             display: none; /* Hide by default */
@@ -129,6 +130,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
             }
 
         }
+
         /*Copied from bootstrap to handle input file multiple*/
         .btn {
             display: inline-block;
@@ -220,9 +222,10 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
             font-size: 12px;
         }
 
-    </style>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
+
+    </style>
+    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
 
 </head>
@@ -241,16 +244,9 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
                             <h5 class="mg-b-2 tx-spacing--1">{{ $item->last_name }} {{$item->first_name}} {{$item->other_names}}</h5>
                             <p class="tx-color-03 mg-b-25"></p>
 
-                            <!-- <div class="d-flex mg-b-25">
-                             <button class="btn btn-xs btn-white flex-fill">Message</button>
-                             <button class="btn btn-xs btn-primary flex-fill mg-l-10">Follow</button>
-                           </div>  -->
-
-
                             <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Contact
                                 Information</label>
                             <ul class="list-unstyled profile-info-list">
-                            <!-- <li><i data-feather="briefcase"></i> <span class="tx-color-03">{{ $item->email }}</span></li> -->
                                 <li><i data-feather="home"></i> <span class="tx-color-03">{{ $item->address }}</span>
                                 </li>
                                 <li><i data-feather="smartphone"></i> <a href="">{{ $item->phone_number1 }}</a></li>
@@ -258,9 +254,6 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
                                 <li><i data-feather="mail"></i> <a href="">{{ Sentinel::getUser()->email}}</a></li>
                             </ul>
 
-
-
-                            <!-- <p class="tx-13 tx-color-02 mg-b-25">Redhead, Innovator, Saviour of Mankind, Hopeless Romantic, Attractive 20-something Yogurt Enthusiast... <a href="">Read more</a></p> -->
 
                             <div class="d-flex">
                                 <div class="profile-skillset flex-fill">
@@ -271,10 +264,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
                                     <h4><a href="" class="link-01">2.8k</a></h4>
                                     <label>Done</label>
                                 </div>
-{{--                                <div class="profile-skillset flex-fill">--}}
-{{--                                    <h4><a href="" class="link-01">437</a></h4>--}}
-{{--                                    <label>Reviews</label>--}}
-{{--                                </div>--}}
+
                             </div>
                         @endforeach
                     </div><!-- col -->
@@ -284,35 +274,6 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
             </div><!-- profile-sidebar -->
             <div class="media-body mg-t-40 mg-lg-t-0 pd-lg-x-10">
-
-
-            <!--  <nav class="navbar navbar-expand-lg bg-gray-100 bd ">
-    <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item {{ request()->is('requester-profile') ? 'active' : '' }}">
-                <a href="requester-profile" class="nav-link ">Home</a>
-            </li>
-            <li class="nav-item {{ request()->is('requester-security') ? 'active' : '' }}">
-                <a class="nav-link" href="requester-security">Security</a>
-            </li>
-            <li class="nav-item {{ request()->is('requester-properties') ? 'active' : '' }}">
-                <a class="nav-link" href="requester-properties">Properties</a>
-            </li>
-            <li class="nav-item {{ request()->is('requester-history') ? 'active' : '' }}">
-                <a class="nav-link" href="requester-history">Request History</a>
-            </li>
-            <li class="nav-item {{ request()->is('requester-payments') ? 'active' : '' }}">
-                <a class="nav-link" href="requester-payments">Payments</a>
-            </li>
-            <li class="nav-item">
-              <a href="requester-request" class="btn btn-xs btn-primary flex-fill mg-l-10">Request</a>
-            </li>
-        </ul>
-    </div>
-</nav> -->
-                @include('shared.navbar-3')
-
-
                 <nav class="navbar navbar-expand-lg navbar-light bg-light bd">
                     <a class="navbar-brand tx-bold tx-spacing--2 order-1" href="#"><h6
                             class="tx-uppercase tx-semibold mg-b-0">@yield('pagename')</h6></a>
@@ -944,7 +905,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
                         toastr.success(data.message, 'Success');
                         // Redirect to a new URL
 
-                        reloading(500, '/requester-properties/'+ formData.get('property_owner_id'))
+                        reloading(500, '/requester-properties/' + formData.get('property_owner_id'))
 
 
                     } else {
