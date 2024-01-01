@@ -17,12 +17,8 @@
                 <div class="avatar avatar-sm"><img src="/uploads/" class="rounded-circle" alt=""></div>
             </a><!-- dropdown-link -->
             <div class="dropdown-menu dropdown-menu-right tx-13">
-                <div class="avatar avatar-lg mg-b-15"><img src="/uploads/" class="rounded-circle" alt=""></div>
-                <h6 class="tx-semibold mg-b-5"></h6>
-                <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
 
-                <a href="/update-prifile/{{$userId}}" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
-                <a href="/prifile/{{$userId}}" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+
                 <div class="dropdown-divider"></div>
                 <form action="/logout" method="post" id="logout-form1" style="margin-top: 10px">
                     {{csrf_field()}}

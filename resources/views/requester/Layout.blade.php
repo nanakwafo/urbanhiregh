@@ -230,7 +230,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 </head>
 <body class="page-profile">
-@include('shared.navbar-3')
+@include('shared.navbar-4')
 
 
 <div class="content content-fixed content-profile">
