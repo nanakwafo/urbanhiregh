@@ -14,16 +14,13 @@
 
         <div class="dropdown dropdown-self">
             <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
-                <div class="avatar avatar-sm"><img src="/uploads/" class="rounded-circle" alt=""></div>
-            </a><!-- dropdown-link -->
-            <div class="dropdown-menu dropdown-menu-right tx-13">
                 <form action="/logout" method="post" id="logout-form1" style="margin-top: 10px">
                     {{csrf_field()}}
                     <a href="#" onclick="document.getElementById('logout-form1').submit()" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
 
                 </form>
+            </a><!-- dropdown-link -->
 
-            </div><!-- dropdown-menu -->
         </div><!-- dropdown -->
     </div><!-- navbar-right -->
 

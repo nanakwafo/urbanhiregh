@@ -257,11 +257,11 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
                             <div class="d-flex">
                                 <div class="profile-skillset flex-fill">
-                                    <h4><a href="" class="link-01">1.4k</a></h4>
+                                    <h4><a href="" class="link-01">{{\App\Helpers\Requester::getTotalRequest($userId)}}</a></h4>
                                     <label>Requests</label>
                                 </div>
                                 <div class="profile-skillset flex-fill">
-                                    <h4><a href="" class="link-01">2.8k</a></h4>
+                                    <h4><a href="" class="link-01">{{\App\Helpers\Requester::getTotalCompletedRequest($userId)}}</a></h4>
                                     <label>Done</label>
                                 </div>
 
