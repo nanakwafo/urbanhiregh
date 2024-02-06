@@ -13,6 +13,7 @@ class CreateHomeOwnersPropertiesTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('properties');
         Schema::create('properties', function (Blueprint $table) {
             $table->increments('id');
             $table->string('property_number')->nullable();
@@ -35,6 +36,6 @@ class CreateHomeOwnersPropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('home_owners_properties');
+        Schema::dropIfExists('properties');
     }
 }

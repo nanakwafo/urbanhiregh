@@ -13,13 +13,12 @@ class AddRequestAttachmentTable extends Migration
      */
     public function up()
     {
-        Schema::table('request_attachment', function (Blueprint $table) {
-            //
-            //
+        Schema::dropIfExists('request_attachment');
+        Schema::create('request_attachment', function (Blueprint $table) {
+
             $table->increments('id');
             $table->integer('request_id');
             $table->string('file_path');
-
             $table->timestamps();
         });
     }
@@ -31,8 +30,9 @@ class AddRequestAttachmentTable extends Migration
      */
     public function down()
     {
-        Schema::table('request_attachment', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('request_attachment', function (Blueprint $table) {
+//            //
+//        });
+        Schema::dropIfExists('request_attachment');
     }
 }

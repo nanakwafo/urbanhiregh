@@ -13,7 +13,8 @@ class AddRequestInformationTable extends Migration
      */
     public function up()
     {
-        Schema::table('request_information', function (Blueprint $table) {
+        Schema::dropIfExists('request_information');
+        Schema::create('request_information', function (Blueprint $table) {
             //
             //
             $table->increments('id');
@@ -30,8 +31,9 @@ class AddRequestInformationTable extends Migration
      */
     public function down()
     {
-        Schema::table('request_information', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('request_information', function (Blueprint $table) {
+//            //
+//        });
+        Schema::dropIfExists('request_information');
     }
 }
