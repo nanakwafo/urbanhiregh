@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 //Route::middleware(['visitor'])->group(function () {
 Route::get('/', 'HomeController@index');
+Route::get('/test', function (){
+    dd( env('APP_URL'));
+});
 //About Us
 Route::get('/about-us', 'PageController@about');
 //Privacy policy
