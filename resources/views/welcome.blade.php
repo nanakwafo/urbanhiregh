@@ -10,7 +10,7 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="dashforge">
+    <meta name="twitter:title" content="Urbanhire">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
     <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
@@ -67,7 +67,7 @@
 
     <div class="home-lead">
 
-        <p class="home-text">Win local work and grow your business with dashforge</p>
+        <p class="home-text">Win local work and grow your business with Urbanhire</p>
 
         <h6 class="home-headline">We’ll introduce you to the millions of <span>Homeowners</span>
             that are searching our website, or reading our printed directories every single month
