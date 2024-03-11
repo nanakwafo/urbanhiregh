@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="UrbanHire">
+    <meta name="twitter:title" content="DashForge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/UrbanHire">
-    <meta property="og:title" content="UrbanHire">
+    <meta property="og:url" content="http://themepixels.me/DashForge">
+    <meta property="og:title" content="DashForge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -40,9 +40,9 @@
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
-    <!-- UrbanHire CSS -->
-    <link rel="stylesheet" href="../../assets/css/UrbanHire.css">
-    <link rel="stylesheet" href="../../assets/css/UrbanHire.auth.css">
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="../../assets/css/DashForge.css">
+    <link rel="stylesheet" href="../../assets/css/DashForge.auth.css">
 </head>
 <body>
 
@@ -52,14 +52,14 @@
         <div class="media align-items-stretch justify-content-center ht-100p">
             <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
                 <div class="pd-t-20 wd-100p">
-                    <h4 class="tx-color-01 mg-b-5">Contact  Urbanhire</h4>
-                    <p class="tx-color-03 tx-16 mg-b-40">If you would like further information about any aspect of Urbanhire, don't forget to check the Help & Advice section, but also feel free to use the contact details below or complete the enquiry form.</p>
+                    <h4 class="tx-color-01 mg-b-5">Contact  DashForge</h4>
+                    <p class="tx-color-03 tx-16 mg-b-40">If you would like further information about any aspect of DashForge, don't forget to check the Help & Advice section, but also feel free to use the contact details below or complete the enquiry form.</p>
 
                 </div>
             </div><!-- sign-wrapper -->
             <div class="media-body pd-y-30 pd-lg-x-50 pd-xl-x-60 align-items-center d-none d-lg-flex pos-relative">
                 <div class="mx-lg-wd-500 mx-xl-wd-550">
-                    <img src="https://urbanhiregh.com/assets/img/home-2.png" class="img-fluid" alt="">
+                    <img src="https://DashForgegh.com/assets/img/home-2.png" class="img-fluid" alt="">
                 </div>
 
             </div><!-- media-body -->
@@ -69,7 +69,7 @@
                 <div class="card card-help">
                     <div class="card-body tx-13">
                         <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-home"></i></div>
-                        <h5><a href="" class="link-01">UrbanHire Ltd.</a></h5>
+                        <h5><a href="" class="link-01">DashForge Ltd.</a></h5>
                         <p class="tx-color-03 mg-b-0">
                            Aburi Kitase,Berekusu Road
                         </p>
@@ -92,7 +92,7 @@
                     <div class="card-body tx-13">
                         <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-mail"></i></div>
                         <h5><a href="" class="link-01">Email us</a></h5>
-                        <p class="tx-color-03 mg-b-0">support@urbanhiregh.com</p>
+                        <p class="tx-color-03 mg-b-0">support@DashForgegh.com</p>
                     </div><!-- card-body -->
 
                 </div><!-- card -->
@@ -135,7 +135,7 @@
             </div><!-- media-body -->
             <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
                 <div class="pd-t-20 wd-100p">
-                    <h4 class="tx-color-01 mg-b-5">Urbanhire Equiry</h4>
+                    <h4 class="tx-color-01 mg-b-5">DashForge Equiry</h4>
                     <p class="tx-color-03 tx-16 mg-b-40">If you are sending us an enquiry about a trader on the website, please first ensure that they are a member on the website before getting in touch.</p>
 
                 </div>
@@ -154,11 +154,11 @@
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="../../lib/select2/js/select2.min.js"></script>
 
-<script src="../../assets/js/UrbanHire.js"></script>
+<script src="../../assets/js/DashForge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/UrbanHire.settings.js"></script>
+<script src="../../assets/js/DashForge.settings.js"></script>
 <script>
     $(function(){
         'use script'

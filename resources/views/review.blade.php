@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="UrbanHire">
+    <meta name="twitter:title" content="DashForge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/UrbanHire">
-    <meta property="og:title" content="UrbanHire">
+    <meta property="og:url" content="http://themepixels.me/DashForge">
+    <meta property="og:title" content="DashForge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -40,9 +40,9 @@
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
-    <!-- UrbanHire CSS -->
-    <link rel="stylesheet" href="../../assets/css/UrbanHire.css">
-    <link rel="stylesheet" href="../../assets/css/UrbanHire.auth.css">
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="../../assets/css/DashForge.css">
+    <link rel="stylesheet" href="../../assets/css/DashForge.auth.css">
 </head>
 <body>
 
@@ -54,7 +54,7 @@
             <div class="pd-t-20 wd-100p accordion">
 
                 <p class="tx-color-03 tx-16 mg-b-40">
-                    New to Urbanhire? Read our Frequently Asked Questions, with lists tailored to both consumers and tradespeople.
+                    New to DashForge? Read our Frequently Asked Questions, with lists tailored to both consumers and tradespeople.
                 </p>
 
 
@@ -69,8 +69,8 @@
 
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>How do I know I can rely on this trader to do the job properly?</h4>
-                    <p> At urbanhiregh.com, we do all the hard work for you! We have hundreds of local tradesmen in your area who have been vetted by our team to check on all the questions you'd like to ask yourself.
-                        If the feedback isn't good enough when they request to join up to urbanhiregh.com, they won't be on our website. Simple!
+                    <p> At DashForgegh.com, we do all the hard work for you! We have hundreds of local tradesmen in your area who have been vetted by our team to check on all the questions you'd like to ask yourself.
+                        If the feedback isn't good enough when they request to join up to DashForgegh.com, they won't be on our website. Simple!
                     </p>
                 </div>
 
@@ -78,12 +78,12 @@
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>What do you do to make sure tradesmen are qualified to do work such as gas or electrics?</h4>
                     <p> There are certain trades where experience isn't always enough! If you have gas or engineering works to be done, you need to know that whoever you hire is the best person for the job. We require copies of all current certificates when our members join, so we know they have the skills you need to do a professional job.
-                        For electricians, we require proof of registration with a governing body, and proof of Part P and 17th Addition Compliance; this ensures that our traders have their specialist training up to date, as bodies such as NICEIC have the sole purpose of protecting consumers from unsafe and unsound electrical work. The same goes for the Gas Safe Register; any trader coming into your home to carry out any gas works will have current Gas Safe Registration if you find them through urbanhire.com.
+                        For electricians, we require proof of registration with a governing body, and proof of Part P and 17th Addition Compliance; this ensures that our traders have their specialist training up to date, as bodies such as NICEIC have the sole purpose of protecting consumers from unsafe and unsound electrical work. The same goes for the Gas Safe Register; any trader coming into your home to carry out any gas works will have current Gas Safe Registration if you find them through DashForge.com.
                         It's always a good idea to check with the trader when they come round, and ask to see their current membership cards for your total peace of mind.
                     </p>
                 </div>
                 <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>How does urbanhiregh.com work?</h4>
+                    <h4>How does DashForgegh.com work?</h4>
                     <p> Unlike some websites advertising reliable and trustworthy tradespeople, we are only here to make sure that you, the consumer, have the best choice of professionals to do the job. Our stringent vetting and constant monitoring of our traders provides you with the assurance that any trader you choose will be capable of completing your job to a high standard. You are, however, welcome to call as many of the companies as you like until you find the perfect one for your needs. </p>
                 </div>
                 <div class="tx-color-03 tx-16 mg-b-40">
@@ -96,13 +96,13 @@
                         Photographs of previous work</p>
                 </div>
                 <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>Is there a charge to the consumer to use urbanhiregh.com?</h4>
-                    <p>urbanhire is a free online directory of tradespeople you can trust because their place on the website depends upon their quality of service. Consumers can leave feedback for our traders based on the work that has been done for them, which continues to improve the reliability of the service.</p>
+                    <h4>Is there a charge to the consumer to use DashForgegh.com?</h4>
+                    <p>DashForge is a free online directory of tradespeople you can trust because their place on the website depends upon their quality of service. Consumers can leave feedback for our traders based on the work that has been done for them, which continues to improve the reliability of the service.</p>
                 </div>
 
 
                 <div class="tx-color-03 tx-16 mg-b-40">
-                    <h4>I'm a consumer. How do I get the best out of urbanhiregh.com?</h4>
+                    <h4>I'm a consumer. How do I get the best out of DashForgegh.com?</h4>
                     <p>As a recommendations website, you can rest assured of the rigorous and stringent checks carried out on all tradespeople. We do recommend however that you contact at least two or three traders to get an idea of costs and how you get on with the tradesperson. There's no right or wrong, and we have no regulations on the fees our traders charge, so make sure you get enough details to ensure you use the company that's right for you.</p>
                 </div>
 
@@ -125,11 +125,11 @@
 <script src="../../lib/select2/js/select2.min.js"></script>
 <script src="../../lib/jqueryui/jquery-ui.min.js"></script>
 <script src="../../lib/prismjs/prism.js"></script>
-<script src="../../assets/js/UrbanHire.js"></script>
+<script src="../../assets/js/DashForge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/UrbanHire.settings.js"></script>
+<script src="../../assets/js/DashForge.settings.js"></script>
 <script>
     $(function () {
         'use script'

@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="UrbanHire">
+    <meta name="twitter:title" content="DashForge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/UrbanHire">
-    <meta property="og:title" content="UrbanHire">
+    <meta property="og:url" content="http://themepixels.me/DashForge">
+    <meta property="og:title" content="DashForge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -38,9 +38,9 @@
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-    <!-- UrbanHire CSS -->
-    <link rel="stylesheet" href="../../assets/css/UrbanHire.css">
-    <link rel="stylesheet" href="../../assets/css/UrbanHire.profile.css">
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="../../assets/css/DashForge.css">
+    <link rel="stylesheet" href="../../assets/css/DashForge.profile.css">
     <link rel="stylesheet" href="../../css/custom.css">
 </head>
 <body class="page-profile">
@@ -274,11 +274,11 @@
 <script src="../../lib/feather-icons/feather.min.js"></script>
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
-<script src="../../assets/js/UrbanHire.js"></script>
+<script src="../../assets/js/DashForge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/UrbanHire.settings.js"></script>
+<script src="../../assets/js/DashForge.settings.js"></script>
 
 <script>
     $(function(){
