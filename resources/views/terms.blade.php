@@ -10,13 +10,13 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="dashforge">
+    <meta name="twitter:title" content="Urbanhire">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
     <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
     <meta property="og:url" content="http://themepixels.me/dashforge">
-    <meta property="og:title" content="dashforge">
+    <meta property="og:title" content="Urbanhire">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
     <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
@@ -53,14 +53,14 @@
 
             <div class="pd-t-20 wd-100p">
 
-                <p class="tx-color-03 tx-16 mg-b-40">These Website Terms and Use (“Terms”) tell you the rules for accessing and using our website www.dashforge.com (our "Website").
+                <p class="tx-color-03 tx-16 mg-b-40">These Website Terms and Use (“Terms”) tell you the rules for accessing and using our website www.Urbanhire.com (our "Website").
 
                     These Website Terms of Use were last updated on 28th June 2021</p>
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Who we are and how to contact us</h4>
-                    <p>dashforge and our Website is operated and managed by dashforge.com Ltd. We are a company incorporated in Ghana and Wales (company number 05489753). Our registered office address is at 5 Meadway Court, Rutherford Close, Stevenage, Hertfordshire, Ghana, SG1 2EF) (“dashforge”, “we”, “us”, “our”).
+                    <p>Urbanhire and our Website is operated and managed by Urbanhire.com Ltd. We are a company incorporated in Ghana and Wales (company number 05489753). Our registered office address is at 5 Meadway Court, Rutherford Close, Stevenage, Hertfordshire, Ghana, SG1 2EF) (“Urbanhire”, “we”, “us”, “our”).
 
-                        To contact us, please email admin@dashforge.com or write to us at 5 Meadway Court, Rutherford Close, Stevenage SG1 2EF.</p>
+                        To contact us, please email admin@Urbanhire.com or write to us at 5 Meadway Court, Rutherford Close, Stevenage SG1 2EF.</p>
                 </div>
 
                 <div class="tx-color-03 tx-16 mg-b-40">
@@ -213,9 +213,9 @@
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Disputes
                     </h4>
-                    <p>Our Website acts as a directory only for Visitors to view listings of, and obtain information about, services offered by Traders and to access their contact information. dashforge is not a party to any contract for goods and services agreed between a Visitor and Trader, nor does it offer such goods or services itself. dashforge does not mediate between Visitors and the Traders in the event of any dispute arising between them.
+                    <p>Our Website acts as a directory only for Visitors to view listings of, and obtain information about, services offered by Traders and to access their contact information. Urbanhire is not a party to any contract for goods and services agreed between a Visitor and Trader, nor does it offer such goods or services itself. Urbanhire does not mediate between Visitors and the Traders in the event of any dispute arising between them.
 
-                        Any issues or disputes that may arise between a Trader and Visitor must be brought directly against each other and not dashforge.
+                        Any issues or disputes that may arise between a Trader and Visitor must be brought directly against each other and not Urbanhire.
 
                         Nothing in these Terms shall limit our right to take action against a Visitor or Trader for breach of these Terms or otherwise comply with legal or regulatory investigations and/or proceedings.
                     </p>

@@ -16,7 +16,7 @@
 
     <!-- Facebook -->
     <meta property="og:url" content="http://themepixels.me/dashforge">
-    <meta property="og:title" content="dashforge">
+    <meta property="og:title" content="Urbanhire">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
     <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
@@ -52,8 +52,8 @@
         <div class="media align-items-stretch justify-content-center ht-100p">
             <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
                 <div class="pd-t-20 wd-100p">
-                    <h4 class="tx-color-01 mg-b-5">Contact  dashforge</h4>
-                    <p class="tx-color-03 tx-16 mg-b-40">If you would like further information about any aspect of dashforge, don't forget to check the Help & Advice section, but also feel free to use the contact details below or complete the enquiry form.</p>
+                    <h4 class="tx-color-01 mg-b-5">Contact  Urbanhire</h4>
+                    <p class="tx-color-03 tx-16 mg-b-40">If you would like further information about any aspect of Urbanhire, don't forget to check the Help & Advice section, but also feel free to use the contact details below or complete the enquiry form.</p>
 
                 </div>
             </div><!-- sign-wrapper -->
@@ -69,7 +69,7 @@
                 <div class="card card-help">
                     <div class="card-body tx-13">
                         <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-home"></i></div>
-                        <h5><a href="" class="link-01">dashforge Ltd.</a></h5>
+                        <h5><a href="" class="link-01">Urbanhire Ltd.</a></h5>
                         <p class="tx-color-03 mg-b-0">
                            Aburi Kitase,Berekusu Road
                         </p>
@@ -92,7 +92,7 @@
                     <div class="card-body tx-13">
                         <div class="tx-60 lh-0 mg-b-25"><i class="icon ion-ios-mail"></i></div>
                         <h5><a href="" class="link-01">Email us</a></h5>
-                        <p class="tx-color-03 mg-b-0">support@dashforgegh.com</p>
+                        <p class="tx-color-03 mg-b-0">support@Urbanhiregh.com</p>
                     </div><!-- card-body -->
 
                 </div><!-- card -->
@@ -135,7 +135,7 @@
             </div><!-- media-body -->
             <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
                 <div class="pd-t-20 wd-100p">
-                    <h4 class="tx-color-01 mg-b-5">dashforge Equiry</h4>
+                    <h4 class="tx-color-01 mg-b-5">Urbanhire Equiry</h4>
                     <p class="tx-color-03 tx-16 mg-b-40">If you are sending us an enquiry about a trader on the website, please first ensure that they are a member on the website before getting in touch.</p>
 
                 </div>

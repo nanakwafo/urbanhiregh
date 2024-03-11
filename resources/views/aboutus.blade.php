@@ -10,13 +10,13 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="dashforge">
+    <meta name="twitter:title" content="Urbanhire">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
     <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
     <meta property="og:url" content="http://themepixels.me/dashforge">
-    <meta property="og:title" content="dashforge">
+    <meta property="og:title" content="Urbanhire">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
     <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
@@ -53,10 +53,10 @@
 
                 <div class="pd-t-20 wd-100p">
                     <h4 class="tx-color-01 mg-b-5">About Us </h4>
-                    <p class="tx-color-03 tx-16 mg-b-40">dashforge is the Ghana's trusted online trade directory, for which we must thank both the public for their strong support of our service, and our great traders who prove that there is an alternative to the 'cowboys'.</p>
+                    <p class="tx-color-03 tx-16 mg-b-40">Urbanhire is the Ghana's trusted online trade directory, for which we must thank both the public for their strong support of our service, and our great traders who prove that there is an alternative to the 'cowboys'.</p>
                     <p class="tx-color-03 tx-16 mg-b-40">You know how frustrating it is to have to use a trader directly out of the paper or a directory without getting recommendations first. But if an emergency occurred, say in the middle of the night or at the weekend, then you simply had no choice in the matter.</p>
                     <p class="tx-color-03 tx-16 mg-b-40"> If work isn't carried out to your satisfaction, the whole experience can leave a bitter taste in your mouth, not to mention a hole in your pocket.</p>
-                    <p class="tx-color-03 tx-16 mg-b-40">Wouldn't it be great if there was a website that could put you in touch with local, reliable tradesmen whose work had been checked out - a website that was as good as a personal recommendation? That's what we thought too. So, we made it our mission to create the Web's most trusted online directory when looking for tradesmen - not just for emergency 'out of hours' jobs but for any job, anytime. Welcome to dashforge.</p>
+                    <p class="tx-color-03 tx-16 mg-b-40">Wouldn't it be great if there was a website that could put you in touch with local, reliable tradesmen whose work had been checked out - a website that was as good as a personal recommendation? That's what we thought too. So, we made it our mission to create the Web's most trusted online directory when looking for tradesmen - not just for emergency 'out of hours' jobs but for any job, anytime. Welcome to Urbanhire.</p>
                     <p class="tx-color-03 tx-16 mg-b-40">Our 'Leave a Review' facility allows you, the consumer, to rate the work of the tradesperson or business you've used. This, together with the fact that we check that all our tradesmen have a minimum of two year's experience in their field and are members of the relevant trade association, makes us the safest bet on the Net when searching for a tradesperson.</p>
 
 
