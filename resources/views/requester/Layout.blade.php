@@ -22,17 +22,17 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="UrbanHire">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/dashforge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/UrbanHire">
+    <meta property="og:title" content="UrbanHire">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -58,17 +58,17 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
         <link href="{{ asset('lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css') }}" rel="stylesheet">
         <link href="{{ asset('lib/select2/css/select2.min.css') }}" rel="stylesheet">
 
-        <!-- DashForge CSS -->
-        <link rel="stylesheet" href="{{ asset('assets/css/dashforge.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/dashforge.profile.css') }}">
+        <!-- UrbanHire CSS -->
+        <link rel="stylesheet" href="{{ asset('assets/css/UrbanHire.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/UrbanHire.profile.css') }}">
     @else
     <!-- vendor css -->
         <link href="{{ asset('lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
         <link href="{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
 
-        <!-- DashForge CSS -->
-        <link rel="stylesheet" href="{{ asset('assets/css/dashforge.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/dashforge.profile.css') }}">
+        <!-- UrbanHire CSS -->
+        <link rel="stylesheet" href="{{ asset('assets/css/UrbanHire.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/UrbanHire.profile.css') }}">
     @endif
 
     <style type="text/css">
@@ -350,11 +350,11 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
     <script src="{{ asset('lib/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 
-    <script src="{{ asset('assets/js/dashforge.js') }}"></script>
+    <script src="{{ asset('assets/js/UrbanHire.js') }}"></script>
 
     <!-- Append theme customizer -->
     <script src="{{ asset('lib/js-cookie/js.cookie.js') }}"></script>
-    <script src="{{ asset('assets/js/dashforge.settings.js') }}"></script>
+    <script src="{{ asset('assets/js/UrbanHire.settings.js') }}"></script>
 
     <script src="{{ asset('lib/prismjs/prism.js') }}"></script>
     <script src="{{ asset('lib/datatables.net/js/jquery.dataTables.min.js') }}"></script>
@@ -363,7 +363,7 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
     <script src="{{ asset('lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js') }}"></script>
     <script src="{{ asset('lib/select2/js/select2.min.js') }}"></script>
 
-    <script src="{{ asset('assets/js/dashforge.js') }}"></script>
+    <script src="{{ asset('assets/js/UrbanHire.js') }}"></script>
 
     <script>
         $(function () {
@@ -423,11 +423,11 @@ use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
     <script src="{{ asset('lib/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 
-    <script src="{{ asset('assets/js/dashforge.js') }}"></script>
+    <script src="{{ asset('assets/js/UrbanHire.js') }}"></script>
 
     <!-- Append theme customizer -->
     <script src="{{ asset('lib/js-cookie/js.cookie.js') }}"></script>
-    <script src="{{ asset('assets/js/dashforge.settings.js') }}"></script>
+    <script src="{{ asset('assets/js/UrbanHire.settings.js') }}"></script>
 
     <script>
         $(function () {

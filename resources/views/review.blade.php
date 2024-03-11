@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="UrbanHire">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/dashforge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/UrbanHire">
+    <meta property="og:title" content="UrbanHire">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/UrbanHire/img/UrbanHire-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -40,9 +40,9 @@
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../../assets/css/dashforge.css">
-    <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
+    <!-- UrbanHire CSS -->
+    <link rel="stylesheet" href="../../assets/css/UrbanHire.css">
+    <link rel="stylesheet" href="../../assets/css/UrbanHire.auth.css">
 </head>
 <body>
 
@@ -125,11 +125,11 @@
 <script src="../../lib/select2/js/select2.min.js"></script>
 <script src="../../lib/jqueryui/jquery-ui.min.js"></script>
 <script src="../../lib/prismjs/prism.js"></script>
-<script src="../../assets/js/dashforge.js"></script>
+<script src="../../assets/js/UrbanHire.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/dashforge.settings.js"></script>
+<script src="../../assets/js/UrbanHire.settings.js"></script>
 <script>
     $(function () {
         'use script'
