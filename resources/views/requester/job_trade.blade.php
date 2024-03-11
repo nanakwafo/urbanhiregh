@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="dashforge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/DashForge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="dashforge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -41,9 +41,9 @@
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
 
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../../assets/css/DashForge.css">
-    <link rel="stylesheet" href="../../assets/css/DashForge.auth.css">
+    <!-- dashforge CSS -->
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
 </head>
 <body>
 
@@ -61,7 +61,7 @@
                 @include('shared.alert')
                 <div class="wd-100p">
                     <h3 class="tx-color-01 mg-b-5">Post a job</h3>
-                    <p class="tx-color-03 tx-16 mg-b-40">Get responses from DashForge screened and reviewed tradespeople near you</p>
+                    <p class="tx-color-03 tx-16 mg-b-40">Get responses from dashforge screened and reviewed tradespeople near you</p>
                     <form action="/post_trade_job" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
@@ -127,11 +127,11 @@
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="../../lib/select2/js/select2.min.js"></script>
 
-<script src="../../assets/js/DashForge.js"></script>
+<script src="../../assets/js/dashforge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/DashForge.settings.js"></script>
+<script src="../../assets/js/dashforge.settings.js"></script>
 <script>
     $(function(){
         'use script'

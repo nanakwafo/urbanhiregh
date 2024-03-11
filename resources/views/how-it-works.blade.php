@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="dashforge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/DashForge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="dashforge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -40,9 +40,9 @@
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../../assets/css/DashForge.css">
-    <link rel="stylesheet" href="../../assets/css/DashForge.auth.css">
+    <!-- dashforge CSS -->
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
 </head>
 <body>
 
@@ -53,7 +53,7 @@
             <div class="wd-100p">
                 <h2 class="tx-color-01 mg-b-5">How It Works!</h2>
 
-                <p class="tx-color-03 tx-16 mg-b-40">If you're looking to get a job done properly, you want to find a trader you can trust to do a good job for a fair price. DashForge allows you to quickly find
+                <p class="tx-color-03 tx-16 mg-b-40">If you're looking to get a job done properly, you want to find a trader you can trust to do a good job for a fair price. dashforge allows you to quickly find
                     a tradesperson in your area who can be trusted to provide a high standard of work</p>
             </div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -135,7 +135,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Leave a review</a></h5>
-                                    <p class="tx-color-03 mg-b-0">Once your job has been completed, leave a review on DashForge to let others know the quality of work done by the trader.
+                                    <p class="tx-color-03 mg-b-0">Once your job has been completed, leave a review on dashforge to let others know the quality of work done by the trader.
 
                                     </p>
                                     <p class="tx-color-03 mg-b-0">This encourages a continued high standard and helps others to find tradespeople they can trust.
@@ -161,8 +161,8 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Are you an experienced professional Tradesperson?</a></h5>
-                                    <p class="tx-color-03 mg-b-0"> If you're skilled in your trade, take pride in your work and have a selection of previously satisfied customers, you could join DashForge.</p>
-                                    <p class="tx-color-03 mg-b-0"> Go to the Join us page to start your DashForge membership application.</p>
+                                    <p class="tx-color-03 mg-b-0"> If you're skilled in your trade, take pride in your work and have a selection of previously satisfied customers, you could join dashforge.</p>
+                                    <p class="tx-color-03 mg-b-0"> Go to the Join us page to start your dashforge membership application.</p>
                                 </div><!-- card-body -->
 
                             </div><!-- card -->
@@ -176,7 +176,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Making the selection</a></h5>
-                                    <p class="tx-color-03 mg-b-0">When a search has been made, the DashForge members who specialise in the relevant trade within the chosen region will be listed.</p>
+                                    <p class="tx-color-03 mg-b-0">When a search has been made, the dashforge members who specialise in the relevant trade within the chosen region will be listed.</p>
                                     <p class="tx-color-03 mg-b-0">We allow only a limited number of members to be listed for any one trade in each region, providing a better quality selection for the consumer and guaranteeing a fair share of enquiries for each trader.</p>
                                 </div><!-- card-body -->
 
@@ -221,7 +221,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Good results</a></h5>
-                                    <p class="tx-color-03 mg-b-0">Reviews left by your satisfied customers boost your rating on DashForge, encouraging others to enquire about your services.
+                                    <p class="tx-color-03 mg-b-0">Reviews left by your satisfied customers boost your rating on dashforge, encouraging others to enquire about your services.
 
                                     </p>
                                     <p class="tx-color-03 mg-b-0">As a trader, you can also sign in at any time to view a range of statistics showing how many have recently viewed your company profile, visited your website etc.
@@ -236,7 +236,7 @@
                     </div>
                     <div class="row mg-t-20" style="justify-content: center;">
                         <div class="col-sm-6 col-lg-6 ">
-                            <button type="submit" class="btn btn-brand-02 btn-block">Join DashForge</button>
+                            <button type="submit" class="btn btn-brand-02 btn-block">Join dashforge</button>
                         </div><!-- col -->
                     </div>
                 </div>
@@ -258,11 +258,11 @@
 <script src="../../lib/select2/js/select2.min.js"></script>
 <script src="../../lib/jqueryui/jquery-ui.min.js"></script>
 <script src="../../lib/prismjs/prism.js"></script>
-<script src="../../assets/js/DashForge.js"></script>
+<script src="../../assets/js/dashforge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/DashForge.settings.js"></script>
+<script src="../../assets/js/dashforge.settings.js"></script>
 <script>
     $(function () {
         'use script'

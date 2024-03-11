@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="dashforge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/DashForge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="dashforge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -40,9 +40,9 @@
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../../assets/css/DashForge.css">
-    <link rel="stylesheet" href="../../assets/css/DashForge.auth.css">
+    <!-- dashforge CSS -->
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
 </head>
 <body>
 
@@ -53,14 +53,14 @@
 
             <div class="pd-t-20 wd-100p">
 
-                <p class="tx-color-03 tx-16 mg-b-40">These Website Terms and Use (“Terms”) tell you the rules for accessing and using our website www.DashForge.com (our "Website").
+                <p class="tx-color-03 tx-16 mg-b-40">These Website Terms and Use (“Terms”) tell you the rules for accessing and using our website www.dashforge.com (our "Website").
 
                     These Website Terms of Use were last updated on 28th June 2021</p>
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Who we are and how to contact us</h4>
-                    <p>DashForge and our Website is operated and managed by DashForge.com Ltd. We are a company incorporated in Ghana and Wales (company number 05489753). Our registered office address is at 5 Meadway Court, Rutherford Close, Stevenage, Hertfordshire, Ghana, SG1 2EF) (“DashForge”, “we”, “us”, “our”).
+                    <p>dashforge and our Website is operated and managed by dashforge.com Ltd. We are a company incorporated in Ghana and Wales (company number 05489753). Our registered office address is at 5 Meadway Court, Rutherford Close, Stevenage, Hertfordshire, Ghana, SG1 2EF) (“dashforge”, “we”, “us”, “our”).
 
-                        To contact us, please email admin@DashForge.com or write to us at 5 Meadway Court, Rutherford Close, Stevenage SG1 2EF.</p>
+                        To contact us, please email admin@dashforge.com or write to us at 5 Meadway Court, Rutherford Close, Stevenage SG1 2EF.</p>
                 </div>
 
                 <div class="tx-color-03 tx-16 mg-b-40">
@@ -213,9 +213,9 @@
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Disputes
                     </h4>
-                    <p>Our Website acts as a directory only for Visitors to view listings of, and obtain information about, services offered by Traders and to access their contact information. DashForge is not a party to any contract for goods and services agreed between a Visitor and Trader, nor does it offer such goods or services itself. DashForge does not mediate between Visitors and the Traders in the event of any dispute arising between them.
+                    <p>Our Website acts as a directory only for Visitors to view listings of, and obtain information about, services offered by Traders and to access their contact information. dashforge is not a party to any contract for goods and services agreed between a Visitor and Trader, nor does it offer such goods or services itself. dashforge does not mediate between Visitors and the Traders in the event of any dispute arising between them.
 
-                        Any issues or disputes that may arise between a Trader and Visitor must be brought directly against each other and not DashForge.
+                        Any issues or disputes that may arise between a Trader and Visitor must be brought directly against each other and not dashforge.
 
                         Nothing in these Terms shall limit our right to take action against a Visitor or Trader for breach of these Terms or otherwise comply with legal or regulatory investigations and/or proceedings.
                     </p>
@@ -247,11 +247,11 @@
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="../../lib/select2/js/select2.min.js"></script>
 
-<script src="../../assets/js/DashForge.js"></script>
+<script src="../../assets/js/dashforge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/DashForge.settings.js"></script>
+<script src="../../assets/js/dashforge.settings.js"></script>
 <script>
     $(function () {
         'use script'

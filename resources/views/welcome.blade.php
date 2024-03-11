@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="dashforge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/DashForge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="dashforge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -38,9 +38,9 @@
     <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="assets/css/DashForge.css">
-    <link rel="stylesheet" href="assets/css/DashForge.landing.css">
+    <!-- dashforge CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.landing.css">
 
 
 
@@ -51,7 +51,7 @@
     <link href="lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/DashForge.demo.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
 
     <link rel="stylesheet" href="css/custom.css">
 
@@ -67,7 +67,7 @@
 
     <div class="home-lead">
 
-        <p class="home-text">Win local work and grow your business with DashForge</p>
+        <p class="home-text">Win local work and grow your business with dashforge</p>
 
         <h6 class="home-headline">We’ll introduce you to the millions of <span>Homeowners</span>
             that are searching our website, or reading our printed directories every single month
@@ -130,7 +130,7 @@
 <script src="lib/feather-icons/feather.min.js"></script>
 <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
-<script src="assets/js/DashForge.js"></script>
+<script src="assets/js/dashforge.js"></script>
 <script>
     $(document).ready(function() {
         'use strict'
@@ -150,7 +150,7 @@
     <script src="lib/prismjs/prism.js"></script>
     <script src="lib/select2/js/select2.min.js"></script>
 
-    <script src="assets/js/DashForge.js"></script>
+    <script src="assets/js/dashforge.js"></script>
     <script>
       // Adding placeholder for search input
       (function($) {

@@ -10,17 +10,17 @@
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
+    <meta name="twitter:title" content="dashforge">
     <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/DashForge">
-    <meta property="og:title" content="DashForge">
+    <meta property="og:url" content="http://themepixels.me/dashforge">
+    <meta property="og:title" content="dashforge">
     <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
 
-    <meta property="og:image" content="http://themepixels.me/DashForge/img/DashForge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/DashForge/img/DashForge-social.png">
+    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
@@ -40,9 +40,9 @@
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
     <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../../assets/css/DashForge.css">
-    <link rel="stylesheet" href="../../assets/css/DashForge.auth.css">
+    <!-- dashforge CSS -->
+    <link rel="stylesheet" href="../../assets/css/dashforge.css">
+    <link rel="stylesheet" href="../../assets/css/dashforge.auth.css">
 </head>
 <body>
 
@@ -53,17 +53,17 @@
 
             <div class="pd-t-20 wd-100p">
                 <h4 class="tx-color-01 mg-b-5">Privacy Policy </h4>
-                <p class="tx-color-03 tx-16 mg-b-40">DashForge.com recognises the importance of protecting your privacy.
+                <p class="tx-color-03 tx-16 mg-b-40">dashforge.com recognises the importance of protecting your privacy.
                     Our use of personal data is set out below.</p>
                 <div class="tx-color-03 tx-16 mg-b-40">
-                <h4>DashForge.com. and our Data Protection Officer</h4>
-                <p>We are DashForge.com Ltd, 5 Meadway Court, Rutherford Close, Stevenage, SG1 2EF.
+                <h4>dashforge.com. and our Data Protection Officer</h4>
+                <p>We are dashforge.com Ltd, 5 Meadway Court, Rutherford Close, Stevenage, SG1 2EF.
 
                     We have a dedicated data protection officer (“DPO”). You can contact the DPO by writing to the above address, marking it for the attention of the DPO, or using the Contact Us enquiry form.</p>
                 </div>
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Consent</h4>
-                    <p>By using the DashForge.com website, you hereby consent to this Privacy policy and agree to its terms.</p>
+                    <p>By using the dashforge.com website, you hereby consent to this Privacy policy and agree to its terms.</p>
                 </div>
 
 
@@ -83,7 +83,7 @@
                     <p>We rely on the following legal bases to use your personal data:
 
                         Where it is needed to provide you with services, such as letting you leave (or for us to validate) a review of a trader as a consumer, or for us to allow you to promote your services on the website and app, as a trader.
-                        Where it is in our legitimate interests to do so, such as to keep records of our communications between you and our staff, or for direct communications related to your trader membership of DashForge.com.
+                        Where it is in our legitimate interests to do so, such as to keep records of our communications between you and our staff, or for direct communications related to your trader membership of dashforge.com.
                         With your consent, such as for some direct marketing communications (if a Trader).
                     </p>
                 </div>
@@ -92,9 +92,9 @@
                     <h4>When do you share my personal information with other organisations?</h4>
                     <p>We may share information with the following third parties for the purposes listed above:
 
-                        DashForge Insurance (with A-Plan Insurance).
-                        Business partners or others who are a part of providing your products and services or operating our business, for example DashForge.com membership card printers Aided Presentations Ltd.
-                        Other organisations and businesses who provide services to us such as back-up and server hosting providers, IT software and maintenance providers, data storage providers and suppliers of other back-office functions, such as the DashForge.com website developers.
+                        dashforge Insurance (with A-Plan Insurance).
+                        Business partners or others who are a part of providing your products and services or operating our business, for example dashforge.com membership card printers Aided Presentations Ltd.
+                        Other organisations and businesses who provide services to us such as back-up and server hosting providers, IT software and maintenance providers, data storage providers and suppliers of other back-office functions, such as the dashforge.com website developers.
                         We may share your information with Google and Facebook to perform ad measurement services on our behalf, and we obtain consent for such sharing and use as is legally required. These services allow us to measure online conversions driven by Google ads using our first-party data. The data will be used to match customers to Google accounts and report the online conversions driven by Google ad interactions.
 
                         Google is committed to protecting the confidentiality and security of the data which is shared. You can read more about how Google uses enhanced conversion data.
@@ -120,15 +120,15 @@
                         Consumer reviews have the reviewer's personal details anonymised (excluding first/last name) after 30 days.
                         Missed appointments have the consumer's personal details anonymised (excluding first/last name) after 90 days.
                         General enquiries are removed from the website after 30 days.
-                        Leads that are closed or become a DashForge.com member are removed after 2 years.
-                        The details of a DashForge.com member that has been archived are removed after 2 years of no updates/activity.
-                        Consumer requests to DashForge.com members (Email, SMS, and Callback requests) are anonymised after 2 years.
+                        Leads that are closed or become a dashforge.com member are removed after 2 years.
+                        The details of a dashforge.com member that has been archived are removed after 2 years of no updates/activity.
+                        Consumer requests to dashforge.com members (Email, SMS, and Callback requests) are anonymised after 2 years.
                         The details of those who have left Help & advice questions are removed after 2 years. </p>
                 </div>
 
                 <div class="tx-color-03 tx-16 mg-b-40">
                     <h4>Data collected in server logs</h4>
-                    <p>We store the following information about each request (page visit) visitors make when visiting DashForge.com:
+                    <p>We store the following information about each request (page visit) visitors make when visiting dashforge.com:
 
                         IP (Internet Protocol) Address
                         ISP (Internet Service Provider)
@@ -174,11 +174,11 @@
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="../../lib/select2/js/select2.min.js"></script>
 
-<script src="../../assets/js/DashForge.js"></script>
+<script src="../../assets/js/dashforge.js"></script>
 
 <!-- append theme customizer -->
 <script src="../../lib/js-cookie/js.cookie.js"></script>
-<script src="../../assets/js/DashForge.settings.js"></script>
+<script src="../../assets/js/dashforge.settings.js"></script>
 <script>
     $(function () {
         'use script'
