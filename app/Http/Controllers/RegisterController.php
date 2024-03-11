@@ -89,7 +89,7 @@ class RegisterController extends Controller
     {
         $trademanprofile = new TradesmanProfile();
         $trademanprofile->user_id = $user->id;
-        $trademanprofile->name = $user->firstname . " " . $user->lastname;
+        $trademanprofile->name = $user->first_name . " " . $user->last_name;
         $trademanprofile->phone = $user->phone_number;
         $trademanprofile->location = $user->location;
         $trademanprofile->email = $user->email;

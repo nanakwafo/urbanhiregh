@@ -50,7 +50,6 @@
         <div class="d-sm-flex align-items-center justify-content-between">
             <div>
                 <h4 class="mg-b-5">Update User Profile</h4>
-                <p class="mg-b-0 tx-color-03">Due on April 21, 2019</p>
             </div>
 
         </div>

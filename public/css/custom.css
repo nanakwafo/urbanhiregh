@@ -163,3 +163,11 @@
     display: flex;
     justify-content: center;
 }
+.profile-img{
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+.profile-name{
+    text-align: center;
+}

@@ -41,6 +41,7 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.profile.css">
+    <link rel="stylesheet" href="../../css/custom.css">
 </head>
 <body class="page-profile">
 
@@ -51,12 +52,16 @@
             <div class="profile-sidebar pd-lg-r-25">
                 <div class="row">
                     <div class="col-sm-3 col-md-2 col-lg">
-                        <div class="avatar avatar-xxl avatar-online"><img src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle" alt=""></div>
+                        @if(is_null($tradesmanprofile->picture))
+                            <div class="" ><img src="/assets/img/2532839-200.png" class="rounded-circle profile-img" alt=""></div>
+                            @else
+                            <div class=""><img  src="/uploads/{{$tradesmanprofile->picture}}" class="rounded-circle profile-img" alt=""></div>
+                        @endif
                     </div><!-- col -->
                     <div class="col-sm-8 col-md-7 col-lg mg-t-20 mg-sm-t-0 mg-lg-t-25">
-                        <h5 class="mg-b-2 tx-spacing--1">{{$tradesmanprofile->name}}</h5>
+                        <h5 class="mg-b-2 tx-spacing--1 profile-name">{{$tradesmanprofile->name}}</h5>
                         <div class="d-flex mg-b-25">
-                            <button class="btn btn-xs btn-primary flex-fill mg-l-10">Not verified</button>
+                            <button class="btn btn-xs btn-danger flex-fill mg-l-10">Verify Account</button>
                         </div>
 
 
@@ -79,11 +84,10 @@
                     </div><!-- col -->
                     <div class="col-sm-6 col-md-5 col-lg mg-t-40">
                         <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Trade</label>
-                        <ul class="list-inline list-inline-skills">
-                            <li class="list-inline-item"><a href="">{{$user->trade}}</a></li>
+
+                            <p>{{$user->trade}}</p>
 
 
-                        </ul>
                     </div><!-- col -->
 
                     <div class="col-sm-6 col-md-5 col-lg mg-t-40">

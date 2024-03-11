@@ -41,7 +41,7 @@
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.landing.css">
-    <link rel="stylesheet" href="css/custom.css">
+
 
 
 
@@ -53,7 +53,7 @@
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/dashforge.demo.css">
 
-
+    <link rel="stylesheet" href="css/custom.css">
 
 
 
@@ -66,7 +66,7 @@
 <div class="home-slider">
 
     <div class="home-lead">
-        <div class="df-logo-initial mg-b-15"><p>UH</p></div>
+
         <p class="home-text">Win local work and grow your business with Urbanhire</p>
 
         <h6 class="home-headline">We’ll introduce you to the millions of <span>Homeowners</span>
@@ -93,13 +93,13 @@
             <div class="home-search-divider">
                 <!-- <input class="home-search-trade" name="tradeSearch" placeholder="Enter a trade" /> -->
                 <input type="hidden" value="1" name="pageNumber">
-            
+
              <select  id="trade" class="form-control select2 home-search-trade" name="tradeSearch" >
                        <option value="" disabled selected>Select Trade</option>
                         @foreach ($uniqueTrades as $trade)
                             <option value="{{ $trade }}">{{ $trade }}</option>
                         @endforeach
-                    </select> 
+                    </select>
 
 
             </div>
@@ -110,10 +110,10 @@
                         @foreach ($uniqueLocations as $location)
                             <option value="{{ $location }}">{{ $location }}</option>
                         @endforeach
-                    </select>                
+                    </select>
                   </div>
 
-                  
+
            <!--  <div class="home-search-divider">
                 <input class="home-search-location" name="location" placeholder="Location" />
             </div> -->

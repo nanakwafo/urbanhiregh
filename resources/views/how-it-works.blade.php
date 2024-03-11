@@ -75,7 +75,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Looking for a reliable Tradesperson?</a></h5>
-                                    <p class="tx-color-03 mg-b-0">No problem - just enter the trade you're looking for and your postcode or town/city into the boxes at the top of the page, then click 'Search'.</p>
+                                    <p class="tx-color-03 mg-b-0">No problem - just enter the trade you're looking for and your town/city into the boxes at the top of the page, then click 'Search'.</p>
                                     <p class="tx-color-03 mg-b-0">Don't worry about having to enter exactly the right trade name - suggested options will be displayed as soon as you start typing.</p>
                                 </div><!-- card-body -->
 
@@ -90,7 +90,7 @@
                                 <div class="card-body tx-13">
 
                                     <h5><a href="" class="link-01">Choose your Trader</a></h5>
-                                    <p class="tx-color-03 mg-b-0">You can view the company profiles of all trusted traders in your area who suit your job.</p>
+                                    <p class="tx-color-03 mg-b-0">You can view all trusted traders in your area who suit your job.</p>
                                     <p class="tx-color-03 mg-b-0">Reviews from previous customers are also available to help you to select the ideal tradesperson. Once you've chosen, you can immediately contact the trader by phone, text or email.</p>
                                 </div><!-- card-body -->
 
@@ -162,7 +162,7 @@
 
                                     <h5><a href="" class="link-01">Are you an experienced professional Tradesperson?</a></h5>
                                     <p class="tx-color-03 mg-b-0"> If you're skilled in your trade, take pride in your work and have a selection of previously satisfied customers, you could join urbanhire.</p>
-                                    <p class="tx-color-03 mg-b-0">As a member your company will be presented in the 710,170 searches made every month by visitors to the website. Go to the Join us page to start your urbanhire membership application.</p>
+                                    <p class="tx-color-03 mg-b-0"> Go to the Join us page to start your urbanhire membership application.</p>
                                 </div><!-- card-body -->
 
                             </div><!-- card -->

@@ -104,7 +104,7 @@
                                     <input type="text" name="phone_number" class="form-control" placeholder="Enter your Phone Number">
                                 </div>
                                 <div class="form-group">
-                                    <label>Full Address</label>
+                                    <label>Full Location Address</label>
                                     <input type="text" name="location"  class="form-control" placeholder="Enter your Full Address">
                                 </div>
                                 <input type="hidden" value="" name="trade">
@@ -148,7 +148,7 @@
                                     <input type="text" name="phone_number" class="form-control" placeholder="Enter your Phone Number">
                                 </div>
                                 <div class="form-group">
-                                    <label>Full Address</label>
+                                    <label>Full Location Address</label>
                                     <input type="text" name="location" class="form-control" placeholder="Enter your Full Address">
                                 </div>
                                 <div class="form-group">
@@ -159,7 +159,7 @@
                                     </select>
                                </div>
                                 <div class="form-group tx-12">
-                                    By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy statement.
+                                    By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy statement <a href="terms">terms</a>.
                                 </div><!-- form-group -->
 
                                 <button type="submit" class="btn btn-brand-02 btn-block">Create Account</button>
